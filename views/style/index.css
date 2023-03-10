@@ -114,28 +114,26 @@ main{
 
     margin-top: 20px;
 
+    position: relative;
+
 }
 
 /* Seção do Artigo principal */
 #article-main section{
-    border: 2px solid rgba(0, 0, 0, 0.07);
-    box-shadow: 0 0 10px rgb(232 234 237 / 50%);
-
     display: flex;
+    justify-content: center; 
+    align-items: center;
+    
+    position: relative;
 
-    flex-direction: column;
-
-    padding: 1.3rem;
-
-    min-height: 92vh;
-
-    width: 40vw
+    padding: 0.1rem;
 
 }
+
 /* Imagem da seção do Artigo */
 #article-main section > img{
-    height: 65vh;
-    width: 40vw;
+    height: 75vh;
+    width: 39.5vw;
 } 
 
 /* Botão da seção do Artigo */
