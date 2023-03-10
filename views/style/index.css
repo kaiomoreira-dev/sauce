@@ -1,10 +1,8 @@
-/* *{
+*{
     margin: 0;
-} */
+}
 
 .container {
-    border: 1px solid;
-
     display: flex;
     
     justify-content: center;
@@ -13,12 +11,6 @@
 
     height: 100vh;
 }
-
-/* header{
-    border: 1px solid;
-
-    display: flex;
-} */
 
 #navbar{
     width: 80vw;
