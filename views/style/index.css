@@ -40,6 +40,7 @@
 #logo{    
     position: absolute;
     left: 3rem;
+    display: flex;
 }
 
 #logo > img {
@@ -49,13 +50,23 @@
 }
 
 #nav-menu{
-    width: 350px;
+    width: 45%;
 
     display: flex;
 
-    gap: 15%;
+    justify-content: center;
+    align-items: center;
+
+    gap: 8%;
 
     list-style: none;
+}
+#nav-menu li:nth-child(5){
+    display: flex;
+}
+#nav-menu li:nth-child(5) > img{
+
+    height: 4vh;
 }
 
 
@@ -70,4 +81,5 @@
 
     text-decoration: none;
 }
+
 
