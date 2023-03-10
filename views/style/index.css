@@ -91,8 +91,6 @@ main{
 
     min-height: 100vh;
 
-    padding-bottom: 50px;
-
     display: flex;
     flex-direction: column;
 
@@ -278,4 +276,52 @@ main{
 #article-secondary section > p{
     margin-top: 1rem;
     text-align: justify;
+}
+
+/* Rodapé com informações */
+#footer-info{
+    color: #ffff;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #CB5D5D;
+
+    width: 80vw;
+    height: 20vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Descrição do Copyrigth no Rodapé */
+#footer-info div {
+    width: 15vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+#footer-info div ul{
+    display: flex;
+
+    width: 10vw;
+
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+    padding: 0.5rem 0 0 0;
+
+    gap: 8%;
+
+}
+
+#footer-info ul li a > img{
+    height: 5vh;
+    width: 2vw;
 }
