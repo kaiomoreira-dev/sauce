@@ -3,13 +3,17 @@
 }
 
 .container {
+    border: 1px solid;
+
     display: flex;
     
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
     background-color: #e5e5e5;
 
     height: 100vh;
+
 }
 
 #navbar{
@@ -17,7 +21,6 @@
     height: 25vh;
 
     display: flex;
-    align-items: center;
     justify-content: center;
 
     margin-top: 20px;
@@ -74,4 +77,12 @@
     text-decoration: none;
 }
 
+main{
+    background-color: white;
+
+    height: 100vh;
+    width: 80vw;
+
+    margin-top: 1.5rem;
+}
 
