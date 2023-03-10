@@ -84,7 +84,7 @@ header{
 
 /* Lista de itens do menu */
 #nav-menu li {
-    padding: 0.5rem;
+    padding: 1rem 0
 }
 
 /* Efeito na ancora do menu */
@@ -98,6 +98,7 @@ header{
     background-color: #CB5D5D;
     border-radius: 3px;
     transition: 0.6s; 
+    
 }
 
 /* Coteudo principal */
