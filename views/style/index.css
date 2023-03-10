@@ -19,7 +19,7 @@ header{
 }
 
 /* Barra de navegação */
-#navbar{
+#navbar-desktop{
     width: 80vw;
     height: 25vh;
 
@@ -54,7 +54,7 @@ header{
     justify-content: center;
     align-items: center;
 
-    gap: 8%;
+    gap: 3%;
 
     list-style: none;
 }
@@ -67,6 +67,7 @@ header{
 /* Lupa de pesquisar */
 #nav-menu li:nth-child(5) a > img{
     height: 4vh;
+    
 }
 
 /* Links do menu de navegação */
@@ -77,8 +78,26 @@ header{
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     
-
+    padding: 1rem;
     text-decoration: none;
+}
+
+/* Lista de itens do menu */
+#nav-menu li {
+    padding: 0.5rem;
+}
+
+/* Efeito na ancora do menu */
+#nav-menu li a:hover{
+    color: #fff;
+    transition: 0.6s;
+}
+
+/* Efeito na lista de itens do menu */
+#nav-menu li:hover{
+    background-color: #CB5D5D;
+    border-radius: 3px;
+    transition: 0.6s; 
 }
 
 /* Coteudo principal */
@@ -335,7 +354,7 @@ main{
     display: none;
 }
 
-#nav-menu-mobile{
+#navbar-mobile{
     display: none;
 }
 
@@ -350,7 +369,7 @@ main{
         position: relative;
     }
 
-    #navbar{
+    #navbar-desktop{
         height: 16.5vh;
 
         display: flex;
@@ -383,12 +402,12 @@ main{
         cursor: pointer;
         outline: none;
         box-shadow: 0 0 0 0.2pt #e49595;
-        border-radius: 3px;
+        border-radius: 1px;
         transition: 1s;
 
     }
 
-    #nav-menu-mobile{
+    #navbar-mobile{
         display: block;
 
         position: absolute;
@@ -403,7 +422,7 @@ main{
         /* border: 1px solid; */
     }
 
-    #nav-menu-mobile ul{
+    #navbar-mobile ul{
         padding: 0;
         height: 31vh;
      
@@ -417,11 +436,11 @@ main{
 
     
     }
-    #nav-menu-mobile ul a{
+    #navbar-mobile ul a{
         text-decoration: none;
         color: #fff;
     }
-    #nav-menu-mobile ul li{
+    #navbar-mobile ul li{
         display: flex;
         align-items:center;
         width: 80vw;
@@ -431,7 +450,7 @@ main{
 
     }
 
-    #nav-menu-mobile ul li:hover{
+    #navbar-mobile ul li:hover{
         background-color: #e49595;
         transition: 0.8s;
     }
