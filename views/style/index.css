@@ -1,8 +1,9 @@
-*{
+/* *{
     margin: 0;
-}
+} */
 
 .container {
+    border: 1px solid;
 
     display: flex;
     
@@ -15,27 +16,36 @@
 
 /* header{
     border: 1px solid;
-} */
-
-nav{
-    width: 100vw;
 
     display: flex;
+} */
 
+#navbar{
+    width: 80vw;
+    height: 25vh;
+
+    display: flex;
     align-items: center;
     justify-content: center;
 
     margin-top: 20px;
+    background-color: #e49595;
+
+    position: relative;
+    
 
 
 }
 
-#navbar{
+#logo{    
+    position: absolute;
+    left: 3rem;
+}
+
+#logo > img {
     height: 25vh;
+    width: 150px;
 
-    width: 90vw;
-
-    background-color: #e49595;
 }
 
 #nav-menu{
@@ -48,15 +58,7 @@ nav{
     list-style: none;
 }
 
-#logo > img {
-    height: 200px;
-    width: 200px;
 
-    position: absolute;
-
-    left: 70px;
-    top: -10px;
-}
 
 #nav-menu li a{
     color: black;
