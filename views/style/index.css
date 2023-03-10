@@ -62,8 +62,7 @@
 }
 
 /* Lupa de pesquisar */
-#nav-menu li:nth-child(5) > img{
-
+#nav-menu li:nth-child(5) a > img{
     height: 4vh;
 }
 
