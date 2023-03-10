@@ -34,12 +34,14 @@
     left: 3rem;
     display: flex;
 }
+
 /* Imagem da logo */
 #logo > img {
     height: 25vh;
     width: 150px;
 
 }
+
 /* Menu de navegação */
 #nav-menu{
     width: 45%;
@@ -53,10 +55,12 @@
 
     list-style: none;
 }
+
 /* Ultimo botão de navegação */
 #nav-menu li:nth-child(5){
     display: flex;
 }
+
 /* Lupa de pesquisar */
 #nav-menu li:nth-child(5) > img{
 
@@ -65,7 +69,7 @@
 
 /* Links do menu de navegação */
 #nav-menu li a{
-    color: black;
+    color: #000000ba;
 
     font-size: 1.2em;
     font-weight: bold;
@@ -87,7 +91,7 @@ main{
 
     min-height: 100vh;
 
-
+    padding-bottom: 50px;
 
     display: flex;
     flex-direction: column;
@@ -164,12 +168,13 @@ main{
 
 /* Descrição da seção do Artigo */
 #article-main section > p{
-    margin-top: 20px;
+    margin-top: 1rem;
+    text-align: justify;
 }
 
 /* Data da seção do Artigo */
 #article-main section > span{
-    margin-top: 10px;
+    margin-top: 0.1rem;
 }
 
 /* Titulo da seção do Artigo */
@@ -184,6 +189,8 @@ main{
 
     background-color: #e49595;
 
+    color: #000000ba;;
+
     margin-top: 20px;
 
     display: flex;
@@ -196,5 +203,79 @@ main{
 }
 
 /* Artigo secundário */
+#article-secondary{
 
+    width: 80vw;
+    min-height: 100vh;
 
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: 1rem;
+
+    box-sizing: border-box;
+
+}
+
+/* Seção do Artigo secundário */
+#article-secondary section{
+   
+    height: 90vh;
+    width: 21vw;
+
+    border-right: 2px solid rgba(0, 0, 0, 0.07);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.07);
+    box-shadow: 0 0 10px rgb(232 234 237 / 60%);
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 1.3rem;
+    margin: 0.5rem;
+}
+
+/* Imagem da seção do Artigo secundário */
+#article-secondary section img{
+    height: 40vh;
+    width: 21vw;
+}
+
+/* Botão da seção do Artigo secundário */
+#article-secondary section button{
+    padding: 15px;
+    margin-top: 20px;
+
+    width: 8vw;
+
+    background-color: #CB5D5D;
+    color: white;
+    
+
+    border:none;
+    border-radius: 3px;
+}
+
+/* Efeito do Botão da seção do Artigo secundário */
+#article-secondary section button:hover{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 0 1pt #CB5D5D;
+    border-radius: 3px;
+    transition: 1s;
+}
+
+/* Data da seção do Artigo secundário */
+#article-secondary section span{
+    padding-top: 0.1rem;
+}
+
+/* Descrição da seção do Artigo secundário */
+#article-secondary section > p{
+    margin-top: 1rem;
+    text-align: justify;
+}
