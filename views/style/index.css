@@ -3,17 +3,14 @@
 }
 
 .container {
-    border: 1px solid;
+    /* border: 1px solid; */
 
     display: flex;
     
     flex-direction: column;
     align-items: center;
 
-    background-color: #e5e5e5;
-
-    height: 100vh;
-
+    background-color: #f5f3f3;
 }
 
 #navbar{
@@ -27,9 +24,6 @@
     background-color: #e49595;
 
     position: relative;
-    
-
-
 }
 
 #logo{    
@@ -64,8 +58,6 @@
     height: 4vh;
 }
 
-
-
 #nav-menu li a{
     color: black;
 
@@ -78,11 +70,108 @@
 }
 
 main{
-    background-color: white;
+    /* border: 1px solid; */
 
-    height: 100vh;
+    background-color: #ffff;
+
     width: 80vw;
 
     margin-top: 1.5rem;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    padding: 50px;
+
+    box-sizing: border-box;
+
+    min-height: 100vh;
+
+}
+#article-main{
+    /* border: 1px solid; */
+
+    width: 60vw;
+    min-height: 100vh;
+
+
+    display: flex;
+
+    justify-content: center;
+}
+
+#article-main section{
+    border: 2px solid rgba(0, 0, 0, 0.07);
+    box-shadow: 0 0 10px rgb(232 234 237 / 50%);
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 1.3rem;
+
+    min-height: 92vh;
+
+    width: 40vw
+
+}
+
+#article-main section > img{
+    height: 65vh;
+    width: 40vw;
+} 
+
+#article-main section > button{
+    padding: 15px;
+    margin-top: 20px;
+
+    width: 8vw;
+
+    background-color: #CB5D5D;
+    color: white;
+    
+
+    border:none;
+    border-radius: 3px;
+}
+
+#article-main section > button:hover{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 0 1pt #CB5D5D;
+    border-radius: 3px;
+    transition: 1s;
+}
+#article-main section > p{
+    margin-top: 20px;
+}
+
+#article-main section > span{
+    margin-top: 10px;
+}
+#article-main section > h1{
+    font-size: 1.5rem;
+}
+
+#emphasis{
+    height: 20vh;
+    width: 80vw;
+
+    background-color: #e49595;
+
+    margin-top: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
