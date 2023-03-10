@@ -14,6 +14,10 @@
     background-color: #f5f3f3;
 }
 
+header{
+    margin-top:1rem;
+}
+
 /* Barra de navegação */
 #navbar{
     width: 80vw;
@@ -22,7 +26,6 @@
     display: flex;
     justify-content: center;
 
-    margin-top: 20px;
     background-color: #e49595;
 
     position: relative;
@@ -108,24 +111,34 @@ main{
     position: relative;
 
 }
+/* @media screen and (max-width: 500px) {
+   
+} */
 
 /* Seção do Artigo principal */
 #article-main section{
+    /* border: 1px solid; */
     display: flex;
     justify-content: center; 
     align-items: center;
     
+    /* flex-direction: column;
+    flex-wrap: wrap; */
     position: relative;
 
     padding: 0.1rem;
 
 }
 
+
 /* Imagem da seção do Artigo */
 #article-main section > img{
     height: 75vh;
     width: 39.5vw;
 } 
+/* @media screen and (max-width: 500px) {
+    
+} */
 
 /* Botão da seção do Artigo */
 #article-main section > button{
@@ -224,11 +237,13 @@ main{
     margin: 0.5rem;
 }
 
+
 /* Imagem da seção do Artigo secundário */
 #article-secondary section img{
     height: 40vh;
     width: 21vw;
 }
+
 
 /* Botão da seção do Artigo secundário */
 #article-secondary section button{
@@ -294,6 +309,7 @@ main{
     align-content: center;
 }
 
+/* Lista de redes social no Rodapé */
 #footer-info div ul{
     display: flex;
 
@@ -309,7 +325,150 @@ main{
 
 }
 
+/* Imagens de redes social no Rodapé */
 #footer-info ul li a > img{
     height: 5vh;
     width: 2vw;
+}
+
+#icon{
+    display: none;
+}
+
+#nav-menu-mobile{
+    display: none;
+}
+
+/* Formatação para dispositivos de 500px */
+@media screen and (max-width: 500px) {
+    #nav-menu{
+        display: none;
+    }
+
+    header{
+        /* border: 1px solid; */
+        position: relative;
+    }
+
+    #navbar{
+        height: 16.5vh;
+
+        display: flex;
+        align-items: center;        
+        box-sizing: border-box;
+    }
+
+    #logo > img {
+        height: 20vh;
+        width: 85px;
+    }
+    
+
+    #icon{
+        color: #fff;
+        background-color: #CB5D5D;
+        padding: 2rem;
+
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        border-radius: 3px;
+        border: 1px solid #CB5D5D;
+        
+    }
+
+    #icon:hover{
+        cursor: pointer;
+        outline: none;
+        box-shadow: 0 0 0 0.2pt #e49595;
+        border-radius: 3px;
+        transition: 1s;
+
+    }
+
+    #nav-menu-mobile{
+        display: block;
+
+        position: absolute;
+        background-color: #CB5D5D;
+
+        height: 31vh;
+
+        position: relative;
+        
+        top: 0;
+
+        /* border: 1px solid; */
+    }
+
+    #nav-menu-mobile ul{
+        padding: 0;
+        height: 31vh;
+     
+        list-style: none;
+        width: 71.8vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+  
+        font-family: Arial, Helvetica, sans-serif;
+
+    
+    }
+    #nav-menu-mobile ul a{
+        text-decoration: none;
+        color: #fff;
+    }
+    #nav-menu-mobile ul li{
+        display: flex;
+        align-items:center;
+        width: 80vw;
+        height: 25vh;
+        padding: 0 0 0 1rem;
+        box-sizing: border-box;
+
+    }
+
+    #nav-menu-mobile ul li:hover{
+        background-color: #e49595;
+        transition: 0.8s;
+    }
+
+    #article-secondary{
+        flex-direction: column;
+    }
+
+    #article-main section > img{
+        height: 45vh;
+        width: 75vw;
+    }
+
+    #article-main {
+        flex-direction: column;
+    }
+
+    #article-secondary section{
+        height: 90vh;
+        width: 65vw;
+    }
+
+    #article-secondary section img{
+        height: 40vh;
+        width: 65vw;
+    }
+
+    #article-secondary section button{
+        width: 25vw;
+    }
+
+    #footer-info{
+        font-size: 0.7rem;
+    }
+
+    #footer-info ul li a > img{
+        height: 3vh;
+        width: 3vw;
+    }
 }
