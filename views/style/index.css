@@ -32,14 +32,14 @@ header{
 }
 
 /* Logo */
-#logo{    
+.logo{    
     position: absolute;
     left: 3rem;
     display: flex;
 }
 
 /* Imagem da logo */
-#logo > img {
+.logo > img {
     height: 25vh;
     width: 150px;
 
@@ -118,7 +118,7 @@ main{
 }
 
 /* Artigo principal */
-#article-main{
+.article-main{
     /* border: 1px solid; */
 
     padding: 0 50px;
@@ -136,7 +136,7 @@ main{
 } */
 
 /* Seção do Artigo principal */
-#article-main section{
+.article-main section{
     /* border: 1px solid; */
     display: flex;
     justify-content: center; 
@@ -152,7 +152,7 @@ main{
 
 
 /* Imagem da seção do Artigo */
-#article-main section > img{
+.article-main section > img{
     height: 75vh;
     width: 39.5vw;
 } 
@@ -161,7 +161,7 @@ main{
 } */
 
 /* Botão da seção do Artigo */
-#article-main section > button{
+.article-main section > button{
     padding: 15px;
     margin-top: 20px;
 
@@ -176,7 +176,7 @@ main{
 }
 
 /* Efeito do Botão da seção do Artigo */
-#article-main section > button:hover{
+.article-main section > button:hover{
     cursor: pointer;
     border: none;
     outline: none;
@@ -186,23 +186,23 @@ main{
 }
 
 /* Descrição da seção do Artigo */
-#article-main section > p{
+.article-main section > p{
     margin-top: 1rem;
     text-align: justify;
 }
 
 /* Data da seção do Artigo */
-#article-main section > span{
+.article-main section > span{
     margin-top: 0.1rem;
 }
 
 /* Titulo da seção do Artigo */
-#article-main section > h1{
+.article-main section > h1{
     font-size: 1.5rem;
 }
 
 /* Barra de mais destaque */
-#emphasis{
+.emphasis{
     height: 20vh;
     width: 80vw;
 
@@ -222,7 +222,7 @@ main{
 }
 
 /* Artigo secundário */
-#article-secondary{
+.article-secondary{
 
     width: 80vw;
     min-height: 100vh;
@@ -241,7 +241,7 @@ main{
 }
 
 /* Seção do Artigo secundário */
-#article-secondary section{
+.article-secondary section{
     height: 90vh;
     width: 22vw;
 
@@ -259,14 +259,14 @@ main{
 
 
 /* Imagem da seção do Artigo secundário */
-#article-secondary section img{
+.article-secondary section img{
     height: 40vh;
     width: 21vw;
 }
 
 
 /* Botão da seção do Artigo secundário */
-#article-secondary section button{
+.article-secondary section button{
     padding: 15px;
     margin-top: 20px;
 
@@ -281,7 +281,7 @@ main{
 }
 
 /* Efeito do Botão da seção do Artigo secundário */
-#article-secondary section button:hover{
+.article-secondary section button:hover{
     cursor: pointer;
     border: none;
     outline: none;
@@ -291,18 +291,18 @@ main{
 }
 
 /* Data da seção do Artigo secundário */
-#article-secondary section span{
+.article-secondary section span{
     padding-top: 0.1rem;
 }
 
 /* Descrição da seção do Artigo secundário */
-#article-secondary section > p{
+.article-secondary section > p{
     margin-top: 1rem;
     text-align: justify;
 }
 
 /* Rodapé com informações */
-#footer-info{
+.footer-info{
     color: #ffff;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #CB5D5D;
@@ -319,7 +319,7 @@ main{
 }
 
 /* Descrição do Copyrigth no Rodapé */
-#footer-info div {
+.footer-info div {
     width: 15vw;
 
     display: flex;
@@ -330,7 +330,7 @@ main{
 }
 
 /* Lista de redes social no Rodapé */
-#footer-info div ul{
+.footer-info div ul{
     display: flex;
 
     width: 10vw;
@@ -346,12 +346,12 @@ main{
 }
 
 /* Imagens de redes social no Rodapé */
-#footer-info ul li a > img{
+.footer-info ul li a > img{
     height: 5vh;
     width: 2vw;
 }
 
-#icon{
+.icon{
     display: none;
 }
 
@@ -378,13 +378,13 @@ main{
         box-sizing: border-box;
     }
 
-    #logo > img {
+    .logo > img {
         height: 20vh;
         width: 85px;
     }
     
 
-    #icon{
+    .icon{
         color: #fff;
         background-color: #CB5D5D;
         padding: 2rem;
@@ -398,7 +398,7 @@ main{
         border: none;
     }
 
-    #icon:hover{
+    .icon:hover{
         cursor: pointer;
         outline: none;
         box-shadow: 0 0 0 0.2pt #e49595;
@@ -462,38 +462,38 @@ main{
         transition: 0.8s;
     }
 
-    #article-secondary{
+    .article-secondary{
         flex-direction: column;
     }
 
-    #article-main section > img{
+    .article-main section > img{
         height: 45vh;
         width: 75vw;
     }
 
-    #article-main {
+    .article-main {
         flex-direction: column;
     }
 
-    #article-secondary section{
+    .article-secondary section{
         height: 90vh;
         width: 65vw;
     }
 
-    #article-secondary section img{
+    .article-secondary section img{
         height: 40vh;
         width: 65vw;
     }
 
-    #article-secondary section button{
+    .article-secondary section button{
         width: 25vw;
     }
 
-    #footer-info{
+    .footer-info{
         font-size: 0.7rem;
     }
 
-    #footer-info ul li a > img{
+    .footer-info ul li a > img{
         height: 3vh;
         width: 3vw;
     }

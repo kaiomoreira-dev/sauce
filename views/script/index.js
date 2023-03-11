@@ -1,4 +1,4 @@
-const navbarIcon = document.getElementById("icon");
+const navbarIcon = document.querySelector(".icon");
 const navbarMenuMobile = document.querySelector(".navbar-mobile");
 
 
