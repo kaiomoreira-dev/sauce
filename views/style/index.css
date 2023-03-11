@@ -351,10 +351,12 @@ main{
     width: 2vw;
 }
 
+/* Icone hamburguer da barra de navegação mobile oculto*/
 .icon{
     display: none;
 }
 
+/* Barra de navegação mobile oculto*/
 .navbar-mobile{
     display: none;
 }
