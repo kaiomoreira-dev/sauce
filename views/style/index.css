@@ -31,21 +31,21 @@ header{
     position: relative;
 }
 
-/* Logo */
+/* Div da logo da barra de navegação */
 .logo{    
     position: absolute;
     left: 3rem;
     display: flex;
 }
 
-/* Imagem da logo */
+/* Imagem da logo da barra de navegação desktop */
 .logo > img {
     height: 25vh;
     width: 150px;
 
 }
 
-/* Menu de navegação */
+/* Menu de navegação desktop */
 .nav-menu{
     width: 45%;
 
@@ -363,6 +363,7 @@ main{
 
 /* Formatação para dispositivos de 500px */
 @media screen and (max-width: 500px) {
+    /* Barra de navegação desktop oculto */
     .nav-menu{
         display: none;
     }
@@ -372,6 +373,7 @@ main{
         position: relative;
     }
 
+    /* Barra de navegação */
     .navbar-desktop{
         height: 16.5vh;
 
@@ -380,12 +382,13 @@ main{
         box-sizing: border-box;
     }
 
+    /* Imagem da barra de navegação desktop*/
     .logo > img {
         height: 20vh;
         width: 85px;
     }
     
-
+    /* Div icon da barra de navegação mobile */
     .icon{
         color: #fff;
         background-color: #CB5D5D;
@@ -400,6 +403,7 @@ main{
         border: none;
     }
 
+    /* Efeito da Div icon da barra de navegação mobile */
     .icon:hover{
         cursor: pointer;
         outline: none;
@@ -408,7 +412,7 @@ main{
         transition: 1s;
 
     }
-
+    /* Barra de navegação mobile */
     .navbar-mobile{
         display: block;
 
@@ -425,13 +429,17 @@ main{
         transition: opacity 1.2s;
     }
 
+    /* Classe para aumentar opacidade da barra de navegação mobile */
     .show{
         opacity: 1 !important;
     }
+
+    /* Classe para aumentar altura da barra de navegação mobile */
     .height{
         height: 31vh;
     }
 
+    /* Lista ul daBarra de navegação mobile */
     .navbar-mobile ul{
         padding: 0;
         height: 31vh;
@@ -444,11 +452,15 @@ main{
   
         font-family: Arial, Helvetica, sans-serif;
     }
+
+    /* Lista ul daBarra de navegação mobile */
     .navbar-mobile ul a{
         text-decoration: none;
         color: #fff;
         
     }
+
+    /* Items li daBarra de navegação mobile */
     .navbar-mobile ul li{
         display: flex;
         align-items:center;
@@ -459,42 +471,51 @@ main{
 
     }
 
+    /* Efeito dos items li da Barra de navegação mobile */
     .navbar-mobile ul li:hover{
         background-color: #e49595;
         transition: 0.8s;
     }
 
+    /* Artigo secundário da Barra de navegação mobile */
     .article-secondary{
         flex-direction: column;
     }
 
+    /* Imagem do artigo principal da Barra de navegação mobile */
     .article-main section > img{
         height: 45vh;
         width: 75vw;
     }
 
+    /* Artigo principal da Barra de navegação mobile */
     .article-main {
         flex-direction: column;
     }
 
+    /* Seção do artigo secundário da Barra de navegação mobile */
     .article-secondary section{
         height: 90vh;
         width: 65vw;
     }
 
+    /* Imagem da seção do artigo secundário na Barra de navegação mobile */
     .article-secondary section img{
         height: 40vh;
         width: 65vw;
     }
 
+    /* Imagem da seção do artigo secundário na Barra de navegação mobile */
     .article-secondary section button{
         width: 25vw;
     }
 
+    /* Rodapé do artigo secundário na Barra de navegação mobile */
     .footer-info{
         font-size: 0.7rem;
     }
 
+    /* Imagem do rodapé no artigo secundário na Barra de navegação mobile */
     .footer-info ul li a > img{
         height: 3vh;
         width: 3vw;
