@@ -19,7 +19,7 @@ header{
 }
 
 /* Barra de navegação */
-#navbar-desktop{
+.navbar-desktop{
     width: 80vw;
     height: 25vh;
 
@@ -46,7 +46,7 @@ header{
 }
 
 /* Menu de navegação */
-#nav-menu{
+.nav-menu{
     width: 45%;
 
     display: flex;
@@ -60,18 +60,18 @@ header{
 }
 
 /* Ultimo botão de navegação */
-#nav-menu li:nth-child(5){
+.nav-menu li:nth-child(5){
     display: flex;
 }
 
 /* Lupa de pesquisar */
-#nav-menu li:nth-child(5) a > img{
+.nav-menu li:nth-child(5) a > img{
     height: 4vh;
     
 }
 
 /* Links do menu de navegação */
-#nav-menu li a{
+.nav-menu li a{
     color: #000000ba;
 
     font-size: 1.2em;
@@ -83,18 +83,18 @@ header{
 }
 
 /* Lista de itens do menu */
-#nav-menu li {
+.nav-menu li {
     padding: 1rem 0
 }
 
 /* Efeito na ancora do menu */
-#nav-menu li a:hover{
+.nav-menu li a:hover{
     color: #fff;
     transition: 0.6s;
 }
 
 /* Efeito na lista de itens do menu */
-#nav-menu li:hover{
+.nav-menu li:hover{
     background-color: #CB5D5D;
     border-radius: 3px;
     transition: 0.6s; 
@@ -355,13 +355,13 @@ main{
     display: none;
 }
 
-#navbar-mobile{
+.navbar-mobile{
     display: none;
 }
 
 /* Formatação para dispositivos de 500px */
 @media screen and (max-width: 500px) {
-    #nav-menu{
+    .nav-menu{
         display: none;
     }
 
@@ -370,7 +370,7 @@ main{
         position: relative;
     }
 
-    #navbar-desktop{
+    .navbar-desktop{
         height: 16.5vh;
 
         display: flex;
@@ -395,8 +395,7 @@ main{
         top: 0;
 
         border-radius: 3px;
-        border: 1px solid #CB5D5D;
-        
+        border: none;
     }
 
     #icon:hover{
@@ -408,22 +407,30 @@ main{
 
     }
 
-    #navbar-mobile{
+    .navbar-mobile{
         display: block;
 
         position: absolute;
         background-color: #CB5D5D;
 
-        height: 31vh;
+        height: 0;
 
         position: relative;
         
         top: 0;
-
         /* border: 1px solid; */
+        opacity: 0;
+        transition: opacity 1.2s;
     }
 
-    #navbar-mobile ul{
+    .show{
+        opacity: 1 !important;
+    }
+    .height{
+        height: 31vh;
+    }
+
+    .navbar-mobile ul{
         padding: 0;
         height: 31vh;
      
@@ -434,14 +441,13 @@ main{
         justify-content: center;
   
         font-family: Arial, Helvetica, sans-serif;
-
-    
     }
-    #navbar-mobile ul a{
+    .navbar-mobile ul a{
         text-decoration: none;
         color: #fff;
+        
     }
-    #navbar-mobile ul li{
+    .navbar-mobile ul li{
         display: flex;
         align-items:center;
         width: 80vw;
@@ -451,7 +457,7 @@ main{
 
     }
 
-    #navbar-mobile ul li:hover{
+    .navbar-mobile ul li:hover{
         background-color: #e49595;
         transition: 0.8s;
     }
