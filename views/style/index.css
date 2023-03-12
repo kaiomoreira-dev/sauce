@@ -131,9 +131,7 @@ main{
     position: relative;
 
 }
-/* @media screen and (max-width: 500px) {
-   
-} */
+
 
 /* Seção do Artigo principal */
 .article-main section{
@@ -156,9 +154,19 @@ main{
     height: 75vh;
     width: 39.5vw;
 } 
-/* @media screen and (max-width: 500px) {
-    
-} */
+.shadowLikeMain{
+    height: 75vh;
+    width: 39.5vw;
+    background-color: #c9c6c6;
+
+    opacity: 0.3;
+    transition: opacity 2.5s;
+
+    position: absolute;
+
+    z-index: 0;
+}
+
 
 /* Botão da seção do Artigo */
 .article-main section > button{
@@ -242,6 +250,7 @@ main{
 
 /* Seção do Artigo secundário */
 .article-secondary section{
+  
     height: 90vh;
     width: 22vw;
 
@@ -252,23 +261,42 @@ main{
     display: flex;
 
     flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+    position: relative;
 
     padding: 1.3rem;
     margin: 0.5rem;
 }
-
 
 /* Imagem da seção do Artigo secundário */
 .article-secondary section img{
     height: 40vh;
     width: 21vw;
 }
+figure{
+    height: 40vh;
+    width: 21vw;
+}
+.shadowLikeSecondary{
+    height: 40vh;
+    width: 21vw;
+    background-color: #c9c6c6;
+
+    opacity: 0.3;
+    transition: opacity 2.5s;
+
+    position: relative;
+    
+
+    z-index: 0;
+}
 
 
 /* Botão da seção do Artigo secundário */
 .article-secondary section button{
     padding: 15px;
-    margin-top: 20px;
+    margin-top: 2rem;
 
     width: 8vw;
 
