@@ -5,6 +5,7 @@ const shadowLikes = document.querySelectorAll("main section div");
 const sections = document.querySelectorAll("section");
 
 const imagesPost = document.querySelectorAll("figure img");
+const divShadowMainPost = document.querySelectorAll("main > article section figure > div")
 
 function toggleNavbarMenuMobile(){
     
@@ -15,36 +16,42 @@ function toggleNavbarMenuMobile(){
     }
 
 }
+
+// <------- Efeito Show menu de Naegação Mobile ------->
 navbarIcon.addEventListener("click", toggleNavbarMenuMobile)
 
-// Efeito que adiciona sombra nas imagens principal
+// <------- Efeito Zom e Sombra Article Main------->
+// Efeito que adiciona zom e sombra nas imagens principal
 imagesPost.forEach(image => {
     image.addEventListener("mouseover", () =>{
-        let imageId = image.getAttribute("id");
-
-        if(imageId === "image-1" || imageId === "image-2"){
-            image.setAttribute("class", "zomImageMain");
-        }
+        let divShadow = image.nextElementSibling;
+        image.setAttribute("class", "zomImageArticleMain shadow");
     });
 })
-// // Efeito que remove sombra nas imagens principal
+// Efeito que remove zom e sombra nas imagens principal
 imagesPost.forEach(image => {
     image.addEventListener("mouseleave", () =>{
-        image.removeAttribute("class", "zomImageArticleMain");
+        image.removeAttribute("class", "zomImageArticleMain shadow");
     });
 })
 
+// <------- Efeito Zom Article Secondary------->
 // Efeito que adiciona sombra nas imagens secundárias
 imagesPost.forEach(image => {
     image.addEventListener("mouseover", () =>{
-        image.setAttribute("class", "zomImageArticleSecondary")
+        let imageId = image.getAttribute("id");
+        if(imageId !== "image-1" && imageId !== "image-2"){
+            image.setAttribute("class", "zomImageArticleSecondary shadow")
+        }
     })
 })
+// Efeito que remove sombra nas imagens secundárias
 imagesPost.forEach(image => {
     image.addEventListener("mouseleave", () =>{
-        image.removeAttribute("class", "zomImageArticleSecondary")
+        let imageId = image.getAttribute("id");
+        if(imageId !== "image-1" && imageId !== "image-2"){
+            image.removeAttribute("class", "zomImageArticleSecondary shadow")
+        }
+        
     })
 })
-
-
-
