@@ -147,11 +147,14 @@ main{
     overflow: hidden;
 
 }
+/* Figura da seção do Artigo principal */
 .article-main section > figure{
     height: 74vh;
     width: 39.3vw;
     overflow: hidden;
 }
+
+/* Efeito zom na Image da seção do Artigo principal */
 .zomImageArticleMain{
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
@@ -269,11 +272,14 @@ main{
     overflow: hidden;
 }
 
+/* Figura da seção do Artigo secondary */
 .article-secondary figure{
     height: 40vh;
     width: 21vw;
     overflow: hidden;
 }
+
+/* Efeito zom na Image da seção do Artigo secondary */
 .zomImageArticleSecondary{
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
