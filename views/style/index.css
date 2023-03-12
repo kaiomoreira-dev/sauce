@@ -131,7 +131,6 @@ main{
     position: relative;
 }
 
-
 /* Seção do Artigo principal */
 .article-main section{
     height: 74vh;
@@ -152,11 +151,33 @@ main{
     height: 74vh;
     width: 39.3vw;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.article-main section figure > div{
+    color: #000;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    height: 68px;
+    width: 68px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    opacity: 0.8;
+
+    z-index: 2;
+
 }
 
 /* Efeito sombra para adionar na Imagem dos Artigos Main e Secondary */
 .shadow{
-    opacity: 0.7;  
+    opacity: 0.6;  
     transition: all 2s;
     height: 74vh;
     width: 39.5vw;
@@ -170,6 +191,13 @@ main{
     z-index: 1;
     
 }
+.likesMain{
+    background-image: url(../images/heartSize48.png);
+    background-repeat: no-repeat;
+    height: 48px;
+    width: 48px;
+}
+
 
 /* Efeito zom na Image da seção do Artigo principal */
 .zomImageArticleMain{
@@ -289,13 +317,40 @@ main{
 
     overflow: hidden;
 }
-
 /* Figura da seção do Artigo secondary */
 .article-secondary figure{
     height: 40vh;
     width: 21vw;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.article-secondary section > div{
+    color: #000;
+    font-family: 'Times New Roman', Times, serif;
+    height: 55px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.8;
+
+    position: relative;
+    right: 8rem;
+    top: 0.5rem;
+    z-index: 2;
+}
+.likesSecondary{
+    background-image: url(../images/heartSize24.png);
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 24px;
+}
+
+
+
 
 /* Efeito zom na Image da seção do Artigo secondary */
 .zomImageArticleSecondary{
