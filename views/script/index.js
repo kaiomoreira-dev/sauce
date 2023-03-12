@@ -4,7 +4,7 @@ const navbarMenuMobile = document.querySelector("header").lastElementChild;
 const shadowLikes = document.querySelectorAll("main section div");
 const sections = document.querySelectorAll("section");
 
-const figures = document.querySelectorAll("figure");
+const imagesPost = document.querySelectorAll("figure img");
 
 function toggleNavbarMenuMobile(){
     
@@ -18,32 +18,33 @@ function toggleNavbarMenuMobile(){
 navbarIcon.addEventListener("click", toggleNavbarMenuMobile)
 
 // Efeito que adiciona sombra nas imagens principal
-sections.forEach(section => {
-    section.addEventListener("mouseover", () =>{
-        let sectionId = section.getAttribute("id")
+imagesPost.forEach(image => {
+    image.addEventListener("mouseover", () =>{
+        let imageId = image.getAttribute("id");
 
-        if(sectionId === "section-1" || sectionId === "section-2"){
-            section.setAttribute("class", "shadowLikeMain");
+        if(imageId === "image-1" || imageId === "image-2"){
+            image.setAttribute("class", "zomImageMain");
         }
     });
 })
-// Efeito que remove sombra nas imagens principal
-sections.forEach(section => {
-    section.addEventListener("mouseleave", () =>{
-        section.removeAttribute("class", "shadowLike");
+// // Efeito que remove sombra nas imagens principal
+imagesPost.forEach(image => {
+    image.addEventListener("mouseleave", () =>{
+        image.removeAttribute("class", "zomImageMain");
     });
 })
+
 // Efeito que adiciona sombra nas imagens secundárias
-figures.forEach(figure => {
-    figure.addEventListener("mouseover", () =>{
-        figure.setAttribute("class", "shadowLikeSecondary")
-    })
-})
-figures.forEach(figure => {
-    figure.addEventListener("mouseleave", () =>{
-        figure.removeAttribute("class", "shadowLikeSecondary")
-    })
-})
+// imagesPost.forEach(image => {
+//     image.addEventListener("mouseover", () =>{
+//         image.setAttribute("class", "shadowLikeSecondary")
+//     })
+// })
+// imagesPost.forEach(image => {
+//     image.addEventListener("mouseleave", () =>{
+//         image.removeAttribute("class", "shadowLikeSecondary")
+//     })
+// })
 
 
 
