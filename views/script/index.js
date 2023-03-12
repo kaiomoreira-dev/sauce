@@ -30,7 +30,7 @@ imagesPost.forEach(image => {
 // // Efeito que remove sombra nas imagens principal
 imagesPost.forEach(image => {
     image.addEventListener("mouseleave", () =>{
-        image.removeAttribute("class", "zomImageMain");
+        image.removeAttribute("class", "zomImageArticleMain");
     });
 })
 

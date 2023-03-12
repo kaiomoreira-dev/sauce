@@ -152,7 +152,8 @@ main{
     width: 39.3vw;
     overflow: hidden;
 }
-.zomImageMain{
+.zomImageArticleMain{
+    -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 
