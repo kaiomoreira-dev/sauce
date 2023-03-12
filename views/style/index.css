@@ -157,7 +157,7 @@ main{
 
 
 }
-
+/* Div dentro do figure da seção do Artigo principal */
 .article-main section figure > div{
     color: #000;
     font-family: 'Times New Roman', Times, serif;
@@ -191,6 +191,7 @@ main{
     z-index: 1;
     
 }
+/* Imagem dentro do elemento <i> da seção do Artigo principal */
 .likesMain{
     background-image: url(../images/heartSize48.png);
     background-repeat: no-repeat;
@@ -342,15 +343,13 @@ main{
     top: 0.5rem;
     z-index: 2;
 }
+/* Imagem dentro do elemento <i> da seção do Artigo secundário */
 .likesSecondary{
     background-image: url(../images/heartSize24.png);
     background-repeat: no-repeat;
     height: 24px;
     width: 24px;
 }
-
-
-
 
 /* Efeito zom na Image da seção do Artigo secondary */
 .zomImageArticleSecondary{
