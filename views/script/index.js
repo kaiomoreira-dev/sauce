@@ -35,16 +35,16 @@ imagesPost.forEach(image => {
 })
 
 // Efeito que adiciona sombra nas imagens secundárias
-// imagesPost.forEach(image => {
-//     image.addEventListener("mouseover", () =>{
-//         image.setAttribute("class", "shadowLikeSecondary")
-//     })
-// })
-// imagesPost.forEach(image => {
-//     image.addEventListener("mouseleave", () =>{
-//         image.removeAttribute("class", "shadowLikeSecondary")
-//     })
-// })
+imagesPost.forEach(image => {
+    image.addEventListener("mouseover", () =>{
+        image.setAttribute("class", "zomImageArticleSecondary")
+    })
+})
+imagesPost.forEach(image => {
+    image.addEventListener("mouseleave", () =>{
+        image.removeAttribute("class", "zomImageArticleSecondary")
+    })
+})
 
 
 
