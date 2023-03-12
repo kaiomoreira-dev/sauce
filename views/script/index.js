@@ -41,7 +41,7 @@ imagesPost.forEach(image => {
     image.addEventListener("mouseover", () =>{
         let imageId = image.getAttribute("id");
         if(imageId !== "image-1" && imageId !== "image-2"){
-            image.setAttribute("class", "zomImageArticleSecondary shadow")
+            image.setAttribute("class", "zomImageArticleSecondary")
         }
     })
 })
@@ -50,7 +50,7 @@ imagesPost.forEach(image => {
     image.addEventListener("mouseleave", () =>{
         let imageId = image.getAttribute("id");
         if(imageId !== "image-1" && imageId !== "image-2"){
-            image.removeAttribute("class", "zomImageArticleSecondary shadow")
+            image.removeAttribute("class", "zomImageArticleSecondary")
         }
         
     })
