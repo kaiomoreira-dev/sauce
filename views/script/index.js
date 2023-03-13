@@ -7,6 +7,11 @@ const sections = document.querySelectorAll("section");
 const imagesPost = document.querySelectorAll("figure img");
 const divShadowMainPost = document.querySelectorAll("main > article section figure > div")
 
+imagesPost.forEach(image => {
+    image.setAttribute("title", "Ler mais")
+})
+
+
 function toggleNavbarMenuMobile(){
     
     if(navbarMenuMobile.classList.length === 1){
@@ -19,6 +24,7 @@ function toggleNavbarMenuMobile(){
 
 // <------- Efeito Show menu de Naegação Mobile ------->
 navbarIcon.addEventListener("click", toggleNavbarMenuMobile)
+
 
 // <------- Efeito Zom e Sombra Article Main------->
 // Efeito que adiciona zom e sombra nas imagens principal
