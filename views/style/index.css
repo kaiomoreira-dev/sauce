@@ -401,6 +401,7 @@ main{
 .article-secondary section > p{
     margin-top: 1rem;
     text-align: justify;
+    width: 21vw;
 }
 
 /* Rodapé com informações */
