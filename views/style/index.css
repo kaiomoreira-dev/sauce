@@ -59,11 +59,6 @@ header{
     list-style: none;
 }
 
-/* Ultimo botão de navegação */
-.nav-menu li:nth-child(5){
-    display: flex;
-}
-
 /* Lupa de pesquisar */
 .nav-menu li:nth-child(5) a > img{
     height: 4vh;
