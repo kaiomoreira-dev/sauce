@@ -31,13 +31,13 @@ navbarIcon.addEventListener("click", toggleNavbarMenuMobile)
 imagesPost.forEach(image => {
     image.addEventListener("mouseover", () =>{
         let divShadow = image.nextElementSibling;
-        image.setAttribute("class", "zomImageArticleMain shadow");
+        image.setAttribute("class", "zomImageArticleMain");
     });
 })
 // Efeito que remove zom e sombra nas imagens principal
 imagesPost.forEach(image => {
     image.addEventListener("mouseleave", () =>{
-        image.removeAttribute("class", "zomImageArticleMain shadow");
+        image.removeAttribute("class", "zomImageArticleMain");
     });
 })
 

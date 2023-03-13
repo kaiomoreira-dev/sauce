@@ -126,7 +126,7 @@ main{
     display: flex;
     
     gap: 3%;
-    margin-top: 20px;
+    margin-top: 1rem;
     position: relative;
 }
 
@@ -182,22 +182,6 @@ main{
     margin-bottom: 1rem;
 }
 
-/* Efeito sombra para adionar na Imagem dos Artigos Main e Secondary */
-.shadow{
-    opacity: 0.6;  
-    transition: all 2s;
-    height: 74vh;
-    width: 39.5vw;
-    background-color: #c9c6c6;
-
-    position: relative;
-
-    top: 0;
-    left: 0; 
-
-    z-index: 1;
-    
-}
 /* Imagem dentro do elemento <i> da seção do Artigo principal */
 .likesMain{
     background-image: url(../images/heartSize24.png);
