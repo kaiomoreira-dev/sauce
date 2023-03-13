@@ -151,6 +151,7 @@ main{
     overflow: hidden;
 
 }
+/* Div title da Seção do Artigo principal */
 .article-main .title {
     /* border: 1px solid; */
     width: 90%;
@@ -160,9 +161,11 @@ main{
     align-items: start;
     position: relative;
 }
+/* h1 da Div title da Seção do Artigo principal */
 .article-main .title > h1{
     font-size: 1.6em;
 }
+/* span da Div title da Seção do Artigo principal */
 .article-main .title > span{
     margin-top: 0.3rem;
 }
@@ -220,7 +223,7 @@ main{
     max-width: 100%; 
 } 
 
-/* Imagem da seção do Artigo */
+/* Imagem da seção do Artigo principal*/
 .article-main section figure a > img{
     height: 100%;
     width: 100%;
@@ -228,22 +231,23 @@ main{
     transition: all 1.3s;
     
 } 
+/* Descrição da seção do Artigo principal*/
 .article-main section > p{
     width: 90%;
 }
 
-/* Descrição da seção do Artigo */
+/* Descrição da seção do Artigo principal*/
 .article-main section > p{
     margin-top: 0.3rem;
     text-align: justify;
 }
 
-/* Data da seção do Artigo */
+/* Data da seção do Artigo principal*/
 .article-main section > span{
     margin-top: 0.1rem;
 }
 
-/* Titulo da seção do Artigo */
+/* Titulo da seção do Artigo principal*/
 .article-main section > h1{
     font-size: 1.5rem;
 }
@@ -307,8 +311,9 @@ main{
     
 
     overflow: hidden;
-}/* Figura da seção do Artigo secondary */
+}
 
+/* Div title na Seção do Artigo secundário */
 .article-secondary section .title{
     /* border: 1px solid; */
     width: 100%;
@@ -321,14 +326,19 @@ main{
     top: 0;
     right: -0.4rem;
 }
+
+/* h1 da Div title na Seção do Artigo secundário */
 .article-secondary .title > h1{
     font-size: 1.2em;
     font-weight: bold;
 }
+
+/* span da Div title na Seção do Artigo secundário */
 .article-secondary .title > span{
     margin-top: 0.3rem;
 }
 
+/* Figure na Seção do Artigo secundário */
 .article-secondary figure{
     height: 40vh;
     width: 21vw;
@@ -337,11 +347,13 @@ main{
     align-items: center;
     justify-content: center;
 }
+/* Aconra da Figure na Seção do Artigo secundário */
 .article-secondary section figure > a{
     height: 100%;
     width: 100%;
 }
 
+/* Div title na Seção do Artigo secundário */
 .article-secondary section > div{
     color: #000;
     font-family: 'Times New Roman', Times, serif;
