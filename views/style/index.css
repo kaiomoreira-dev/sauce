@@ -206,8 +206,13 @@ main{
     transform: scale(1.1);
 }
 
+.article-main section figure a{
+    height: 100%;
+    max-width: 100%; 
+} 
+
 /* Imagem da seção do Artigo */
-.article-main section figure > img{
+.article-main section figure a > img{
     height: 100%;
     max-width: 100%;
     -webkit-transition: -webkit-transform .5s ease;
@@ -326,6 +331,10 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.article-secondary section figure > a{
+    height: 100%;
+    width: 100%;
 }
 
 .article-secondary section > div{
