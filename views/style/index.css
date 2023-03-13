@@ -317,7 +317,7 @@ main{
 .article-secondary section .title{
     /* border: 1px solid; */
     width: 100%;
-    height: 10%;
+    height: 10.5%;
     display: flex;
     flex-direction: column;
     align-items: start;
