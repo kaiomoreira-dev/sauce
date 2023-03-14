@@ -251,6 +251,7 @@ main .hight-view{
     width: 18px;
 }
 
+
 /* Figura da seção do Artigo principal */
 .article-main section > figure{
     /* border: 1px solid; */
@@ -499,6 +500,7 @@ main .hight-view{
     padding: 0;
 
 }
+
 .article-meat section .title .stars i{
     /* border: 1px solid; */
     background-image: url("../images/icons8-star-18.png");
