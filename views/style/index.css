@@ -119,6 +119,7 @@ main{
     /* margin-top: 0.5rem; */
 }
 
+/* Seção titulo na Main */
 main .title-main {
     /* border: 1px solid; */
     
@@ -134,11 +135,14 @@ main .title-main {
     /* position: relative;
     right: 27rem; */
 }
+
+/* Descrição na section titulo na Main */
 main .title-main p {
     font-size: 1.25rem;
     margin-top: 1.5rem;
 }
 
+/* Section pesquisar titulo na Main */
 main .section-search {
     /* border: 1px solid; */
     width: 70%;
@@ -150,6 +154,7 @@ main .section-search {
 
 }
 
+/* Div na section pesquisar titulo na Main */
 main .section-search form div{
     height: 60%;
     border: 3px solid #ff7875;
@@ -158,6 +163,8 @@ main .section-search form div{
     position: relative;
     padding: 0.5rem;
 }
+
+/* Input text da <div> na section pesquisar titulo na Main */
 main .section-search form div input{
     background-color: #f7f7f7;
     box-shadow: 0 0 0 0;
@@ -170,18 +177,24 @@ main .section-search form div input{
     font-size: 1.3rem;
 
 }
+/* Botão da <div> na section pesquisar titulo na Main */
 main .section-search form div button{
     background-color: transparent;
     border: none;
 }
+
+/* Efeito no botão da <div> na section pesquisar titulo na Main */
 main .section-search form div button:hover{
     cursor: pointer;
 }
+
+/* Image da lupa no botão na section pesquisar titulo na Main */
 main .section-search form div button > img{
     height: 4vh;
     width: 2vw;
 }
 
+/* Div mais visitados */
 main .hight-view{
     /* border: 1px solid; */
     height: 8vh;
@@ -298,7 +311,7 @@ main .hight-view{
 }
 
 /* Barra de mais destaque */
-.emphasis{
+.new-recipes{
     /* border: 1px solid; */
     height: 8vh;
     width: 93.8%;
@@ -318,7 +331,7 @@ main .hight-view{
 }
 
 /* Artigo secundário */
-.article-secondary{
+.article-news{
     /* border: 1px solid; */
     width: 95%;
     height: auto;
@@ -331,8 +344,8 @@ main .hight-view{
 
 }
 
-/* Seção do Artigo secundário */
-.article-secondary section{
+/* Seção do Artigo novidades */
+.article-news section{
     /* border: 1px solid; */
 
     height: auto;
@@ -349,8 +362,8 @@ main .hight-view{
 
     overflow: hidden;
 }
-/* Figure na Seção do Artigo secundário */
-.article-secondary figure{
+/* Figure na Seção do Artigo novidades */
+.article-news figure{
     height: 40vh;
     width: auto;
     overflow: hidden;
@@ -358,14 +371,14 @@ main .hight-view{
     align-items: center;
     justify-content: center;
 }
-/* Aconra da Figure na Seção do Artigo secundário */
-.article-secondary section figure > a{
+/* Aconra da Figure na Seção do Artigo novidades */
+.article-news section figure > a{
     height: 100%;
     width: 100%;
 }
 
-/* Div title na Seção do Artigo secundário */
-.article-secondary section > div{
+/* Div title na Seção do Artigo novidades */
+.article-news section > div{
     color: #000;
     height: 55px;
     width: 50px;
@@ -380,8 +393,8 @@ main .hight-view{
     z-index: 2;
 }
 
-/* Imagem da seção do Artigo secundário */
-.article-secondary section img{
+/* Imagem da seção do Artigo novidades */
+.article-news section img{
     height: 100%;
     width: 100%;
     border-radius: 0.3rem;
@@ -389,14 +402,14 @@ main .hight-view{
     transition: all 1.3s;
 }
 
-/* Descrição da seção do Artigo secundário */
-.article-secondary section > p{
+/* Descrição da seção do Artigo novidades */
+.article-news section > p{
     margin-top: 0.5rem;
     text-align: justify;
     width: 21vw;
 }
 
-/* Imagem dentro do elemento <i> da seção do Artigo secundário */
+/* Imagem dentro do elemento <i> da seção do Artigo novidades */
 .likesSecondary{
     background-image: url(../images/heartSize24.png);
     background-repeat: no-repeat;
@@ -404,12 +417,13 @@ main .hight-view{
     width: 24px;
 }
 
-/* Efeito zom na Image da seção do Artigo secondary */
-.zomImageArticleSecondary{
+/* Efeito zom na Image da seção do Artigo novidades */
+.zomImageArticleNews{
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 
+/* Div categorias de Carnes */
 .meat{
     /* border: 1px solid; */
     height: 8vh;
@@ -426,6 +440,8 @@ main .hight-view{
     font-size: 2em;
     font-weight: bold;
 }
+
+/* Artigo de carnes */
 .article-meat{
     /* border: 1px solid; */
     width: 95%;
@@ -439,7 +455,7 @@ main .hight-view{
 
     margin-bottom: 3rem;
 }
-/* Seção do Artigo secundário */
+/* Seção do Artigo novidades */
 .article-meat section{
     /* border: 1px solid; */
 
@@ -457,7 +473,7 @@ main .hight-view{
 
     overflow: hidden;
 }
-/* Figure na Seção do Artigo secundário */
+/* Figure na Seção do Artigo novidades */
 .article-meat figure{
     height: 40vh;
     width: auto;
@@ -466,13 +482,13 @@ main .hight-view{
     align-items: center;
     justify-content: center;
 }
-/* Aconra da Figure na Seção do Artigo secundário */
+/* Aconra da Figure na Seção do Artigo novidades */
 .article-meat section figure > a{
     height: 100%;
     width: 100%;
 }
 
-/* Div title na Seção do Artigo secundário */
+/* Div title na Seção do Artigo novidades */
 .article-meat section > div{
     color: #000;
     height: 55px;
@@ -488,7 +504,7 @@ main .hight-view{
     z-index: 2;
 }
 
-/* Imagem da seção do Artigo secundário */
+/* Imagem da seção do Artigo novidades */
 .article-meat section img{
     height: 100%;
     width: 100%;
@@ -497,7 +513,7 @@ main .hight-view{
     transition: all 1.3s;
 }
 
-/* Descrição da seção do Artigo secundário */
+/* Descrição da seção do Artigo novidades */
 .article-meat section > p{
     margin-top: 0.5rem;
     text-align: justify;
