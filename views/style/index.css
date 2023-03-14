@@ -209,7 +209,7 @@ main .hight-view{
 /* Artigo principal */
 .article-main{
     /* border: 1px solid; */
-    height: 65vh;
+    height: 75vh;
     width: 90vw;
     display: flex;
     
@@ -233,6 +233,23 @@ main .hight-view{
     overflow: hidden;
 
 }
+.article-main section .title .stars{
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: auto;
+    padding: 0;
+
+}
+.article-main section .title .stars i{
+    /* border: 1px solid; */
+    background-image: url("../images/icons8-star-18.png");
+    background-repeat: no-repeat;
+    display: flex;
+    height: 18px;
+    width: 18px;
+}
 
 /* Figura da seção do Artigo principal */
 .article-main section > figure{
@@ -254,9 +271,13 @@ main .hight-view{
     justify-content: center;
     
     padding-left: 0.5rem;
-    margin-top: 0.5rem;
+    margin-top: 0.3rem;
     position: relative;
     font-size: 1.1rem;
+}
+
+.article-main section div h1{
+    margin-top: 0.5rem;
 }
 
 /* Ancora da figure no Artigo main */
@@ -331,6 +352,34 @@ main .hight-view{
    
     overflow: hidden;
 }
+.article-news section .title .stars{
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: auto;
+    padding: 0;
+    margin-top: 0.3rem;
+
+}
+.article-news section .title .stars i{
+    /* border: 1px solid; */
+    background-image: url("../images/icons8-star-18.png");
+    background-repeat: no-repeat;
+    display: flex;
+    height: 18px;
+    width: 18px;
+}
+.article-news section .title .stars i:nth-of-type(5){
+    /* border: 1px solid; */
+    background-image: url("../images/icons8-star-18-cinza.png");
+    background-repeat: no-repeat;
+    display: flex;
+    height: 18px;
+    width: 18px;
+}
+
+
 /* Figure na Seção do Artigo novidades */
 .article-news figure{
     height: 40vh;
@@ -364,7 +413,9 @@ main .hight-view{
     font-size: 1rem;
 
 }
-
+.article-news section .title h1{
+    margin-top: 0.3rem;
+}
 /* Imagem da seção do Artigo novidades */
 .article-news section img{
     height: 100%;
@@ -434,6 +485,43 @@ main .hight-view{
     justify-content: center;
  
     overflow: hidden;
+}
+.article-meat section .title h1{
+    margin-top: 0.3rem;
+}
+.article-meat section .title .stars{
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: auto;
+    margin-top: 0.3rem;
+    padding: 0;
+
+}
+.article-meat section .title .stars i{
+    /* border: 1px solid; */
+    background-image: url("../images/icons8-star-18.png");
+    background-repeat: no-repeat;
+    display: flex;
+    height: 18px;
+    width: 18px;
+}
+.article-meat section .title .stars i:nth-of-type(5){
+    /* border: 1px solid; */
+    background-image: url("../images/icons8-star-18-cinza.png");
+    background-repeat: no-repeat;
+    display: flex;
+    height: 18px;
+    width: 18px;
+}
+.article-meat section .title .stars i:nth-of-type(4){
+    /* border: 1px solid; */
+    background-image: url("../images/icons8-star-18-cinza.png");
+    background-repeat: no-repeat;
+    display: flex;
+    height: 18px;
+    width: 18px;
 }
 /* Figure na Seção do Artigo novidades */
 .article-meat figure{
