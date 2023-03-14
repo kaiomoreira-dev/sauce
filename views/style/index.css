@@ -206,8 +206,8 @@ main .hight-view{
 /* Artigo principal */
 .article-main{
     /* border: 1px solid; */
-    height: auto;
-    width: 95%;
+    height: 65vh;
+    width: 90vw;
     display: flex;
     
     gap: 1%;
@@ -218,8 +218,7 @@ main .hight-view{
 /* Seção do Artigo principal */
 .article-main section{
     /* border: 1px solid; */
-    width: 40%;
-
+    width: 40vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -238,26 +237,27 @@ main .hight-view{
     height: 100%;
     width: 100%;
     overflow: hidden;
+    border-radius: 0.3rem;
+
 }
 /* Div dentro do figure da seção do Artigo principal */
-.article-main section figure + div{
-    color: #000;
-    font-weight: bold;
-    height: 42px;
-    width: 40px;
+.article-main section div{
+    color: #000000df;
+    width: 100%;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
-
+    
+    padding-left: 0.5rem;
+    margin-top: 0.5rem;
     position: relative;
+    font-size: 1.1rem;
 
-    top: 2vh;
-    right: 12.8rem;
 
-    opacity: 0.8;
-    margin-bottom: 1rem;
+    
+
 }
 
 /* Imagem dentro do elemento <i> da seção do Artigo principal */
@@ -272,6 +272,7 @@ main .hight-view{
 
 /* Efeito zom na Image da seção do Artigo principal */
 .zomImageArticleMain{
+    border-radius: 0.3rem;
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
@@ -287,6 +288,7 @@ main .hight-view{
     width: 100%;
     -webkit-transition: -webkit-transform .5s ease;
     transition: all 1.3s;
+    border-radius: 0.3rem;
     
 } 
 /* Descrição da seção do Artigo principal*/
@@ -340,7 +342,7 @@ main .hight-view{
     flex-wrap: wrap;
   
     align-items: center;
-
+    gap: 1%;
 
 }
 
@@ -349,7 +351,7 @@ main .hight-view{
     /* border: 1px solid; */
 
     height: auto;
-    width: 23.5%;
+    width: 24%;
 
     display: flex;
 
@@ -357,9 +359,7 @@ main .hight-view{
     align-items: center;
     justify-content: center;
     
-    margin: 0.5rem;
-    
-
+   
     overflow: hidden;
 }
 /* Figure na Seção do Artigo novidades */
@@ -370,27 +370,30 @@ main .hight-view{
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 0.3rem;
+
 }
 /* Aconra da Figure na Seção do Artigo novidades */
 .article-news section figure > a{
     height: 100%;
     width: 100%;
+    
 }
 
 /* Div title na Seção do Artigo novidades */
 .article-news section > div{
+    /* border: 1px solid; */
     color: #000;
-    height: 55px;
-    width: 50px;
+    width: 97%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    opacity: 0.8;
+    align-items: start;
 
+    margin-top: 0.5rem;
     position: relative;
-    right: 8rem;
-    top: 0.8rem;
-    z-index: 2;
+
+    font-size: 1rem;
+
 }
 
 /* Imagem da seção do Artigo novidades */
@@ -409,18 +412,11 @@ main .hight-view{
     width: 21vw;
 }
 
-/* Imagem dentro do elemento <i> da seção do Artigo novidades */
-.likesSecondary{
-    background-image: url(../images/heartSize24.png);
-    background-repeat: no-repeat;
-    height: 24px;
-    width: 24px;
-}
-
 /* Efeito zom na Image da seção do Artigo novidades */
 .zomImageArticleNews{
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+    
 }
 
 /* Div categorias de Carnes */
@@ -451,7 +447,7 @@ main .hight-view{
     flex-wrap: wrap;
   
     align-items: center;
-
+    gap: 1%;
 
     margin-bottom: 3rem;
 }
@@ -460,17 +456,14 @@ main .hight-view{
     /* border: 1px solid; */
 
     height: auto;
-    width: 23.5%;
+    width: 24%;
 
     display: flex;
 
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
-    margin: 0.5rem;
-    
-
+ 
     overflow: hidden;
 }
 /* Figure na Seção do Artigo novidades */
@@ -481,6 +474,7 @@ main .hight-view{
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 0.3rem;
 }
 /* Aconra da Figure na Seção do Artigo novidades */
 .article-meat section figure > a{
@@ -490,18 +484,17 @@ main .hight-view{
 
 /* Div title na Seção do Artigo novidades */
 .article-meat section > div{
-    color: #000;
-    height: 55px;
-    width: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    opacity: 0.8;
+   /* border: 1px solid; */
+   color: #000;
+   width: 97%;
+   display: flex;
+   flex-direction: column;
+   align-items: start;
 
-    position: relative;
-    right: 8rem;
-    top: 0.8rem;
-    z-index: 2;
+   margin-top: 0.5rem;
+   position: relative;
+
+   font-size: 1rem;
 }
 
 /* Imagem da seção do Artigo novidades */
