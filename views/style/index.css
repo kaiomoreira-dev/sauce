@@ -247,7 +247,7 @@ main .hight-view{
 .article-main section div{
     color: #000000df;
     width: 100%;
-
+    
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -257,29 +257,9 @@ main .hight-view{
     margin-top: 0.5rem;
     position: relative;
     font-size: 1.1rem;
-
-
-    
-
 }
 
-/* Imagem dentro do elemento <i> da seção do Artigo principal */
-.likesMain{
-    background-image: url(../images/heartSize24.png);
-    background-repeat: no-repeat;
-    height: 24px;
-    width: 24px;
-
-}
-
-
-/* Efeito zom na Image da seção do Artigo principal */
-.zomImageArticleMain{
-    border-radius: 0.3rem;
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
+/* Ancora da figure no Artigo main */
 .article-main section figure a{
     height: 100%;
     max-width: 100%; 
@@ -294,27 +274,13 @@ main .hight-view{
     border-radius: 0.3rem;
     
 } 
-/* Descrição da seção do Artigo principal*/
-.article-main section > p{
-    width: 90%;
-}
 
-/* Descrição da seção do Artigo principal*/
-.article-main section > p{
-    margin-top: 0.3rem;
-    text-align: justify;
+/* Efeito zom na Image da seção do Artigo principal */
+.zomImageArticleMain{
+    border-radius: 0.3rem;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
-
-/* Data da seção do Artigo principal*/
-.article-main section > span{
-    margin-top: 0.1rem;
-}
-
-/* Titulo da seção do Artigo principal*/
-.article-main section > h1{
-    font-size: 1.5rem;
-}
-
 /* Barra de mais destaque */
 .new-recipes{
     /* border: 1px solid; */
