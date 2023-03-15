@@ -690,7 +690,7 @@ main .hight-view{
     /* Menu de navegação desktop */
     .navbar-menu{
         /* border: 1px solid; */
-        border-top: 1px solid rgba(0, 0, 0, 0.80);
+        border-top: 1px solid rgba(0, 0, 0, 0.50);
         box-shadow: 0 0 10px rgb(232 234 237 / 30%);
         width: 100vw;
         height: auto;
@@ -705,8 +705,8 @@ main .hight-view{
     }
     /* Lista de itens do menu */
     .navbar-menu li {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.80);
-        /* box-shadow: 0 0 10px rgb(232 234 237 / 50%); */
+        border-bottom: 1px solid rgba(0, 0, 0, 0.50);
+        box-shadow: 0 0 10px rgb(232 234 237 / 50%);
         width: 100%;
         height: 5vh;
         
