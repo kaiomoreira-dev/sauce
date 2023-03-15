@@ -67,14 +67,6 @@ header{
     position: absolute;
     list-style: none;
 }
-/* Links do menu de navegação */
-.navbar-menu li a{
-    color: #000000;
-    font-size: 1.1em;
-    font-weight: bolder;    
-    padding: 1rem;
-    text-decoration: none;
-}
 /* Div para conter o icone de pesquisa */
 .navbar-global .navItem-search{
     display: none;
@@ -94,14 +86,21 @@ header{
 #showIconeSearch{
     display: block;
 }
-
 /* Lista de itens do menu */
 .navbar-menu li {
     padding: 1rem 0
 }
+/* Links do menu de navegação */
+.navbar-menu li a{
+    color: #000000ca;
+    font-size: 1.1em;
+    font-weight: bolder;    
+    padding: 1rem;
+    text-decoration: none;
+}
 /* Efeito na ancora do menu */
 .navbar-menu li a:hover{
-    color: #C40907;
+    color: #000000ca;
     transition: 0.6s;
 }
 /* Efeito na lista de itens do menu */
@@ -690,34 +689,34 @@ main .hight-view{
     /* Menu de navegação desktop */
     .navbar-menu{
         /* border: 1px solid; */
-        border-top: 1px solid rgba(0, 0, 0, 0.50);
-        box-shadow: 0 0 10px rgb(232 234 237 / 30%);
         width: 100vw;
         height: auto;
         display: block;
         padding: 0;
         gap: 3%;
         position: absolute;
-        top: 9rem;
+        top: 8rem;
         list-style: none;
         opacity: 0;
         transition: opacity 0.4s;
     }
     /* Lista de itens do menu */
-    .navbar-menu li {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.50);
-        box-shadow: 0 0 10px rgb(232 234 237 / 50%);
+    .navbar-menu li {  
         width: 100%;
         height: 5vh;
-        
         display: flex;
         align-items: center;
 
     }
     /* Links do menu de navegação */
     .navbar-menu li a{
+        border: 1px solid;
+        /* border-bottom: 1px solid rgba(0, 0, 0, 0.50); */
+        box-shadow: 0 0 10px rgb(232 234 237 / 50%);
+        background-color: #f7f7f7;
         color: rgba(0, 0, 0, 0.70); 
-        padding: 1.1rem 100vw 1.1rem 2.3rem;
+        
+        padding: 1.2rem 100vw 1.2rem 2.3rem;
 
         font-size: 1.1em;
         font-weight: bolder;    
