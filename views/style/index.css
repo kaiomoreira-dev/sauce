@@ -112,7 +112,7 @@ header{
 main{
     color: #000000d7;
 
-    border: 1px solid;
+    /* border: 1px solid; */
 
     background-color: #f7f7f7;
     
@@ -131,7 +131,7 @@ main{
 }
 /* Seção titulo na Main */
 main .title-main {
-    border: 1px solid;
+    /* border: 1px solid; */
     
     width: 60%;
     padding: 1.5rem 2rem;
@@ -763,11 +763,11 @@ main .hight-view{
     main{
         color: #000000d7;
     
-        /* border: 1px solid; */
+        border: 1px solid;
     
         background-color: #f7f7f7;
         
-        width: 95%;
+        width: 98%;
         min-height: 100%;
         box-sizing: border-box;
     
@@ -780,22 +780,33 @@ main .hight-view{
     
         /* margin-top: 0.5rem; */
     }
+    
     /* Seção titulo na Main */
     main .title-main {
         /* border: 1px solid; */
         
-        width: 60%;
+        width: 90%;
         padding: 1.5rem 2rem;
         margin-top: 11rem;
        
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;    
+    }
+    main .title-main h1 {
+        /* border: 1px solid; */
+        width: auto;
+        display: flex;
+        justify-content: start;
     }
     /* Descrição na section titulo na Main */
     main .title-main p {
+        /* border: 1px solid; */
+        width: 80%;
         font-size: 1.25rem;
-        margin-top: 1.5rem;
+        margin-top: 1rem;
+        text-align: justify;
     }
     /* Section pesquisar titulo na Main */
     main .section-search {
