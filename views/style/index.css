@@ -112,11 +112,11 @@ header{
 main{
     color: #000000d7;
 
-    /* border: 1px solid; */
+    border: 1px solid;
 
     background-color: #f7f7f7;
     
-    width: 95%;
+    width: 100%;
     min-height: 100%;
     box-sizing: border-box;
 
@@ -131,7 +131,7 @@ main{
 }
 /* Seção titulo na Main */
 main .title-main {
-    /* border: 1px solid; */
+    border: 1px solid;
     
     width: 60%;
     padding: 1.5rem 2rem;
@@ -198,15 +198,16 @@ main .section-search form div button > img{
 /* Div mais visitados */
 main .hight-view{
     /* border: 1px solid; */
-    height: 8vh;
-    width: 95%;
+    height: 5vh;
+    width: 100%;
     margin-top: 3rem;
+    margin-left: 1rem;
 }
 /* Artigo principal */
 .article-main{
     /* border: 1px solid; */
     height: 75vh;
-    width: 90vw;
+    width: 98vw;
     display: flex;
     
     gap: 1%;
@@ -299,7 +300,7 @@ main .hight-view{
 .new-recipes{
     /* border: 1px solid; */
     height: 8vh;
-    width: 93.8%;
+    width: 97.5%;
 
     /* background-color: #e49595; */
 
@@ -317,7 +318,7 @@ main .hight-view{
 /* Artigo secundário */
 .article-news{
     /* border: 1px solid; */
-    width: 95%;
+    width: 98%;
     height: auto;
 
     display: flex;
@@ -433,7 +434,7 @@ main .hight-view{
 .meat{
     /* border: 1px solid; */
     height: 8vh;
-    width: 93.8%;
+    width: 97.5%;
 
     color:#000000d7;
 
@@ -449,7 +450,7 @@ main .hight-view{
 /* Artigo de carnes */
 .article-meat{
     /* border: 1px solid; */
-    width: 95%;
+    width: 98%;
     height: auto;
 
     display: flex;
