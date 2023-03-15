@@ -21,8 +21,8 @@ header{
 
     z-index: 1;
 }
-/* Barra de navegação */
-.navbar-desktop{
+/* Barra de navegação desktop*/
+.navbar-global{
     /* border: 1px solid; */
     height: 100%;
 
@@ -34,7 +34,11 @@ header{
 
     position: relative;
 }
-/* Div da logo da barra de navegação */
+/* Escondendo botão da barra de navegação mobile */
+.navbar-global .btnShowMenuMobile{
+    display: none;
+}
+/* Div da logo da barra de navegação desktop */
 .logo{    
     position: absolute;
     left: 13rem;
@@ -42,10 +46,11 @@ header{
 }
 /* Imagem da logo da barra de navegação desktop */
 .logo > img {
-    height: 25vh;
-    width: 150px;
+    height: 9rem;
+    width: 9rem;
 
 }
+
 /* Menu de navegação desktop */
 .nav-menu{
     /* border: 1px solid; */
@@ -72,24 +77,25 @@ header{
     text-decoration: none;
 }
 /* Div para conter o icone de pesquisa */
-.navbar-desktop .navItem-search{
+.navbar-global .navItem-search{
     display: none;
     position: relative;
     left: 19rem;
 }
 /* Efeito na Div para mudar o ponteiro do mouse no icone de pesquisa */
-.navbar-desktop .navItem-search:hover{
+.navbar-global .navItem-search:hover{
     cursor: pointer;
+}
+/* Imagem do icone de pesquisa */
+.navbar-global .navItem-search img{
+    height: 1.5rem;
+    width: 1.5rem;
 }
 /* Estilo para alterar o display para block */
 #showIconeSearch{
     display: block;
 }
-/* Imagem do icone de pesquisa */
-.navbar-desktop .navItem-search img{
-    height: 4vh;
-    width: 4vh;
-}
+
 /* Lista de itens do menu */
 .nav-menu li {
     padding: 1rem 0
@@ -602,128 +608,245 @@ main .hight-view{
     height: 5vh;
     width: 2vw;
 }
-/* Icone hamburguer da barra de navegação mobile oculto*/
-.icon{
-    display: none;
-}
-/* Barra de navegação mobile oculto*/
-.navbar-mobile{
-    display: none;
-}
+
 /* Formatação para dispositivos de 500px */
 @media screen and (max-width: 500px) {
-    /* Barra de navegação desktop oculto */
-    .nav-menu{
-        display: none;
-    }
     header{
         /* border: 1px solid; */
-        position: relative;
-    }
-    /* Barra de navegação */
-    .navbar-desktop{
-        height: 16.5vh;
-
-        display: flex;
-        align-items: center;        
-        box-sizing: border-box;
-    }
-    /* Imagem da barra de navegação desktop*/
-    .logo > img {
+        width: 100vw;
         height: 20vh;
-        width: 85px;
-    }
-    /* Div icon da barra de navegação mobile */
-    .icon{
-        color: #fff;
-        background-color: #CB5D5D;
-        padding: 2rem;
-
-        display: block;
-        position: absolute;
-        right: 2rem;
-        top: 0;
-
-        border-radius: 3px;
-        border: none;
-    }
-    /* Efeito da Div icon da barra de navegação mobile */
-    .icon:hover{
-        cursor: pointer;
-        outline: none;
-        box-shadow: 0 0 0 0.2pt #e49595;
-        border-radius: 1px;
-        transition: 1s;
-
-    }
-    /* Barra de navegação mobile */
-    .navbar-mobile{
-        display: block;
-
-        position: absolute;
-        background-color: #CB5D5D;
-
-        height: 0;
-
-        position: relative;
-        
-        top: 0;
-        /* border: 1px solid; */
-        opacity: 0;
-        transition: opacity 1.2s;
-    }
-    /* Classe para aumentar opacidade da barra de navegação mobile */
-    .show{
-        opacity: 1 !important;
-    }
-    /* Classe para aumentar altura da barra de navegação mobile */
-    .height{
-        height: 31vh;
-    }
-    /* Lista ul daBarra de navegação mobile */
-    .navbar-mobile ul{
-        padding: 0;
-        height: 31vh;
-     
-        list-style: none;
-        width: 71.8vw;
+        position: fixed;
         display: flex;
-        flex-direction: column;
         justify-content: center;
-  
+        z-index: 1;
     }
-    /* Lista ul daBarra de navegação mobile */
-    .navbar-mobile ul a{
-        text-decoration: none;
-        color: #fff;
-        
+    /* Barra de navegação desktop*/
+    .navbar-global{
+        /* border: 1px solid; */
+        height: 100%;
+        width:  100%;
+        display: flex;
+        justify-content: center;
     }
-    /* Items li daBarra de navegação mobile */
-    .navbar-mobile ul li{
+    .navbar-global .btnShowMenuMobile{
+        display: block;
+        background-color: transparent;
+        border: none;
+        position:absolute;
+        height: 100%;
+        width: 15%;
+        padding-left: 1.3rem;
+        left: 0;
+    }
+
+    .navbar-global .btnShowMenuMobile::before{
+        content: "";
+        display: block;
+        width: 28px;
+        height: 3px;
+        transform: translateY(-5px);
+        background-color: #ff7875;
+        transition: all 0.25s ease-in-out;
+    }
+
+    .navbar-global .btnShowMenuMobile::after{
+        content: "";
+        display: block;
+        width: 28px;
+        height: 3px;
+        transform: translateY(5px);
+        background-color: #ff7875;
+        transition: all 0.25s ease-in-out;
+    }
+
+    #transformX::before{
+        transform: rotate(45deg);
+    }
+    #transformX::after{
+        transform: rotate(-45deg);
+        position: relative;
+        top: -0.2rem;
+    }
+    /* Div da logo da barra de navegação desktop*/
+    .logo{   
+        height: 100%;
         display: flex;
         align-items:center;
-        width: 80vw;
-        height: 25vh;
-        padding: 0 0 0 1rem;
-        box-sizing: border-box;
+        position: absolute;
+    }
+    /* Imagem da logo da barra de navegação desktop */
+    .logo > img {
+        height: 7rem;
+        width: 7rem;
+    }
+    /* Menu de navegação desktop */
+    .nav-menu{
+        border: 1px solid;
+        width: 100vw;
+        height: 50vh;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3%;
+    
+        position: absolute;
+        top: 6.2rem;
+        list-style: none;
+    }
+    /* Links do menu de navegação */
+    .nav-menu li a{
+        border: 1px solid;
+        color: #000000;
+        width: 100%;
+        font-size: 1.1em;
+        font-weight: bolder;    
+        padding: 1rem;
+        position: relative;
+        text-decoration: none;
+    }
+     /* Lista de itens do menu */
+     .nav-menu li {
+        border: 1px solid;
 
+        width: 100%;
+        padding: 1rem 0
     }
-    /* Efeito dos items li da Barra de navegação mobile */
-    .navbar-mobile ul li:hover{
-        background-color: #e49595;
-        transition: 0.8s;
+    /* Efeito na ancora do menu */
+    .nav-menu li a:hover{
+        background-color: #ff7875;
+        color: #FFF;
+        transition: 0.6s;
     }
-    /* Artigo secundário da Barra de navegação mobile */
-    .article-secondary{
+    /* Efeito na lista de itens do menu */
+    .nav-menu li:hover{
+        border-radius: 3px;
+        transition: 0.6s; 
+        
+    }
+    /* Div para conter o icone de pesquisa */
+    .navbar-global .navItem-search{
+        /* border: 1px solid; */
+        display: flex;
+        position: inherit;
+        left: 10rem;
+        
+    }
+    /* Efeito na Div para mudar o ponteiro do mouse no icone de pesquisa */
+    .navbar-global .navItem-search:hover{
+        cursor: pointer;
+    }
+    /* Imagem do icone de pesquisa */
+    .navbar-global .navItem-search img{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    /* Estilo para alterar o display para block */
+    #showIconeSearch{
+        display: none;
+    }
+    
+   
+    main{
+        color: #000000d7;
+    
+        /* border: 1px solid; */
+    
+        background-color: #f7f7f7;
+        
+        width: 95%;
+        min-height: 100%;
+        box-sizing: border-box;
+    
+        display: flex;
+        flex-direction: column;
+    
+        align-items: center;
+        justify-content: center;
+    
+    
+        /* margin-top: 0.5rem; */
+    }
+    /* Seção titulo na Main */
+    main .title-main {
+        /* border: 1px solid; */
+        
+        width: 60%;
+        padding: 1.5rem 2rem;
+        margin-top: 11rem;
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    }
+    /* Descrição na section titulo na Main */
+    main .title-main p {
+        font-size: 1.25rem;
+        margin-top: 1.5rem;
+    }
+    /* Section pesquisar titulo na Main */
+    main .section-search {
+        /* border: 1px solid; */
+        width: 70%;
+        height: 7vh;
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        margin-top: 20rem;
+        /* margin: 1.5rem 0; */
+        
+    }
+    /* Div na section pesquisar titulo na Main */
+    main .section-search form div{
+        height: 60%;
+        border: 3px solid #ff7875;
+        border-radius: 3rem;
+        display: flex;
+        position: relative;
+        padding: 0.5rem;
+        margin-top: 10rem;
+    }
+    /* Input text da <div> na section pesquisar titulo na Main */
+    main .section-search form div input{
+        background-color: #f7f7f7;
+        box-shadow: 0 0 0 0;
+        outline: 0;
+        border: none;
+        border-radius: 3rem;
+        height: 100%;
+        width: 60vw;
+        padding-left: 1rem;
+        font-size: 1.3rem;
+    
+    }
+    /* Botão da <div> na section pesquisar titulo na Main */
+    main .section-search form div button{
+        background-color: transparent;
+        border: none;
+    }
+    /* Efeito no botão da <div> na section pesquisar titulo na Main */
+    main .section-search form div button:hover{
+        cursor: pointer;
+    }
+    /* Image da lupa no botão na section pesquisar titulo na Main */
+    main .section-search form div button > img{
+        height: 4vh;
+        width: 4vh;
+    }
+
+     /* Artigo principal da Barra de navegação mobile */
+     .article-main {
+        margin-top: 10rem;
         flex-direction: column;
     }
-    /* Imagem do artigo principal da Barra de navegação mobile */
-    .article-main section > img{
+     /* Imagem do artigo principal da Barra de navegação mobile */
+     .article-main section > img{
         height: 45vh;
         width: 75vw;
     }
-    /* Artigo principal da Barra de navegação mobile */
-    .article-main {
+    /* Artigo secundário da Barra de navegação mobile */
+    .article-secondary{
         flex-direction: column;
     }
     /* Seção do artigo secundário da Barra de navegação mobile */
