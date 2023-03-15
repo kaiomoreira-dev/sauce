@@ -2,12 +2,12 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 /* Container */
 .container {
     /* border: 1px solid; */
-
+    width: 100%;
     display: flex;
-    
     flex-direction: column;
     align-items: center;
 
@@ -109,23 +109,18 @@ header{
     
 }
 /* Coteudo principal */
+
 main{
-    color: #000000d7;
-
     /* border: 1px solid; */
-
+    color: #000000d7;
     background-color: #f7f7f7;
-    
-    width: 98%;
-    min-height: 100%;
     box-sizing: border-box;
-
+    width: 100%;
     display: flex;
     flex-direction: column;
 
     align-items: center;
     justify-content: center;
-    opacity: 1;
 
     /* margin-top: 0.5rem; */
 }
@@ -139,7 +134,8 @@ main .title-main {
    
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;  
+    font-size: 1.3rem;  
 }
 /* Descrição na section titulo na Main */
 main .title-main p {
@@ -198,18 +194,24 @@ main .section-search form div button > img{
 /* Div mais visitados */
 main .hight-view{
     /* border: 1px solid; */
-    height: 5vh;
-    width: 99%;
-    margin-top: 3rem;
-    margin-right: 0.6rem;
+    height: auto;
+    width: auto;
+
+    font-size: 1.2rem;
+
+    margin-top: 4rem;
+    position: relative;
+    right: 31.9rem;
+    margin-bottom: 1rem;
+    
+   
 }
 /* Artigo principal */
 .article-main{
     /* border: 1px solid; */
     height: 75vh;
-    width: 97vw;
+    width: 99%;
     display: flex;
-    
     gap: 1%;
     
     position: relative; 
@@ -222,7 +224,7 @@ main .hight-view{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    
     border-radius: 0.3rem;
     box-sizing: border-box;
 
@@ -251,7 +253,7 @@ main .hight-view{
 /* Figura da seção do Artigo principal */
 .article-main section > figure{
     /* border: 1px solid; */
-    height: 80%;
+    height: 100%;
     width: 100%;
     overflow: hidden;
     border-radius: 0.3rem;
@@ -259,6 +261,7 @@ main .hight-view{
 }
 /* Div dentro do figure da seção do Artigo principal */
 .article-main section div{
+    /* border: 1px solid; */
     color: #000000df;
     width: 100%;
     
@@ -299,26 +302,26 @@ main .hight-view{
 /* Barra de novidades */
 .new-recipes{
     /* border: 1px solid; */
-    height: 8vh;
-    width: 97.5%;
-
-    /* background-color: #e49595; */
-
+    height: auto;
+    width: auto;
     color:#000000d7;
-
     margin-top: 4rem;
+    position: relative;
+    right: 36.8rem;
+    margin-bottom: 1rem;
 
     display: flex;
     align-items: center;
+    
     /* justify-content: center; */
 
-    font-size: 2em;
+    font-size: 1.2em;
     font-weight: bold;
 }
-/* Artigo secundário */
+/* Artigo novidades */
 .article-news{
     /* border: 1px solid; */
-    width: 98%;
+    width: 99%;
     height: auto;
 
     display: flex;
@@ -433,24 +436,27 @@ main .hight-view{
 /* Div categorias de Carnes */
 .meat{
     /* border: 1px solid; */
-    height: 8vh;
-    width: 97.5%;
+    height: auto;
+    width: auto;
 
     color:#000000d7;
-
     margin-top: 4rem;
+    position: relative;
+    right: 38.3rem;
+    margin-bottom: 1rem;
 
     display: flex;
     align-items: center;
+    
     /* justify-content: center; */
 
-    font-size: 2em;
+    font-size: 1.2em;
     font-weight: bold;
 }
 /* Artigo de carnes */
 .article-meat{
     /* border: 1px solid; */
-    width: 98%;
+    width: 99%;
     height: auto;
 
     display: flex;
@@ -610,8 +616,13 @@ main .hight-view{
 
 /* Formatação para dispositivos de 500px */
 @media screen and (max-width: 500px) {
+    .container{
+        border: 1px solid;
+        width: 100%;
+        overflow-x: hidden;
+    }
     header{
-        /* border: 1px solid; */
+        border: 1px solid;
         width: 100vw;
         height: 20vh;
         position: fixed;
@@ -759,23 +770,19 @@ main .hight-view{
         display: flex;
     }   
     main{
-        color: #000000d7;
-    
         border: 1px solid;
-    
+        color: #000000d7;
+        
         background-color: #f7f7f7;
         
-        width: 98%;
+        max-width: 100%;
         min-height: 100%;
         box-sizing: border-box;
     
         display: flex;
-        flex-direction: column;
-    
         align-items: center;
         justify-content: center;
-    
-    
+        position: relative;
         /* margin-top: 0.5rem; */
     }
     /* Section pesquisar titulo na Main */
@@ -844,13 +851,14 @@ main .hight-view{
         font-size: 2rem;
         width: 89%;
         display: flex;
-        justify-content: start;
+        justify-content: center;
         position: relative;
+        right: 1.78rem;
     }
     /* Descrição na section titulo na Main */
     main .title-main p {
         /* border: 1px solid; */
-        width: 88%;
+        width: 78%;
         font-size: 1.25rem;
         margin-top: 1rem;
         text-align: justify;
@@ -859,27 +867,28 @@ main .hight-view{
     main .hight-view{
         /* border: 1px solid; */
         height: 5vh;
-        width: 90%;
+        width: auto;
         margin-top: 3rem;
-        margin-left: 0.9rem;
+        position: relative;
+        right: 5.2rem;
+        font-size: 1.2rem;
     }
     /* Artigo principal */
     .article-main{
         /* border: 1px solid; */
         height: 100%;
-        width: 100%;
+        width: 95%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 2rem;
-        margin-top: 0.8rem;
-
+        
         overflow: hidden;
     }
     /* Seção do Artigo principal */
     .article-main section{
         /* border: 1px solid; */
-        width: 90%;
+        width: 100%;
         height: 80%;
         display: flex;
         flex-direction: column;
@@ -900,6 +909,45 @@ main .hight-view{
         border-radius: 0.3rem;
 
     }
+
+     /* Barra de novidades  */
+    .new-recipes{
+        /* border: 1px solid; */
+        height: 5vh;
+        width: auto;
+    
+        margin-top: 3rem;
+        position: relative;
+        right: 10rem;
+        font-size: 1.2rem;
+    }
+    /* Artigo novidades */
+    .article-news{
+        /* border: 1px solid; */
+        width: 95%;
+        height: auto;
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+    }
+    /* Seção do Artigo novidades */
+    .article-news section{
+        /* border: 1px solid; */
+        height: auto;
+        width: 49.5%;
+        
+        display: flex;
+
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+        overflow: hidden;
+    }
+
+    /* <------ NEW CODE ------> */
 
     /* Rodapé do artigo secundário na Barra de navegação mobile */
     .footer-info{
