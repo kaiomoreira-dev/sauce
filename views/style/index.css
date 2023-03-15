@@ -583,7 +583,8 @@ main .hight-view{
 }
 /* Rodapé com informações */
 .footer-info{
-    /* border-top: 1px solid; */
+    border-top: 2px solid rgba(0, 0, 0, 0.20);
+    box-shadow: 0 0 10px rgb(232 234 237 / 60%);
 
     color: #000000;
     background-color: #eeeeee;
