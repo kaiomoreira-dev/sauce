@@ -45,12 +45,12 @@ iconeShowMenuMobile.addEventListener("click", event =>{
     if(iconeIdLength === null){
         iconeShowMenuMobile.setAttribute("id","transformX");
         navbarMenu.setAttribute("id","showNavbarMenu");
-        main.setAttribute("id", "hidde");
+        // main.setAttribute("id", "hidde");
         
     }else{
         iconeShowMenuMobile.removeAttribute("id","transformX");
         navbarMenu.removeAttribute("id","showNavbarMenu");
-        main.removeAttribute("id", "hidde");
+        // main.removeAttribute("id", "hidde");
     }
 
 })
