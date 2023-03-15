@@ -50,23 +50,6 @@ header{
     width: 9rem;
 
 }
-
-/* Menu de navegação desktop */
-.navbar-menu{
-    /* border: 1px solid; */
-    width: 50%;
-    height: 100%;
-
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
-
-    gap: 3%;
-
-    position: absolute;
-    list-style: none;
-}
 /* Div para conter o icone de pesquisa */
 .navbar-global .navItem-search{
     display: none;
@@ -85,6 +68,22 @@ header{
 /* Estilo para alterar o display para block */
 #showIconeSearch{
     display: block;
+}
+/* Menu de navegação desktop */
+.navbar-menu{
+    /* border: 1px solid; */
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 3%;
+
+    position: absolute;
+    list-style: none;
 }
 /* Lista de itens do menu */
 .navbar-menu li {
@@ -167,6 +166,7 @@ main .section-search form div{
     position: relative;
     padding: 0.5rem;
     margin-top: 10rem;
+    z-index: 0;
 }
 /* Input text da <div> na section pesquisar titulo na Main */
 main .section-search form div input{
@@ -691,14 +691,12 @@ main .hight-view{
         /* border: 1px solid; */
         width: 100vw;
         height: auto;
-        display: block;
+        display: none;
         padding: 0;
         gap: 3%;
         position: absolute;
         top: 8rem;
         list-style: none;
-        opacity: 0;
-        transition: opacity 0.4s;
     }
     /* Lista de itens do menu */
     .navbar-menu li {  
@@ -730,7 +728,7 @@ main .hight-view{
         transition: 0.6s;
     }
     #showNavbarMenu{
-        opacity: 1;
+        display: block;
     }
     /* Efeito na lista de itens do menu */
     .navbar-menu li:hover{
