@@ -737,9 +737,9 @@ main .hight-view{
     }
     /* Links do menu de navegação */
     .navbar-menu li a{
-        border: 1px solid;
-        /* border-bottom: 1px solid rgba(0, 0, 0, 0.50); */
-        box-shadow: 0 0 10px rgb(232 234 237 / 50%);
+        border-top: 2px solid rgba(0, 0, 0, 0.20);
+        border-bottom: 2px solid rgba(0, 0, 0, 0.20);
+        box-shadow: 0 0 10px rgb(232 234 237 / 60%);
         background-color: #f7f7f7;
         color: rgba(0, 0, 0, 0.70); 
         
