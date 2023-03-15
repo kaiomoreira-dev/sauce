@@ -116,7 +116,7 @@ main{
 
     background-color: #f7f7f7;
     
-    width: 100%;
+    width: 98%;
     min-height: 100%;
     box-sizing: border-box;
 
@@ -199,15 +199,15 @@ main .section-search form div button > img{
 main .hight-view{
     /* border: 1px solid; */
     height: 5vh;
-    width: 100%;
+    width: 99%;
     margin-top: 3rem;
-    margin-left: 1rem;
+    margin-right: 0.6rem;
 }
 /* Artigo principal */
 .article-main{
     /* border: 1px solid; */
     height: 75vh;
-    width: 98vw;
+    width: 97vw;
     display: flex;
     
     gap: 1%;
@@ -679,7 +679,7 @@ main .hight-view{
         display: flex;
         align-items:center;
         position: absolute;
-        left: 11rem;
+        left: 11.5rem;
         
     }
     /* Imagem da logo da barra de navegação desktop */
@@ -757,9 +757,7 @@ main .hight-view{
     /* Estilo para alterar o display para block */
     #showIconeSearch{
         display: flex;
-    }
-    
-   
+    }   
     main{
         color: #000000d7;
     
@@ -780,34 +778,6 @@ main .hight-view{
     
         /* margin-top: 0.5rem; */
     }
-    
-    /* Seção titulo na Main */
-    main .title-main {
-        /* border: 1px solid; */
-        
-        width: 90%;
-        padding: 1.5rem 2rem;
-        margin-top: 11rem;
-       
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;    
-    }
-    main .title-main h1 {
-        /* border: 1px solid; */
-        width: auto;
-        display: flex;
-        justify-content: start;
-    }
-    /* Descrição na section titulo na Main */
-    main .title-main p {
-        /* border: 1px solid; */
-        width: 80%;
-        font-size: 1.25rem;
-        margin-top: 1rem;
-        text-align: justify;
-    }
     /* Section pesquisar titulo na Main */
     main .section-search {
         /* border: 1px solid; */
@@ -816,19 +786,18 @@ main .hight-view{
         display: flex;
         justify-content: center;
         position: relative;
-
-        margin: 3rem 0;
+       
         
     }
     /* Div na section pesquisar titulo na Main */
     main .section-search form div{
         height: 60%;
+        width: 86vw;
         border: 3px solid #ff7875;
         border-radius: 3rem;
         display: flex;
         position: relative;
         padding: 0.5rem;
-        margin-top: 10rem;
     }
     /* Input text da <div> na section pesquisar titulo na Main */
     main .section-search form div input{
@@ -838,7 +807,7 @@ main .hight-view{
         border: none;
         border-radius: 3rem;
         height: 100%;
-        width: 60vw;
+        width: 80vw;
         padding-left: 1rem;
         font-size: 1.3rem;
     
@@ -857,42 +826,89 @@ main .hight-view{
         height: 4vh;
         width: 4vh;
     }
-
-     /* Artigo principal da Barra de navegação mobile */
-     .article-main {
+    /* Seção titulo na Main */
+    main .title-main {
+        /* border: 1px solid; */
+        
+        width: 100%;
+        padding: 1.5rem 2rem 1rem;
         margin-top: 10rem;
+       
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;    
     }
-     /* Imagem do artigo principal da Barra de navegação mobile */
-     .article-main section > img{
-        height: 45vh;
-        width: 75vw;
+    main .title-main h1 {
+        /* border: 1px solid; */
+        font-size: 2rem;
+        width: 89%;
+        display: flex;
+        justify-content: start;
+        position: relative;
     }
-    /* Artigo secundário da Barra de navegação mobile */
-    .article-secondary{
+    /* Descrição na section titulo na Main */
+    main .title-main p {
+        /* border: 1px solid; */
+        width: 88%;
+        font-size: 1.25rem;
+        margin-top: 1rem;
+        text-align: justify;
+    }
+   /* Div mais visitados */
+    main .hight-view{
+        /* border: 1px solid; */
+        height: 5vh;
+        width: 90%;
+        margin-top: 3rem;
+        margin-left: 0.9rem;
+    }
+    /* Artigo principal */
+    .article-main{
+        /* border: 1px solid; */
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 0.8rem;
+
+        overflow: hidden;
+    }
+    /* Seção do Artigo principal */
+    .article-main section{
+        /* border: 1px solid; */
+        width: 90%;
+        height: 80%;
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 0.3rem;
+        box-sizing: border-box;
+       
+        overflow: hidden;
+
     }
-    /* Seção do artigo secundário da Barra de navegação mobile */
-    .article-secondary section{
-        height: 90vh;
-        width: 65vw;
+    /* Figura da seção do Artigo principal */
+    .article-main section > figure{
+        /* border: 1px solid; */
+        height: 55vh;
+        overflow: hidden;
+        border-radius: 0.3rem;
+
     }
-    /* Imagem da seção do artigo secundário na Barra de navegação mobile */
-    .article-secondary section img{
-        height: 40vh;
-        width: 65vw;
-    }
-    /* Imagem da seção do artigo secundário na Barra de navegação mobile */
-    .article-secondary section button{
-        width: 25vw;
-    }
+
     /* Rodapé do artigo secundário na Barra de navegação mobile */
     .footer-info{
-        font-size: 0.7rem;
+            font-size: 0.7rem;
     }
     /* Imagem do rodapé no artigo secundário na Barra de navegação mobile */
     .footer-info ul li a > img{
-        height: 3vh;
-        width: 3vw;
+            height: 3vh;
+            width: 3vw;
     }
+
 }
