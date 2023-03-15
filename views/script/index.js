@@ -11,18 +11,11 @@ const body = document.querySelector("body");
 
 const navItemSearch = document.querySelector("header nav").lastElementChild;
 
+const iconeShowMenuMobile = document.querySelector(".btnShowMenuMobile");
+
 imagesPost.forEach(image => {
     image.setAttribute("title", "Ler mais")
 })
-
-document.addEventListener("scroll", (event) => {
-     if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        navItemSearch.setAttribute("id","showIconeSearch")
-     }else{
-        navItemSearch.removeAttribute("id","showIconeSearch")
-     }
-})
-
 
 function toggleNavbarMenuMobile(){
     
@@ -34,15 +27,26 @@ function toggleNavbarMenuMobile(){
 
 }
 
-
-
-
 // Mostar icone para pesquisar ao rolar a barra de scroll
-
+document.addEventListener("scroll", (event) => {
+    if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+       navItemSearch.setAttribute("id","showIconeSearch")
+    }else{
+       navItemSearch.removeAttribute("id","showIconeSearch")
+    }
+})
 
 // <------- Efeito Show menu de Naegação Mobile ------->
-navbarIcon.addEventListener("click", toggleNavbarMenuMobile)
+// navbarIcon.addEventListener("click", toggleNavbarMenuMobile)
+iconeShowMenuMobile.addEventListener("click", event =>{
+    const iconeIdLength = iconeShowMenuMobile.getAttribute("id");
+    if(iconeIdLength === null){
+        iconeShowMenuMobile.setAttribute("id","transformX");
+    }else{
+        iconeShowMenuMobile.removeAttribute("id","transformX");
+    }
 
+})
 
 // <------- Efeito Zom e Sombra Article Main------->
 // Efeito que adiciona zom e sombra nas imagens principal
