@@ -109,7 +109,6 @@ header{
     
 }
 /* Coteudo principal */
-
 main{
     /* border: 1px solid; */
     color: #000000d7;
@@ -646,9 +645,6 @@ main .hight-view{
         z-index: 1;
         
     }
-    #hidde{
-        opacity: 0;
-    }
     /* Barra de navegação*/
     .navbar-global{
         /* border: 1px solid; */
@@ -660,6 +656,7 @@ main .hight-view{
         padding: 1rem;
         
     }
+    /* Botão para mostrar barra de navegação mobile */
     .navbar-global .btnShowMenuMobile{
         display: block;
         background-color: transparent;
@@ -669,10 +666,11 @@ main .hight-view{
         width: auto;
         left: 2rem;
     }
+    /* Efeito no Botão para mostrar barra de navegação mobile */
     .navbar-global .btnShowMenuMobile:hover{
         cursor: pointer;
     }
-
+    /* Adiciona pseu do elemento antes botão na barra de navegação mobile */
     .navbar-global .btnShowMenuMobile::before{
         content: "";
         display: block;
@@ -682,7 +680,7 @@ main .hight-view{
         background-color: #ff7875;
         transition: all 0.25s ease-in-out;
     }
-
+    /* Adiciona pseu do elemento depois botão na barra de navegação mobile */
     .navbar-global .btnShowMenuMobile::after{
         content: "";
         display: block;
@@ -692,10 +690,11 @@ main .hight-view{
         background-color: #ff7875;
         transition: all 0.25s ease-in-out;
     }
-
+    /* Efeito para tranformar em x o pseu do elemento anterior ao span */
     #transformX::before{
         transform: rotate(45deg);
     }
+    /* Efeito para tranformar em x o pseu do elemento posterior ao span */
     #transformX::after{
         transform: rotate(-45deg);
         position: relative;
@@ -1013,7 +1012,9 @@ main .hight-view{
     
     /* Rodapé do artigo secundário na Barra de navegação mobile */
     .footer-info{
-            font-size: 0.7rem;
+            border-top: 2px solid rgba(0, 0, 0, 0.10);
+            box-shadow: 0 0 10px rgb(232 234 237 / 60%);
+            font-size: 0.8rem;
     }
     /* Imagem do rodapé no artigo secundário na Barra de navegação mobile */
     .footer-info ul li a > img{
