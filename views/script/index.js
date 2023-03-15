@@ -1,7 +1,5 @@
 const navbarIcon = document.querySelector("header > a");
-const navbarMenuMobile = document.querySelector("header").lastElementChild;
 
-const shadowLikes = document.querySelectorAll("main section div");
 const sections = document.querySelectorAll("section");
 
 const imagesPost = document.querySelectorAll("figure img");
@@ -12,6 +10,10 @@ const body = document.querySelector("body");
 const navItemSearch = document.querySelector("header nav").lastElementChild;
 
 const iconeShowMenuMobile = document.querySelector(".btnShowMenuMobile");
+
+const navbarMenu = document.querySelector(".navbar-menu")
+
+const main = document.querySelector("main");
 
 imagesPost.forEach(image => {
     image.setAttribute("title", "Ler mais")
@@ -42,8 +44,13 @@ iconeShowMenuMobile.addEventListener("click", event =>{
     const iconeIdLength = iconeShowMenuMobile.getAttribute("id");
     if(iconeIdLength === null){
         iconeShowMenuMobile.setAttribute("id","transformX");
+        navbarMenu.setAttribute("id","showNavbarMenu");
+        main.setAttribute("id", "hidde");
+        
     }else{
         iconeShowMenuMobile.removeAttribute("id","transformX");
+        navbarMenu.removeAttribute("id","showNavbarMenu");
+        main.removeAttribute("id", "hidde");
     }
 
 })
