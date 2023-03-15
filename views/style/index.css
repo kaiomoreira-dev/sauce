@@ -669,6 +669,9 @@ main .hight-view{
         width: auto;
         left: 2rem;
     }
+    .navbar-global .btnShowMenuMobile:hover{
+        cursor: pointer;
+    }
 
     .navbar-global .btnShowMenuMobile::before{
         content: "";
