@@ -871,7 +871,7 @@ main .hight-view{
         display: flex;
         justify-content: center;
         position: relative;
-        right: 1.78rem;
+        right: 1.5rem;
     }
     /* Descrição na section titulo na Main */
     main .title-main p {
