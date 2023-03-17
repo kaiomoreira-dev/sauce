@@ -11,7 +11,7 @@ app.get("/", (request, response) =>{
     response.render("pages/index.ejs")
 });
 
-app.get("/recipes", (request, response) =>{
+app.get("/meat", (request, response) =>{
     response.render("pages/meat.ejs")
 });
 
