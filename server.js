@@ -5,13 +5,14 @@ const app = express();
 
 //engine para entender o ejs na pasta views
 app.set("view engine", "ejs");
-app.use(express.static("views/css"));
-app.use(express.static("views/script"));
-app.use(express.static("views/images"));
-
+app.use(express.static("views"));
 
 app.get("/", (request, response) =>{
     response.render("pages/index.ejs")
+});
+
+app.get("/recipes", (request, response) =>{
+    response.render("pages/recipes.ejs")
 });
 
 app.listen(8080, () =>{
