@@ -242,7 +242,7 @@ main .hight-view{
 /* Elemento i para receber Imagens estrelas hate */
 .article-main section .title .stars i{
     /* border: 1px solid; */
-    background-image: url("icons8-star-18.png");
+    background-image: url("/images/icons8-star-18.png");
     background-repeat: no-repeat;
     display: flex;
     height: 18px;
@@ -357,7 +357,7 @@ main .hight-view{
 /* Imagem dentro do elemento <i> da <div> estrela de hate*/
 .article-news section .title .stars i{
     /* border: 1px solid; */
-    background-image: url("icons8-star-18.png");
+    background-image: url("/images/icons8-star-18.png");
     background-repeat: no-repeat;
     display: flex;
     height: 18px;
@@ -367,7 +367,7 @@ main .hight-view{
 /* Imagem de estrela cinza*/
 .article-news section .title .stars i:nth-of-type(5){
     /* border: 1px solid; */
-    background-image: url("icons8-star-18-cinza.png");
+    background-image: url("/images/icons8-star-18-cinza.png");
     background-repeat: no-repeat;
     display: flex;
     height: 18px;
@@ -509,7 +509,7 @@ main .hight-view{
 /* Imagem com estrelas no elemento i da seção do Artigo carnes */
 .article-meat section .title .stars i{
     /* border: 1px solid; */
-    background-image: url("icons8-star-18.png");
+    background-image: url("/images/icons8-star-18.png");
     background-repeat: no-repeat;
     display: flex;
     height: 18px;
@@ -518,7 +518,7 @@ main .hight-view{
 /* Imagem de estrela cinza*/
 .article-meat section .title .stars i:nth-of-type(5){
     /* border: 1px solid; */
-    background-image: url("icons8-star-18-cinza.png");
+    background-image: url("/images/icons8-star-18-cinza.png");
     background-repeat: no-repeat;
     display: flex;
     height: 18px;
@@ -527,7 +527,7 @@ main .hight-view{
 /* Imagem de estrela cinza*/
 .article-meat section .title .stars i:nth-of-type(4){
     /* border: 1px solid; */
-    background-image: url("icons8-star-18-cinza.png");
+    background-image: url("/images/icons8-star-18-cinza.png");
     background-repeat: no-repeat;
     display: flex;
     height: 18px;
