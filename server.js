@@ -12,7 +12,7 @@ app.get("/", (request, response) =>{
 });
 
 app.get("/recipes", (request, response) =>{
-    response.render("pages/recipes.ejs")
+    response.render("pages/meat.ejs")
 });
 
 app.listen(8080, () =>{
