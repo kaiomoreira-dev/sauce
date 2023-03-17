@@ -15,6 +15,10 @@ const navbarMenu = document.querySelector(".navbar-menu")
 
 const main = document.querySelector("main");
 
+const liShowCategories = document.querySelector(".navbar-menu li + li");
+const ulCategories = document.querySelector(".navbar-menu .categories");
+const iconeAngleDown = document.querySelector(".navbar-menu li + li i");
+
 imagesPost.forEach(image => {
     image.setAttribute("title", "Ler mais")
 })
@@ -88,4 +92,16 @@ imagesPost.forEach(image => {
         }
         
     })
+})
+
+liShowCategories.addEventListener("click", () =>{
+    let categoriesId = ulCategories.getAttribute("id");
+    if(!categoriesId){
+        ulCategories.setAttribute("id","showCategories")
+        iconeAngleDown.setAttribute("id","rotateInverse")
+    }else{
+        ulCategories.removeAttribute("id","showCategories")
+        iconeAngleDown.removeAttribute("id","rotateInverse")
+    }
+    
 })
