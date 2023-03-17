@@ -208,17 +208,18 @@ main .hight-view{
 /* Artigo principal */
 .article-main{
     /* border: 1px solid; */
-    height: 75vh;
+    height: auto;
     width: 99%;
     display: flex;
     gap: 1%;
-    
+    margin-bottom: 4rem;
     position: relative; 
 }
 /* Seção do Artigo principal */
 .article-main section{
     /* border: 1px solid; */
     width: 40vw;
+    height: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -304,7 +305,6 @@ main .hight-view{
     height: auto;
     width: auto;
     color:#000000d7;
-    margin-top: 4rem;
     position: relative;
     right: 36.8rem;
     margin-bottom: 1rem;
@@ -325,6 +325,7 @@ main .hight-view{
 
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 4rem;
   
     align-items: center;
     gap: 1%;
@@ -440,7 +441,6 @@ main .hight-view{
     width: auto;
 
     color:#000000d7;
-    margin-top: 4rem;
     position: relative;
     right: 38.3rem;
     margin-bottom: 1rem;
