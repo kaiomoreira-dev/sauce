@@ -318,13 +318,13 @@ main .hight-view{
     font-size: 1.2em;
     font-weight: bold;
 }
-/* Efeito zom na Image da seção do Artigo novidades */
+/* Efeito zom na Image da seção do Artigo */
 .zomImageArticle{
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
     
 }
-/* Div categorias de Carnes */
+/* Div categorias de secundario */
 .meat{
     /* border: 1px solid; */
     height: auto;
@@ -342,7 +342,7 @@ main .hight-view{
     font-size: 1.2em;
     font-weight: bold;
 }
-/* Artigo de carnes */
+/* Artigo de secundario */
 .article-second-recipe{
     /* border: 1px solid; */
     width: 99%;
@@ -354,7 +354,7 @@ main .hight-view{
     align-items: center;
     gap: 1%;
 }
-/* Seção do Artigo novidades */
+/* Seção do Artigo secundario */
 .article-second-recipe section{
     /* border: 1px solid; */
     height: auto;
@@ -381,11 +381,11 @@ main .hight-view{
     font-size: 1rem;
 
 }
-/* h1 da div titulo do artigo carnes */
+/* h1 da div titulo do artigo secundario */
 .article-second-recipe section .title h1{
     margin-top: 0.3rem;
 }
-/* Div para receber estrelas da seção do Artigo carnes */
+/* Div para receber estrelas da seção do Artigo secundario */
 .article-second-recipe section .title .stars{
     /* border: 1px solid; */
     display: flex;
@@ -396,7 +396,7 @@ main .hight-view{
     padding: 0;
 
 }
-/* Imagem com estrelas no elemento i da seção do Artigo carnes */
+/* Imagem com estrelas no elemento i da seção do Artigo secundario */
 .article-second-recipe section .title .stars i{
     /* border: 1px solid; */
     background-image: url("/images/icons8-star-18.png");
@@ -423,7 +423,7 @@ main .hight-view{
     height: 18px;
     width: 18px;
 }
-/* Figure na Seção do Artigo novidades */
+/* Figure na Seção do Artigo secundário */
 .article-second-recipe figure{
     height: 40vh;
     width: auto;
@@ -433,12 +433,12 @@ main .hight-view{
     justify-content: center;
     border-radius: 0.3rem;
 }
-/* Aconra da Figure na Seção do Artigo novidades */
+/* Aconra da Figure na Seção do Artigo secundário */
 .article-second-recipe section figure > a{
     height: 100%;
     width: 100%;
 }
-/* Div title na Seção do Artigo novidades */
+/* Div title na Seção do Artigo secundário */
 .article-second-recipe section > div{
    /* border: 1px solid; */
    color: #000;
@@ -452,7 +452,7 @@ main .hight-view{
 
    font-size: 1rem;
 }
-/* Imagem da seção do Artigo novidades */
+/* Imagem da seção do Artigo secundário */
 .article-second-recipe section img{
     height: 100%;
     width: 100%;
@@ -460,7 +460,7 @@ main .hight-view{
     -webkit-transition: -webkit-transform .5s ease;
     transition: all 1.3s;
 }
-/* Descrição da seção do Artigo novidades */
+/* Descrição da seção do Artigo secundário */
 .article-second-recipe section > p{
     margin-top: 0.5rem;
     text-align: justify;
@@ -777,7 +777,7 @@ main .hight-view{
         font-size: 1.2rem;
     }
     /* Artigo principal */
-    .article-main{
+    .article-main-recipe{
         /* border: 1px solid; */
         height: 100%;
         width: 95%;
@@ -790,7 +790,7 @@ main .hight-view{
         margin-bottom: 4.5rem;
     }
     /* Seção do Artigo principal */
-    .article-main section{
+    .article-main-recipe section{
         /* border: 1px solid; */
         width: 100%;
         height: 80%;
@@ -806,7 +806,7 @@ main .hight-view{
 
     }
     /* Figura da seção do Artigo principal */
-    .article-main section > figure{
+    .article-main-recipe section > figure{
         /* border: 1px solid; */
         height: 55vh;
         overflow: hidden;
@@ -814,7 +814,7 @@ main .hight-view{
 
     }
 
-     /* Barra de novidades  */
+     /* Barra de secundário  */
     .new-recipes{
         /* border: 1px solid; */
         height: 5vh;
@@ -823,8 +823,8 @@ main .hight-view{
         right: 0;
         font-size: 1.2rem;
     }
-    /* Artigo novidades */
-    .article-news{
+    /* Artigo secundário */
+    .article-second-recipe{
         /* border: 1px solid; */
         width: 95%;
         height: auto;
@@ -836,8 +836,8 @@ main .hight-view{
         margin-bottom: 0;
 
     }
-    /* Seção do Artigo novidades */
-    .article-news section{
+    /* Seção do Artigo secundário */
+    .article-second-recipe section{
         /* border: 1px solid; */
         height: auto;
         width: 49.5%;
@@ -851,50 +851,19 @@ main .hight-view{
         margin-bottom: 4.5rem;
     }
 
-    .article-news section .title h1{
+    .article-second-recipe section .title h1{
         /* border: 1px solid; */
         margin-top: 0.3rem;
         height: auto;
         width: 100%;
     }    
-    /* Div categorias de Carnes */
+    /* Div categorias de secundario */
     .meat{
         /* border: 1px solid; */
         width: 94%;
         position: relative;
         right: 0;
         font-size: 1.2rem;
-    }
-    /* Artigo de carnes */
-    .article-meat{
-        /* border: 1px solid; */
-        width: 95%;
-        height: auto;
-
-        display: flex;
-        flex-wrap: wrap;
-    
-        align-items: center;
-        gap: 1%;
-        margin-bottom: 1rem;
-       
-    }
-    /* Seção do Artigo novidades */
-    .article-meat section{
-        /* border: 1px solid; */
-        width: 48%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        overflow: hidden;
-        margin-bottom: 4.5rem;
-    }
-    .article-meat section .title h1{
-        /* border: 1px solid; */
-        margin-top: 0.3rem;
-        height: auto;
-        width: 100%;
     }
     
     /* Rodapé do artigo secundário na Barra de navegação mobile */
@@ -910,7 +879,6 @@ main .hight-view{
     }
 
 }
-
 /* <------------------- Final Home  ------------------->*/
 
 /* <------------------- Inicio Recipes  ------------------->*/
