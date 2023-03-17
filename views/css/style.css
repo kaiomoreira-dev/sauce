@@ -207,17 +207,18 @@ main .hight-view{
    
 }
 /* Artigo principal */
-.article-main{
+.article-main-recipe{
     /* border: 1px solid; */
     height: auto;
     width: 99%;
     display: flex;
+    justify-content: center;
     gap: 1%;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
     position: relative; 
 }
 /* Seção do Artigo principal */
-.article-main section{
+.article-main-recipe section{
     /* border: 1px solid; */
     width: 40vw;
     height: 80%;
@@ -233,7 +234,7 @@ main .hight-view{
 
 }
 /* Div para receber estilo para estrelas hate */
-.article-main section .title .stars{
+.article-main-recipe section .title .stars{
     /* border: 1px solid; */
     display: flex;
     flex-direction: row;
@@ -243,7 +244,7 @@ main .hight-view{
 
 }
 /* Elemento i para receber Imagens estrelas hate */
-.article-main section .title .stars i{
+.article-main-recipe section .title .stars i{
     /* border: 1px solid; */
     background-image: url("/images/icons8-star-18.png");
     background-repeat: no-repeat;
@@ -252,7 +253,7 @@ main .hight-view{
     width: 18px;
 }
 /* Figura da seção do Artigo principal */
-.article-main section > figure{
+.article-main-recipe section > figure{
     /* border: 1px solid; */
     height: 100%;
     width: 100%;
@@ -261,7 +262,7 @@ main .hight-view{
 
 }
 /* Div dentro do figure da seção do Artigo principal */
-.article-main section .title{
+.article-main-recipe section .title{
     /* border: 1px solid; */
     color: #000000df;
     width: 100%;
@@ -277,35 +278,36 @@ main .hight-view{
     font-size: 1.1rem;
 }
 /* h1 da Div dentro do figure da seção do Artigo principal */
-.article-main section .title h1{
+.article-main-recipe section .title h1{
     margin-top: 0.5rem;
 }
 /* Ancora da figure no Artigo main */
-.article-main section figure a{
+.article-main-recipe section figure a{
     height: 100%;
     max-width: 100%; 
 } 
 /* Imagem da seção do Artigo principal*/
-.article-main section figure a > img{
+.article-main-recipe section figure a > img{
     height: 100%;
     width: 100%;
     -webkit-transition: -webkit-transform .5s ease;
     transition: all 1.3s;
     border-radius: 0.3rem;
     
-} 
+}
 /* Efeito zom na Image da seção do Artigo principal */
 .zomImageArticleMain{
     border-radius: 0.3rem;
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
-/* Barra de novidades */
 .new-recipes{
     /* border: 1px solid; */
     height: auto;
     width: 98%;
+
     color:#000000d7;
+    
     margin-bottom: 1rem;
 
     display: flex;
@@ -315,117 +317,6 @@ main .hight-view{
 
     font-size: 1.2em;
     font-weight: bold;
-}
-/* Artigo novidades */
-.article-news{
-    /* border: 1px solid; */
-    width: 99%;
-    height: auto;
-
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 4rem;
-  
-    align-items: center;
-    gap: 1%;
-
-}
-/* Seção do Artigo novidades */
-.article-news section{
-    /* border: 1px solid; */
-
-    height: auto;
-    width: 24%;
-
-    display: flex;
-
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-   
-    overflow: hidden;
-}
-/* Div para receber estrelas de hate */
-.article-news section .title .stars{
-    /* border: 1px solid; */
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    width: auto;
-    padding: 0;
-    margin-top: 0.3rem;
-
-}
-/* Imagem dentro do elemento <i> da <div> estrela de hate*/
-.article-news section .title .stars i{
-    /* border: 1px solid; */
-    background-image: url("/images/icons8-star-18.png");
-    background-repeat: no-repeat;
-    display: flex;
-    height: 18px;
-    width: 18px;
-}
-
-/* Imagem de estrela cinza*/
-.article-news section .title .stars i:nth-of-type(5){
-    /* border: 1px solid; */
-    background-image: url("/images/icons8-star-18-cinza.png");
-    background-repeat: no-repeat;
-    display: flex;
-    height: 18px;
-    width: 18px;
-}
-/* Figure na Seção do Artigo novidades */
-.article-news figure{
-    height: 40vh;
-    width: auto;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0.3rem;
-
-}
-/* Aconra da Figure na Seção do Artigo novidades */
-.article-news section figure > a{
-    height: 100%;
-    width: 100%;
-    
-}
-/* Div title na Seção do Artigo novidades */
-.article-news section > div{
-    /* border: 1px solid; */
-    color: #000;
-    width: 98%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-
-    margin-top: 0.5rem;
-    position: relative;
-
-    font-size: 1rem;
-
-}
-/* h1 da div titulo do artigo novidades */
-.article-news section .title h1{
-    /* border: 1px solid; */
-    margin-top: 0.3rem;
-}
-/* Imagem da seção do Artigo novidades */
-.article-news section img{
-    height: 100%;
-    width: 100%;
-    border-radius: 0.3rem;
-    -webkit-transition: -webkit-transform .5s ease;
-    transition: all 1.3s;
-}
-/* Descrição da seção do Artigo novidades */
-.article-news section > p{
-    margin-top: 0.5rem;
-    text-align: justify;
-    width: 21vw;
 }
 /* Efeito zom na Image da seção do Artigo novidades */
 .zomImageArticle{
@@ -452,7 +343,7 @@ main .hight-view{
     font-weight: bold;
 }
 /* Artigo de carnes */
-.article-meat{
+.article-second-recipe{
     /* border: 1px solid; */
     width: 99%;
     height: auto;
@@ -462,28 +353,24 @@ main .hight-view{
   
     align-items: center;
     gap: 1%;
-
-    margin-bottom: 3rem;
 }
 /* Seção do Artigo novidades */
-.article-meat section{
+.article-second-recipe section{
     /* border: 1px solid; */
-
     height: auto;
     width: 24%;
-
     display: flex;
-
     flex-direction: column;
     align-items: center;
     justify-content: center;
- 
+    margin-bottom: 3rem;
     overflow: hidden;
 }
-.article-meat section > div{
+.article-second-recipe section > div{
     /* border: 1px solid; */
     color: #000;
     width: 100%;
+    height: 5rem;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -495,11 +382,11 @@ main .hight-view{
 
 }
 /* h1 da div titulo do artigo carnes */
-.article-meat section .title h1{
+.article-second-recipe section .title h1{
     margin-top: 0.3rem;
 }
 /* Div para receber estrelas da seção do Artigo carnes */
-.article-meat section .title .stars{
+.article-second-recipe section .title .stars{
     /* border: 1px solid; */
     display: flex;
     flex-direction: row;
@@ -510,7 +397,7 @@ main .hight-view{
 
 }
 /* Imagem com estrelas no elemento i da seção do Artigo carnes */
-.article-meat section .title .stars i{
+.article-second-recipe section .title .stars i{
     /* border: 1px solid; */
     background-image: url("/images/icons8-star-18.png");
     background-repeat: no-repeat;
@@ -519,7 +406,7 @@ main .hight-view{
     width: 18px;
 }
 /* Imagem de estrela cinza*/
-.article-meat section .title .stars i:nth-of-type(5){
+.article-second-recipe section .title .stars i:nth-of-type(5){
     /* border: 1px solid; */
     background-image: url("/images/icons8-star-18-cinza.png");
     background-repeat: no-repeat;
@@ -528,7 +415,7 @@ main .hight-view{
     width: 18px;
 }
 /* Imagem de estrela cinza*/
-.article-meat section .title .stars i:nth-of-type(4){
+.article-second-recipe section .title .stars i:nth-of-type(4){
     /* border: 1px solid; */
     background-image: url("/images/icons8-star-18-cinza.png");
     background-repeat: no-repeat;
@@ -537,7 +424,7 @@ main .hight-view{
     width: 18px;
 }
 /* Figure na Seção do Artigo novidades */
-.article-meat figure{
+.article-second-recipe figure{
     height: 40vh;
     width: auto;
     overflow: hidden;
@@ -547,12 +434,12 @@ main .hight-view{
     border-radius: 0.3rem;
 }
 /* Aconra da Figure na Seção do Artigo novidades */
-.article-meat section figure > a{
+.article-second-recipe section figure > a{
     height: 100%;
     width: 100%;
 }
 /* Div title na Seção do Artigo novidades */
-.article-meat section > div{
+.article-second-recipe section > div{
    /* border: 1px solid; */
    color: #000;
    width: 97%;
@@ -566,7 +453,7 @@ main .hight-view{
    font-size: 1rem;
 }
 /* Imagem da seção do Artigo novidades */
-.article-meat section img{
+.article-second-recipe section img{
     height: 100%;
     width: 100%;
     border-radius: 0.3rem;
@@ -574,7 +461,7 @@ main .hight-view{
     transition: all 1.3s;
 }
 /* Descrição da seção do Artigo novidades */
-.article-meat section > p{
+.article-second-recipe section > p{
     margin-top: 0.5rem;
     text-align: justify;
     width: 21vw;
@@ -1027,9 +914,6 @@ main .hight-view{
 /* <------------------- Final Home  ------------------->*/
 
 /* <------------------- Inicio Recipes  ------------------->*/
-main{
-    border: 1px solid;
-}
 .meat-title{
     /* border: 1px solid; */
     width: 99%;
@@ -1037,102 +921,3 @@ main{
     margin-top: 12rem;
 }
 
-.article-main-recipe  {
-    border: 1px solid;
-    height: auto;
-    width: 90%;
-    height: 20%;
-
-    position: relative;
-
-    z-index: 0;
-}
-/* Artigo principal */
-.article-main-recipe{
-    /* border: 1px solid; */
-    height: auto;
-    width: 99%;
-    display: flex;
-    justify-content: center;
-    gap: 1%;
-    margin-bottom: 4rem;
-    position: relative; 
-}
-/* Seção do Artigo principal */
-.article-main-recipe section{
-    /* border: 1px solid; */
-    width: 40vw;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-    border-radius: 0.3rem;
-    box-sizing: border-box;
-
-    overflow: hidden;
-
-}
-/* Div para receber estilo para estrelas hate */
-.article-main-recipe section .title .stars{
-    /* border: 1px solid; */
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    width: auto;
-    padding: 0;
-
-}
-/* Elemento i para receber Imagens estrelas hate */
-.article-main-recipe section .title .stars i{
-    /* border: 1px solid; */
-    background-image: url("/images/icons8-star-18.png");
-    background-repeat: no-repeat;
-    display: flex;
-    height: 18px;
-    width: 18px;
-}
-/* Figura da seção do Artigo principal */
-.article-main-recipe section > figure{
-    /* border: 1px solid; */
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 0.3rem;
-
-}
-/* Div dentro do figure da seção do Artigo principal */
-.article-main-recipe section .title{
-    /* border: 1px solid; */
-    color: #000000df;
-    width: 100%;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    
-    padding-left: 0.5rem;
-    margin-top: 0.3rem;
-    position: relative;
-    font-size: 1.1rem;
-}
-/* h1 da Div dentro do figure da seção do Artigo principal */
-.article-main-recipe section .title h1{
-    margin-top: 0.5rem;
-}
-/* Ancora da figure no Artigo main */
-.article-main-recipe section figure a{
-    height: 100%;
-    max-width: 100%; 
-} 
-/* Imagem da seção do Artigo principal*/
-.article-main-recipe section figure a > img{
-    height: 100%;
-    width: 100%;
-    -webkit-transition: -webkit-transform .5s ease;
-    transition: all 1.3s;
-    border-radius: 0.3rem;
-    
-}
