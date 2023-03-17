@@ -90,7 +90,18 @@ header{
 }
 /* Lista de itens do menu */
 .navbar-menu li {
+    color: #000000ca;
+    font-size: 1rem;
+    font-weight: bolder;    
     padding: 1rem 0
+}
+.navbar-menu > li:nth-child(2) i{
+    /* border: 1px solid; */
+    margin-left: 0.6rem;
+}
+
+.navbar-menu > li:nth-child(2):hover {
+    cursor: pointer;
 }
 /* Links do menu de navegação */
 .navbar-menu li a{
@@ -100,6 +111,7 @@ header{
     padding: 1rem;
     text-decoration: none;
 }
+
 /* Efeito na ancora do menu */
 .navbar-menu li a:hover{
     color: #000000ca;
@@ -111,6 +123,62 @@ header{
     transition: 0.6s; 
     
 }
+/* Div com lista de categorias */
+.navbar-global .categories{
+    /* border: 1px solid; */
+    position: absolute;
+    top: 5.5rem;
+    right: 16rem;
+    height: 18rem;
+    width: 10rem;
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    justify-content:center;
+    padding: 0;
+    
+}
+.navbar-global .categories li{
+    /* border: 1px solid; */
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: content-box;
+}
+
+.navbar-global .categories li a{
+    /* border: 1px solid; */
+    text-decoration: none;
+    background-color: #eeeeee;
+    
+    border-top: 2px solid rgba(0, 0, 0, 0.20);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.20);
+    box-shadow: 0 0 10px rgb(232 234 237 / 60%);
+    font-size: 0.8rem;
+    padding-right: 100%;
+    color: rgba(0, 0, 0, 0.70); 
+    
+}
+.navbar-global .categories li:last-child a{
+    padding-right: 20%;
+}
+
+.navbar-global .categories li a:hover{
+    background-color: #e3e1e1;
+
+    color: #000000ca;
+    transition: 0.6s;
+}
+#showCategories{
+    display: flex;
+}
+#rotateInverse{
+    transform: rotate(180deg);
+}
+
 /* Coteudo principal */
 main{
     /* border: 1px solid; */
@@ -668,6 +736,7 @@ main .hight-view{
         height: 1.5rem;
         width: 1.5rem;
     }
+    
     /* Estilo para alterar o display para block */
     #showIconeSearch{
         display: flex;
@@ -888,4 +957,8 @@ main .hight-view{
     margin-bottom: 1rem;
     margin-top: 12rem;
 }
+/* <------------------- Final Recipes  ------------------->*/
 
+/* <------------------- Inicio Sobre  ------------------->*/
+
+/* <------------------- Final Sobre  ------------------->*/
