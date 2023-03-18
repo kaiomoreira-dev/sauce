@@ -709,9 +709,6 @@ main .hight-view{
 
         text-decoration: none;
     }
-    #no-border{
-        border-top: 0;
-    }
     .navbar-menu .item-category-recipes{
         color: rgba(0, 0, 0, 0.70);
         padding-left: 2.2rem; 
