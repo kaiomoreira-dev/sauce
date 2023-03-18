@@ -705,7 +705,6 @@ main .hight-view{
         padding: 0.8rem 100vw 0.8rem 2.3rem;
 
         font-size: 1.1em;
-        font-weight: bolder;    
 
         text-decoration: none;
     }
@@ -780,6 +779,7 @@ main .hight-view{
         /* border: 1px solid; */
         text-decoration: none;
         background-color: #eeeeee;
+        font-weight: normal;
         
         
         font-size: 1rem;
