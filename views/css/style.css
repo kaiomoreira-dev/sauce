@@ -679,7 +679,7 @@ main .hight-view{
         height: 74vh;
         display: none;
         padding: 0;
-        top: 8rem;
+        top: 5rem;
         list-style: none;
         overflow-y: scroll;
         overflow-x: hidden;
@@ -690,7 +690,8 @@ main .hight-view{
         height: 3vh;
         display: flex;
         align-items: center;
-        /* /padding-left: 10rem; */    
+        /* /padding-left: 10rem; */  
+        padding: 0.9rem 0;  
     } 
     /* Links do menu de navegação */
     .navbar-menu li a{
@@ -707,6 +708,9 @@ main .hight-view{
         font-weight: bolder;    
 
         text-decoration: none;
+    }
+    #no-border{
+        border-top: 0;
     }
     .navbar-menu .item-category-recipes{
         color: rgba(0, 0, 0, 0.70);
@@ -741,8 +745,11 @@ main .hight-view{
         height: auto;
         font-size: 1.1em;
     }
+    .navbar-menu > .item-category-recipes:hover {
+        background-color: #eeeeee;
+    }
     #upHeightItemCategoryRecipes{
-        height: 76.9vh;
+        height: 78.5vh;
     }
     /* ul categorias */
     .navbar-menu .categories{
