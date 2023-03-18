@@ -97,7 +97,7 @@ header{
 }
 .navbar-menu .item-category-recipes {
     background-color: #f7f7f7;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 .navbar-menu > .item-category-recipes i{
     /* border: 1px solid; */
@@ -110,7 +110,7 @@ header{
 /* Links do menu de navegação */
 .navbar-menu li a{
     color: #000000ca;
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: bolder;    
     padding: 1rem;
     text-decoration: none;
