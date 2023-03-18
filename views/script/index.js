@@ -18,7 +18,8 @@ const main = document.querySelector("main");
 const liShowCategories = document.querySelector(".navbar-menu li + li");
 const ulCategories = document.querySelector(".navbar-menu .categories");
 const iconeAngleDown = document.querySelector(".navbar-menu li + li i");
-console.log(liShowCategories)
+const header = document.querySelector("header");
+
 
 imagesPost.forEach(image => {
     image.setAttribute("title", "Ler mais")
@@ -116,4 +117,9 @@ liShowCategories.addEventListener("click", () =>{
         ulCategories.removeAttribute("id","showCategories")
     }
     
+})
+
+main.addEventListener("click", () =>{
+    iconeAngleDown.removeAttribute("id","rotateInverse")
+    ulCategories.removeAttribute("id","showCategories")
 })
