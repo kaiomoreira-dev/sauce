@@ -95,12 +95,17 @@ header{
     font-weight: bolder;    
     padding: 1rem 0
 }
-.navbar-menu > li:nth-child(2) i{
+.navbar-menu .item-category-recipes {
+    background-color: #f7f7f7;
+    font-size: 1.1rem;
+}
+.navbar-menu > .item-category-recipes i{
     /* border: 1px solid; */
     margin-left: 0.6rem;
+
 }
 
-.navbar-menu > li:nth-child(2):hover {
+.navbar-menu > .item-category-recipes:hover {
     cursor: pointer;
 }
 /* Links do menu de navegação */
@@ -140,6 +145,7 @@ header{
 }
 .navbar-global .categories li{
     /* border: 1px solid; */
+
     padding: 0;
     height: 100%;
     overflow: hidden;
@@ -158,11 +164,11 @@ header{
     border-bottom: 2px solid rgba(0, 0, 0, 0.20);
     box-shadow: 0 0 10px rgb(232 234 237 / 60%);
     font-size: 0.8rem;
-    padding-right: 100%;
+    /* padding-right: 100%; */
     color: rgba(0, 0, 0, 0.70); 
     
 }
-.navbar-global .categories li:last-child a{
+.navbar-global .categories .last-item a{
     padding-right: 20%;
 }
 
@@ -673,52 +679,143 @@ main .hight-view{
     .navbar-menu{
         /* border: 1px solid; */
         width: 100vw;
-        height: auto;
+        height: 74vh;
         display: none;
         padding: 0;
-        gap: 3%;
-        position: absolute;
         top: 8rem;
         list-style: none;
-    }
-    /* Lista de itens do menu */
-    .navbar-menu li {  
-        width: 100%;
-        height: 5vh;
-        display: flex;
-        align-items: center;
+        overflow-y: scroll;
+        overflow-x: hidden;
 
     }
+    /* Lista de itens do menu */
+    .navbar-menu li { 
+        /* border: 1px solid; */
+        height: 3vh;
+        display: flex;
+        align-items: center;
+        /* /padding-left: 10rem; */
+        
+    }
+   
     /* Links do menu de navegação */
     .navbar-menu li a{
+        /* border: 1px solid; */
+
         border-top: 2px solid rgba(0, 0, 0, 0.20);
         border-bottom: 2px solid rgba(0, 0, 0, 0.20);
-        box-shadow: 0 0 10px rgb(232 234 237 / 60%);
+        box-shadow: 0 0 10px rgb(232 234 237 / 30%); 
         background-color: #f7f7f7;
         color: rgba(0, 0, 0, 0.70); 
         
-        padding: 1.2rem 100vw 1.2rem 2.3rem;
+        padding: 0.8rem 100vw 0.8rem 2.3rem;
 
         font-size: 1.1em;
         font-weight: bolder;    
 
         text-decoration: none;
     }
+    .navbar-menu .item-category-recipes{
+        color: rgba(0, 0, 0, 0.70);
+        padding-left: 2.2rem; 
+        display: flex;
+        align-items: start;
+    }
+
+    #showRecipes{
+        height: 70vh;
+        display: flex;
+        align-items: start;
+        
+    }
+    
     /* Efeito na ancora do menu */
     .navbar-menu li a:hover{
         background-color: #eeeeee;
         color: #000000ca;
         transition: 0.6s;
     }
-    #showNavbarMenu{
-        display: block;
-    }
     /* Efeito na lista de itens do menu */
     .navbar-menu li:hover{
         border-radius: 3px;
         transition: 0.6s; 
         
-    }     
+    }
+    #showNavbarMenu{
+        display: block;
+    }
+       
+    /* li categorias de receitas */
+    .navbar-menu .item-category-recipes {
+        /* border: 1px solid; */
+        height: auto;
+        font-size: 1.1em;
+    }
+    #upHeightItemCategoryRecipes{
+        height: 78vh;
+    }
+    /* ul categorias */
+    .navbar-menu .categories{
+        /* border: 1px solid; */
+        width: 100%;  
+        height: 100%;
+        flex-direction: column;
+        z-index: 0;
+        position: absolute;
+        top: 6rem;
+        left: 0;
+        display: none;
+        box-sizing: border-box;
+        padding: 0;
+        
+    }
+    /* itens li da lista ul categorias */
+    .navbar-menu .categories li{
+        /* border: 1px solid; */
+        height: 100vh;
+        box-sizing: border-box;
+        overflow: hidden;
+        align-items: start;
+        padding: 1rem 0 1rem 0;
+        border-top: 2px solid rgba(0, 0, 0, 0.20);
+        
+        box-shadow: 0 0 10px rgb(232 234 237 /30%);
+    }
+      
+    .navbar-menu .categories li a{
+        /* border: 1px solid; */
+        text-decoration: none;
+        background-color: #f7f7f7;
+        
+        
+        font-size: 1rem;
+        color: rgba(0, 0, 0, 0.70); 
+        /* padding-left: rem; */
+        
+        margin-left: 0;
+        box-sizing: border-box;
+        padding: 0.7rem 100vw 0.7rem 2.2rem;
+    }
+
+    .navbar-menu .categories li a:hover{
+        background-color: #eeeeee;
+        color: #000000ca;
+        transition: 0.6s;
+    }
+
+    .navbar-menu .categories .last-item{
+        /* border: 1px solid; */
+        padding: 1rem 0 1rem 0;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.01);
+        box-shadow: 0 0 10px rgb(232 234 237 /30%);
+
+    }
+    .navbar-menu .categories .last-item a{
+        padding-right: 68.5vw;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.01);
+        box-shadow: 0 0 10px rgb(232 234 237 /30%);
+    }      
+
     /* Div para conter o icone de pesquisa */
     .navbar-global .navItem-search{
         /* border: 1px solid; */
