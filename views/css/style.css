@@ -594,9 +594,8 @@ main .hight-view{
         overflow-x: hidden;
     }
     header{
-        border: 1px solid;
         width: 100vw;
-        height: 20vh;
+        height: 10vh;
         position: fixed;
         display: flex;
         justify-content: center;
@@ -670,8 +669,8 @@ main .hight-view{
     }
     /* Imagem da logo da barra de navegação desktop */
     .logo > img {
-        height: 7rem;
-        width: 7rem;
+        height: 5.5rem;
+        width: 5.5rem;
     }
     /* Menu de navegação desktop */
     .navbar-menu{
@@ -821,8 +820,8 @@ main .hight-view{
     }
     /* Imagem do icone de pesquisa */
     .navbar-global .navItem-search img{
-        height: 1.5rem;
-        width: 1.5rem;
+        height: 1.2rem;
+        width: 1.2rem;
     }
     
     /* Estilo para alterar o display para block */
@@ -890,8 +889,8 @@ main .hight-view{
     }
     /* Image da lupa no botão na section pesquisar titulo na Main */
     main .section-search form div button > img{
-        height: 4vh;
-        width: 4vh;
+        height: 1.2rem;
+        width: 1.2rem;
     }
     /* Seção titulo na Main */
     main .title-main {
