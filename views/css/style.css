@@ -44,7 +44,7 @@ header{
 /* Div da logo da barra de navegação desktop */
 .logo{    
     position: absolute;
-    left: 13rem;
+    left: 8rem;
     display: flex;
 }
 /* Imagem da logo da barra de navegação desktop */
