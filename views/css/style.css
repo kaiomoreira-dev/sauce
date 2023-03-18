@@ -613,6 +613,7 @@ main .hight-view{
         padding: 1rem;
         
     }
+    
     /* Botão para mostrar barra de navegação mobile */
     .navbar-global .btnShowMenuMobile{
         display: block;
@@ -778,7 +779,7 @@ main .hight-view{
     .navbar-menu .categories li a{
         /* border: 1px solid; */
         text-decoration: none;
-        background-color: #eeeeee;
+        background-color: transparent;
         font-weight: normal;
         
         
@@ -790,6 +791,8 @@ main .hight-view{
         box-sizing: border-box;
         padding: 0.7rem 100vw 0.7rem 2.2rem;
     }
+
+    
 
     .navbar-menu .categories li a:hover{
         background-color: #e3e1e1;
@@ -805,10 +808,12 @@ main .hight-view{
 
     }
     .navbar-menu .categories .last-item a{
-        padding-right: 65vw;
+        padding-right: 75%;
         border-bottom: 2px solid rgba(0, 0, 0, 0.01);
         box-shadow: 0 0 10px rgb(232 234 237 /30%);
-    }      
+    } 
+   
+         
 
     /* Div para conter o icone de pesquisa */
     .navbar-global .navItem-search{
