@@ -704,7 +704,7 @@ main .hight-view{
         
         padding: 0.8rem 100vw 0.8rem 2.3rem;
 
-        font-size: 1.1em;
+        font-size: 1em;
 
         text-decoration: none;
     }
@@ -739,7 +739,7 @@ main .hight-view{
     .navbar-menu .item-category-recipes {
         /* border: 1px solid; */
         height: auto;
-        font-size: 1.1em;
+        font-size: 1rem;
     }
     .navbar-menu > .item-category-recipes:hover {
         background-color: #eeeeee;
