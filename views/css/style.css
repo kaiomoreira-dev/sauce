@@ -115,19 +115,16 @@ header{
     padding: 1rem;
     text-decoration: none;
 }
-/* Efeito na ancora do menu */
-.navbar-menu li a:hover{
-    color: #000000ca;
-    transition: 0.6s;
-}
+
 /* Efeito na lista de itens do menu */
 .navbar-menu li:hover{
+    color: #000000ca;
     border-radius: 3px;
     transition: 0.6s; 
     
 }
-/* Div com lista de categorias */
-.navbar-global .categories{
+/* Ul com lista de categorias */
+.navbar-menu .categories{
     /* border: 1px solid; */
     position: absolute;
     top: 4.5rem;
@@ -141,9 +138,8 @@ header{
     padding: 0;
     
 }
-.navbar-global .categories li{
+.navbar-menu .categories li{
     /* border: 1px solid; */
-
     padding: 0;
     height: 100%;
     overflow: hidden;
@@ -153,24 +149,18 @@ header{
     box-sizing: content-box;
 }
 
-.navbar-global .categories li a{
+.navbar-menu .categories li a{
     /* border: 1px solid; */
     text-decoration: none;
     background-color: #eeeeee;
     
-    border-top: 2px solid rgba(0, 0, 0, 0.20);
-    border-bottom: 2px solid rgba(0, 0, 0, 0.20);
-    box-shadow: 0 0 10px rgb(232 234 237 / 60%);
     font-size: 0.8rem;
     /* padding-right: 100%; */
     color: rgba(0, 0, 0, 0.70); 
     
 }
-.navbar-global .categories .last-item a{
-    padding-right: 20%;
-}
 
-.navbar-global .categories li a:hover{
+.navbar-menu .categories li a:hover{
     background-color: #e3e1e1;
 
     color: #000000ca;
@@ -624,10 +614,6 @@ main .hight-view{
         width: auto;
         left: 2rem;
     }
-    /* Efeito no Botão para mostrar barra de navegação mobile */
-    .navbar-global .btnShowMenuMobile:hover{
-        cursor: pointer;
-    }
     /* Adiciona pseu do elemento antes botão na barra de navegação mobile */
     .navbar-global .btnShowMenuMobile::before{
         content: "";
@@ -680,7 +666,7 @@ main .hight-view{
         height: 74vh;
         display: none;
         padding: 0;
-        top: 5rem;
+        top: 4.9rem;
         list-style: none;
         overflow-y: scroll;
         overflow-x: hidden;
@@ -709,6 +695,7 @@ main .hight-view{
 
         text-decoration: none;
     }
+    
     .navbar-menu .item-category-recipes{
         color: rgba(0, 0, 0, 0.70);
         padding-left: 2.2rem; 
@@ -721,18 +708,7 @@ main .hight-view{
         align-items: start;
         
     }
-    /* Efeito na ancora do menu */
-    .navbar-menu li a:hover{
-        background-color: #eeeeee;
-        color: #000000ca;
-        transition: 0.6s;
-    }
-    /* Efeito na lista de itens do menu */
-    .navbar-menu li:hover{
-        border-radius: 3px;
-        transition: 0.6s; 
-        
-    }
+  
     #showNavbarMenu{
         display: block;
     }   
@@ -742,11 +718,12 @@ main .hight-view{
         height: auto;
         font-size: 1rem;
     }
-    .navbar-menu > .item-category-recipes:hover {
-        background-color: #eeeeee;
+    .item-recipes{
+        color: rgba(0, 0, 0, 0.70);
     }
+
     #upHeightItemCategoryRecipes{
-        height: 78.5vh;
+        height: 80vh;
     }
     /* ul categorias */
     .navbar-menu .categories{
@@ -771,49 +748,23 @@ main .hight-view{
         overflow: hidden;
         align-items: start;
         padding: 1rem 0 1rem 0;
-        border-top: 2px solid rgba(0, 0, 0, 0.20);
-        
-        box-shadow: 0 0 10px rgb(232 234 237 /30%);
+       
     }
       
     .navbar-menu .categories li a{
-        /* border: 1px solid; */
+        border:none;
         text-decoration: none;
-        background-color: transparent;
-        font-weight: normal;
-        
-        
+        background-color: #f7f7f7;;
+
         font-size: 1rem;
+        font-weight: normal;
         color: rgba(0, 0, 0, 0.70); 
         /* padding-left: rem; */
         
         margin-left: 0;
         box-sizing: border-box;
-        padding: 0.7rem 100vw 0.7rem 2.2rem;
-    }
-
-    
-
-    .navbar-menu .categories li a:hover{
-        background-color: #e3e1e1;
-        color: #000000ca;
-        transition: 0.6s;
-    }
-
-    .navbar-menu .categories .last-item{
-        /* border: 1px solid; */
-        padding: 1rem 0 1rem 0;
-        border-bottom: 2px solid rgba(0, 0, 0, 0.01);
-        box-shadow: 0 0 10px rgb(232 234 237 /30%);
-
-    }
-    .navbar-menu .categories .last-item a{
-        padding-right: 73%;
-        border-bottom: 2px solid rgba(0, 0, 0, 0.01);
-        box-shadow: 0 0 10px rgb(232 234 237 /30%);
-    } 
-   
-         
+        padding: 0.6rem 100% 0.6rem 2.3rem;
+    }      
 
     /* Div para conter o icone de pesquisa */
     .navbar-global .navItem-search{
@@ -822,10 +773,6 @@ main .hight-view{
         position: inherit;
         left: 10rem;
         
-    }
-    /* Efeito na Div para mudar o ponteiro do mouse no icone de pesquisa */
-    .navbar-global .navItem-search:hover{
-        cursor: pointer;
     }
     /* Imagem do icone de pesquisa */
     .navbar-global .navItem-search img{
@@ -891,10 +838,6 @@ main .hight-view{
     main .section-search form div button{
         background-color: transparent;
         border: none;
-    }
-    /* Efeito no botão da <div> na section pesquisar titulo na Main */
-    main .section-search form div button:hover{
-        cursor: pointer;
     }
     /* Image da lupa no botão na section pesquisar titulo na Main */
     main .section-search form div button > img{
@@ -1042,7 +985,6 @@ main .hight-view{
             height: 3vh;
             width: 3vw;
     }
-
 }
 /* <------------------- Final Home  ------------------->*/
 
