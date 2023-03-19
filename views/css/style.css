@@ -1004,6 +1004,7 @@ main .hight-view{
     .meat-title{
         /* border: 1px solid; */
         width: 94%;
+        margin-top: 9rem;
     }
 }
 
@@ -1061,9 +1062,6 @@ main .hight-view{
 
 
 /* <------------------- Inicio Contact  ------------------->*/
-.container{
-    border: 1px solid;
-}
 .article-contact{
     border: 1px solid rgba(0, 0, 0, 0.10);
     box-shadow: 0 0 10px rgb(232 234 237 / 70%);
