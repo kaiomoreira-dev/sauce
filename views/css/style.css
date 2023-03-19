@@ -91,13 +91,13 @@ header{
 /* Lista de itens do menu */
 .navbar-menu li {
     color: #000000ca;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: bolder;    
     padding: 1rem 0
 }
 .navbar-menu .item-category-recipes {
     background-color: #f7f7f7;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 .navbar-menu > .item-category-recipes i{
     /* border: 1px solid; */
@@ -154,7 +154,7 @@ header{
     text-decoration: none;
     background-color: #eeeeee;
     
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     /* padding-right: 100%; */
     color: rgba(0, 0, 0, 0.70); 
     
@@ -691,7 +691,7 @@ main .hight-view{
         
         padding: 1.5rem 100vw 1.5rem 2.3rem;
 
-        font-size: 1em;
+        font-size: 0.9rem;
 
         text-decoration: none;
     }
@@ -716,7 +716,7 @@ main .hight-view{
     .navbar-menu .item-category-recipes {
         /* border: 1px solid; */
         height: auto;
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     .item-recipes{
         color: rgba(0, 0, 0, 0.70);
@@ -756,7 +756,7 @@ main .hight-view{
         text-decoration: none;
         background-color: #f7f7f7;;
 
-        font-size: 1rem;
+        font-size: 0.8rem;
         font-weight: normal;
         color: rgba(0, 0, 0, 0.70); 
         /* padding-left: rem; */
