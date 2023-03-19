@@ -1010,9 +1010,7 @@ main .hight-view{
 /* <------------------- Final Recipes  ------------------->*/
 
 /* <------------------- Inicio Sobre  ------------------->*/
-.container{
-    /* border: 1px solid; */
-}
+
 .zomImageArticleMain{
     border-radius: 0;
     -webkit-transform: unset;
@@ -1030,7 +1028,6 @@ main .hight-view{
     margin-top: 4rem;
 
 }
-
 .about-sauce figure img{
     height: 100%;
     width: 20vw;
@@ -1061,3 +1058,126 @@ main .hight-view{
     }
 }
 /* <------------------- Final Sobre  ------------------->*/
+
+
+/* <------------------- Inicio Contact  ------------------->*/
+.container{
+    border: 1px solid;
+}
+.article-contact{
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    box-shadow: 0 0 10px rgb(232 234 237 / 70%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+    width: 80%;
+}
+.article-contact h1{
+    width: 80%;
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+.article-contact p{
+    width: 80%;
+}
+.article-contact form{
+    /* border: 1px solid; */
+    width: 80%;
+    margin-top: 1rem;
+    overflow: hidden;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.article-contact form div{
+  /* border: 1px solid; */
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  
+}
+.article-contact form div label{
+    margin-bottom: 0.3rem;
+}
+
+.article-contact form .group-info {
+    /* border: 1px solid; */
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    gap: 6.5rem;
+    box-sizing: border-box;
+}
+
+.article-contact #check-human{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+
+.article-contact div figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.article-contact div figure img{
+    height: 2.5rem;
+    width: 2.5rem;
+   
+}
+
+.article-contact div figure span{
+    margin: 0.3rem;
+    font-size: 0.5rem;
+    justify-content: center;
+}
+#check-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+#dongradeWidth{
+    /* border: 1px solid; */
+    width: 30%;
+    position: relative;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+#label-human{
+    margin-top: 0.5rem;
+}
+
+#email_id{
+    width:90%
+}
+#message_id{
+    width: 90%;
+}
+
+#check-human{
+    background-color: #eeeeee;
+    box-sizing: border-box;
+    width: 17rem;
+    height: 5.5rem;
+    padding: 1rem;
+}
+
+#check_id{
+    height: 1.1rem;
+    width: 1.1rem;
+}
+#btn-format{
+    width: 5rem;
+    height: 2.5rem;
+    margin-top: 2rem;
+}
+/* <------------------- Final Contact  ------------------->*/
