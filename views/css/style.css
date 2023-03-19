@@ -765,6 +765,11 @@ main .hight-view{
         box-sizing: border-box;
         padding: 0.6rem 100% 0.6rem 2.3rem;
     }      
+    .navbar-menu .categories li a:hover{
+        background-color: unset;
+        border: none;
+    }
+
 
     /* Div para conter o icone de pesquisa */
     .navbar-global .navItem-search{
