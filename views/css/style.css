@@ -1070,20 +1070,21 @@ main .hight-view{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin-top: 8rem;
     width: 80%;
 }
 .article-contact h1{
-    width: 80%;
+    width: 73%;
     margin: 2rem 0;
     font-size: 2rem;
 }
 .article-contact p{
-    width: 80%;
+    width: 73%;
 }
 .article-contact form{
-    /* border: 1px solid; */
-    width: 80%;
+    border: 1px solid;
+    width: 73%;
     margin-top: 1rem;
     overflow: hidden;
     box-sizing: content-box;
@@ -1093,6 +1094,7 @@ main .hight-view{
 
 .article-contact form div{
   /* border: 1px solid; */
+  width: 98%;
   margin: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -1102,16 +1104,10 @@ main .hight-view{
 .article-contact form div label{
     margin-bottom: 0.3rem;
 }
-
-.article-contact form .group-info {
-    /* border: 1px solid; */
-    width: 80vw;
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    gap: 6.5rem;
-    box-sizing: border-box;
+.article-contact form div input[type="text"]{
+    height: 1.5rem;
 }
+
 
 .article-contact #check-human{
     display: flex;
@@ -1156,11 +1152,8 @@ main .hight-view{
     margin-top: 0.5rem;
 }
 
-#email_id{
-    width:90%
-}
 #message_id{
-    width: 90%;
+    width: 99%;
 }
 
 #check-human{
@@ -1179,5 +1172,38 @@ main .hight-view{
     width: 5rem;
     height: 2.5rem;
     margin-top: 2rem;
+}
+
+@media screen and (max-width: 500px){
+    .article-contact form .group-info {
+        /* border: 1px solid; */
+        gap: 2rem;
+    }
+    .article-contact form{
+        /* border: 1px solid; */
+        width: 90%;
+        margin-top: 1rem;
+        overflow: hidden;
+        box-sizing: content-box;
+        display: flex;
+        flex-direction: column;
+    }
+    .article-contact form div{
+        width: 95%;
+    }
+    .article-contact h1{
+        width: 85%;
+        
+    }
+    .article-contact p{
+        width: 85%;
+    }
+    #message_id{
+        width: 98%;
+    }
+    #check-human{
+        height: 5rem;
+        
+    }
 }
 /* <------------------- Final Contact  ------------------->*/
