@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <!-- Head -->
+    <%- include('../partials/head') -%>
+    <title>Contato</title>
+<body>
+    <div class="container">
+         <!-- Header -->
+         <%- include('../partials/header') -%>
+        <main>
+            <article class="article-contact">
+                <h1>Contato</h1>
+                <p>É um fato há muito estabelecido que um leitor se distrairá com o conteúdo legível de uma página ao olhar para seu layout. O objetivo de usar Lorem Ipsum é que ele tem uma distribuição de letras mais:</p>
+
+                <form action="">
+                    <div class="group-info">
+                        <div id="dongradeWidth">
+                            <label for="name_id">Nome:</label>
+                            <input id="name_id" type="text" name="name" placeholder="Digite um nome">
+                        </div>
+    
+                        <div id="dongradeWidth">
+                            <label for="lastname_id">Sobrenome:</label>
+                            <input id="lastname_id" type="text" name="lastname" placeholder="Digite um sobrenome">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="email_id">E-mail:</label>
+                        <input id="email_id" type="text" name="email" placeholder="email@email.com">
+                    </div>
+                    <div>
+                        <label for="message_id"> Mensagem:</label>
+                        <textarea name="message" id="message_id" cols="30" rows="10" placeholder="Deixe sua mensagem"></textarea>
+                    </div>
+                    <div id="check-human">
+                        <div id="check-group">
+                            <input type="checkbox" name="ckeck" id="check_id">
+                            <label id="label-human"for="">Não sou um robô</label>
+                        </div>
+                        <figure>
+                            <img src="/images/reCAPTCHA.png" alt="">
+                            <span>Privacy - Terms</span>
+                        </figure>
+                    </div>
+                    <div>
+                        <button id="btn-format" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </article>
+        </main>
+        <!-- Footer -->
+        <%- include('../partials/footer') -%>
+    </div>
+</body>
+<script src="/script/index.js"></script>
+</html>
