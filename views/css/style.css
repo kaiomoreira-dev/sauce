@@ -385,8 +385,7 @@ main .hight-view{
 /* Efeito zom na Image da seção do Artigo */
 .zomImageArticle{
     -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    
+    transform: scale(1.1); 
 }
 /* Div categorias de secundario */
 .meat{
@@ -1012,11 +1011,7 @@ main .hight-view{
 
 /* <------------------- Inicio Sobre  ------------------->*/
 
-.zomImageArticleMain{
-    border-radius: 0;
-    -webkit-transform: unset;
-    transform: unset;
-}
+
 .about-sauce{
     /* border: 1px solid; */
     position: relative;
@@ -1032,6 +1027,11 @@ main .hight-view{
 .about-sauce figure img{
     height: 100%;
     width: 20vw;
+}
+#removeZomLogo{
+    border-radius: none;
+    -webkit-transform: unset;
+    transform: unset;
 }
 
 .about-sauce h1{
