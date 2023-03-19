@@ -19,6 +19,10 @@ app.get("/about", (request, response) =>{
     response.render("pages/about.ejs")
 });
 
+app.get("/contact", (request, response) =>{
+    response.render("pages/contact.ejs")
+});
+
 app.listen(8080, () =>{
     console.log('Server listening on port 8080. . .')
 })
