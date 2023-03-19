@@ -1010,5 +1010,54 @@ main .hight-view{
 /* <------------------- Final Recipes  ------------------->*/
 
 /* <------------------- Inicio Sobre  ------------------->*/
+.container{
+    /* border: 1px solid; */
+}
+.zomImageArticleMain{
+    border-radius: 0;
+    -webkit-transform: unset;
+    transform: unset;
+}
+.about-sauce{
+    /* border: 1px solid; */
+    position: relative;
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.about-sauce figure{
+    margin-top: 2rem;
 
+}
+
+.about-sauce figure img{
+    height: 100%;
+    width: 20vw;
+}
+
+.about-sauce h1{
+    /* border: 1px solid; */
+    width: 80%;
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+.about-sauce p{
+    width: 80%;
+    text-align: justify;
+}
+
+@media screen and (max-width: 500px){
+    .about-sauce figure img{
+        height: 20vh;
+        width: 40vw;
+    }
+    
+    .about-sauce h1{
+        /* border: 1px solid; */
+        width: 80%;
+        margin: 2rem 0;
+        font-size: 1.8rem;
+    }
+}
 /* <------------------- Final Sobre  ------------------->*/
