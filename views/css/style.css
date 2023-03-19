@@ -259,7 +259,7 @@ main .section-search form div button > img{
 main .hight-view{
     /* border: 1px solid; */
     height: auto;
-    width: 98%;
+    width: 96%;
 
     font-size: 1.2rem;
 
@@ -272,7 +272,7 @@ main .hight-view{
 .article-main-recipe{
     /* border: 1px solid; */
     height: auto;
-    width: 99%;
+    width: 96%;
     display: flex;
     justify-content: center;
     gap: 1%;
@@ -366,7 +366,7 @@ main .hight-view{
 .new-recipes{
     /* border: 1px solid; */
     height: auto;
-    width: 98%;
+    width: 96%;
 
     color:#000000d7;
     
@@ -390,7 +390,7 @@ main .hight-view{
 .meat{
     /* border: 1px solid; */
     height: auto;
-    width: 98%;
+    width: 96%;
 
     color:#000000d7;
     
@@ -407,7 +407,7 @@ main .hight-view{
 /* Artigo de secundario */
 .article-second-recipe{
     /* border: 1px solid; */
-    width: 99%;
+    width: 96%;
     height: auto;
 
     display: flex;
@@ -768,7 +768,7 @@ main .hight-view{
     .navbar-menu .categories li a:hover{
         background-color: unset;
         border: none;
-    }
+    }   
     /* Div para conter o icone de pesquisa */
     .navbar-global .navItem-search{
         /* border: 1px solid; */
@@ -994,7 +994,7 @@ main .hight-view{
 /* <------------------- Inicio Recipes  ------------------->*/
 .meat-title{
     /* border: 1px solid; */
-    width: 99%;
+    width: 96%;
     margin-bottom: 1rem;
     margin-top: 12rem;
 }
