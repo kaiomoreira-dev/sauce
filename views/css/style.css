@@ -683,8 +683,8 @@ main .hight-view{
     /* Links do menu de navegação */
     .navbar-menu li a{
         /* border: 1px solid; */
-        border-top: 2px solid rgba(0, 0, 0, 0.20);
-        border-bottom: 2px solid rgba(0, 0, 0, 0.20);
+        border-top: 1px solid rgba(0, 0, 0, 0.20);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.20);
         box-shadow: 0 0 10px rgb(232 234 237 / 30%); 
         background-color: #f7f7f7;
         color: rgba(0, 0, 0, 0.70); 
