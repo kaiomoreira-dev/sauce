@@ -1102,6 +1102,9 @@ main .hight-view{
 .article-contact form div label{
     margin-bottom: 0.3rem;
 }
+.article-contact form div label i{
+    color:rgba(255, 0, 0, 0.736);  
+}
 .article-contact form div input[type="text"]{
     height: 1.5rem;
 }
