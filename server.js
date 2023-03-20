@@ -22,7 +22,7 @@ app.get("/contato", (request, response) =>{
 
 // <---------- Categorias das Receitas ---------->
 app.get("/categoria/carnes", (request, response) =>{
-    response.render("pages/meat.ejs")
+    response.render("pages/recipes/meat.ejs")
 });
 
 // <---------- Carnes ---------->
