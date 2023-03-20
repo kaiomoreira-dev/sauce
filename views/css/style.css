@@ -179,7 +179,7 @@ header{
 main{
     /* border: 1px solid; */
     color: #000000d7;
-    background-color: #f7f7f7;
+    /* box-shadow: 0 0 10px rgb(232 234 237 / 80%); */
     box-sizing: border-box;
     width: 100%;
     height: 100%;
@@ -541,7 +541,6 @@ main .hight-view{
     align-items: center;
     justify-content: space-around;
 
-    margin-top: 1rem;
 }
 /* Descrição do Copyrigth no Rodapé */
 .footer-info div {
@@ -1014,7 +1013,9 @@ main .hight-view{
 
 .about-sauce{
     /* border: 1px solid; */
+    width: 90%;
     position: relative;
+    box-shadow: 0 0 10px rgb(232 234 237 / 80%);
     margin-top: 4rem;
     display: flex;
     align-items: center;
@@ -1028,7 +1029,7 @@ main .hight-view{
     height: 100%;
     width: 20vw;
 }
-#removeZomLogo{
+#removeZom{
     border-radius: none;
     -webkit-transform: unset;
     transform: unset;
@@ -1066,18 +1067,18 @@ main .hight-view{
 
 /* <------------------- Inicio Contact  ------------------->*/
 .article-contact{
-    border: 0.1px solid rgba(0, 0, 0, 0.10);
+    /* border: 0.1px solid rgba(0, 0, 0, 0.10); */
     box-shadow: 0 0 10px rgb(232 234 237 / 80%);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 11rem 0 5rem 0;
-    width: 80%;
+    /* margin: 0 0 5rem 0; */
+    width: 90%;
 }
 .article-contact h1{
     width: 73%;
-    margin: 3.5rem 0 3rem 0;
+    margin: 10rem 0 3rem 0;
     font-size: 1.8rem;
 }
 
@@ -1201,9 +1202,13 @@ main .hight-view{
 
 
 /* <------------------- Inicio Post ------------------->*/
+#removeZom{
+    border-radius: none;
+    -webkit-transform: unset;
+    transform: unset;
+}
 .article-post{
-    margin-top: 10rem;
-    width: 80%;
+    width: 95%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1219,14 +1224,14 @@ main .hight-view{
     
 }
 .article-post .section-presentation h1{
-    margin: 4rem 0;
+    margin: 10rem 0 5rem 0;
     font-size: 2rem;
 }
 .article-post .section-presentation figure{
     /* border: 1px solid; */
     overflow: hidden;
-    width: 100%;
-    height: 100vh;
+    width: 60%;
+    height: 100%;
     
 }
 .article-post .section-presentation figure img{
@@ -1241,7 +1246,7 @@ main .hight-view{
 }
 .article-post .section-presentation .recipe-info{
     /* border: 1px solid; */
-    width: 100%;
+    width: 60%;
     background-color: #eeeeee;    
     height: 8rem;
     display: flex;
@@ -1349,9 +1354,29 @@ main .hight-view{
     font-size: 1.3rem;
     padding: 0 1rem;
 }
-.zomImageArticleMain{
-    border-radius: unset;
-    -webkit-transform: unset;
-    transform: unset;
+
+@media screen and (max-width: 500px){
+    .zomImageArticleMain{
+        border-radius: unset;
+        -webkit-transform: unset;
+        transform: unset;
+    } 
+    .article-post .section-presentation figure{
+        /* border: 1px solid; */
+        height: 70vh;
+        width: 100%;
+        
+    }
+    .article-post .section-presentation .recipe-info{
+        /* border: 1px solid; */
+        width: 100%;
+        background-color: #eeeeee;    
+        height: 8rem;
+        display: flex;
+        justify-content: space-around;
+        gap: 1rem;
+        font-size: 0.9rem;    
+    }
+
 }
 /* <------------------- Final Post ------------------->*/
