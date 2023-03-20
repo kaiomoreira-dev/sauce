@@ -262,14 +262,11 @@ main .hight-view{
     /* border: 1px solid; */
     height: auto;
     width: 96%;
-
-    font-size: 1.2rem;
-
     margin-top: 3rem;
     margin-bottom: 1rem;
-    
-   
+    font-size: 1.2rem;
 }
+
 /* Artigo principal */
 .article-main-recipe{
     /* border: 1px solid; */
@@ -999,6 +996,9 @@ main .hight-view{
     margin-bottom: 1rem;
     margin-top: 12rem;
 }
+.meat-title h1{
+    font-size: 1.8rem
+}
 @media screen and (max-width: 500px){
     .meat-title{
         /* border: 1px solid; */
@@ -1038,11 +1038,14 @@ main .hight-view{
     /* border: 1px solid; */
     width: 80%;
     margin: 2rem 0;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 .about-sauce p{
     width: 80%;
     text-align: justify;
+}
+.about-sauce p:last-child{
+    margin-bottom: 4rem;
 }
 
 @media screen and (max-width: 500px){
@@ -1063,23 +1066,21 @@ main .hight-view{
 
 /* <------------------- Inicio Contact  ------------------->*/
 .article-contact{
-    border: 1px solid rgba(0, 0, 0, 0.10);
-    box-shadow: 0 0 10px rgb(232 234 237 / 70%);
+    border: 0.1px solid rgba(0, 0, 0, 0.10);
+    box-shadow: 0 0 10px rgb(232 234 237 / 80%);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 8rem;
+    margin: 11rem 0 5rem 0;
     width: 80%;
 }
 .article-contact h1{
-    width: 71%;
-    margin: 2rem 0;
-    font-size: 2rem;
+    width: 73%;
+    margin: 3.5rem 0 3rem 0;
+    font-size: 1.8rem;
 }
-.article-contact p{
-    width: 71%;
-}
+
 .article-contact form{
     /* border: 1px solid; */
     width: 73%;
@@ -1093,7 +1094,7 @@ main .hight-view{
 .article-contact form div{
   /* border: 1px solid; */
   width: 98%;
-  margin: 0.5rem;
+  margin: 0.9rem 0;
   display: flex;
   flex-direction: column;
   font-size: 0.9rem;
@@ -1118,7 +1119,6 @@ main .hight-view{
     gap: 0.5rem;
 }
 
-
 .article-contact div figure {
     display: flex;
     flex-direction: column;
@@ -1141,11 +1141,9 @@ main .hight-view{
     align-items: center;
     gap: 0.5rem;
 }
-
 #label-human{
     margin-top: 0.5rem;
 }
-
 #message_id{
     width: 99%;
 }
@@ -1165,7 +1163,7 @@ main .hight-view{
 #btn-format{
     width: 5rem;
     height: 2.5rem;
-    margin-top: 2rem;
+    margin: 2.5rem 0;
 }
 
 @media screen and (max-width: 500px){
@@ -1187,11 +1185,10 @@ main .hight-view{
     }
     .article-contact h1{
         width: 85%;
+        margin-bottom: 2rem;
         
     }
-    .article-contact p{
-        width: 85%;
-    }
+
     #message_id{
         width: 98%;
     }
