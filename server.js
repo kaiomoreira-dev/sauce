@@ -3,13 +3,39 @@ const { request } = require('http');
 const Recipes = require('./views/module/Recipes');
 
 const app = express();
+const recipes = Recipes();
 
 //engine para entender o ejs na pasta views
 app.set("view engine", "ejs");
 app.use(express.static("views"));
 
 app.get("/", (request, response) =>{
-    response.render("pages/index.ejs")
+    const articleMain = [];
+    const articleSecondary = [];
+    const articleMeats = []
+
+    recipes.forEach(category => {
+        for(let meat of category.meats){
+            if(meat.rating >= 4){
+                articleMain.push(meat);
+            }else{
+                articleMeats.push(meat);
+            }
+        }
+        for(let salad of category.salads){
+            if(salad.rating > 4){
+                articleMain.push(salad);
+            }
+        }
+
+        for(let recipe of category.mainCourse){
+            if(recipe.rating <= 4){
+                articleSecondary.push(recipe);
+            }
+        }
+    });
+    
+    response.render("pages/index.ejs", {articleMain, articleSecondary, articleMeats})
 });
 
 
@@ -28,13 +54,11 @@ app.get("/categoria/carnes", (request, response) =>{
 
 // <---------- Carnes ---------->
 app.get("/categoria/carne/tambaqui-assado-no-forno", (request, response) =>{
-    const recipes = Recipes();
-
     let tambaqui = {};
 
     recipes.forEach(category =>{
         for(let meat of category.meats){
-            if(meat.name.indexOf("tambaqui")){
+            if(meat.title.includes("Tambaqui")){
                 tambaqui = meat;
             }
         }
