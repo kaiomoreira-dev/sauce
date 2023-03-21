@@ -1021,8 +1021,7 @@ main .hight-view{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 1rem;
-    margin-top: 7rem;
+    margin-top: 5rem;
 }
 .about-sauce figure{
     margin-top: 4rem;
@@ -1072,14 +1071,13 @@ main .hight-view{
     width: 85%;
     box-sizing: content-box;
     padding: 0 2rem 4rem 2rem;
-    margin-top: 7rem;
-    margin-bottom: 1rem;
+    margin-top: 5rem;
 }
 
 .privacy-policies h1{
     /* border: 1px solid; */
     width: 90%;
-    margin-top: 4rem;
+    margin-top: 6rem;
     margin-bottom: 1rem;
     font-size: 1.8rem;
 }
@@ -1131,12 +1129,12 @@ main .hight-view{
     justify-content: center;
     /* margin: 0 0 5rem 0; */
     width: 90%;
-    margin: 7rem 0 1rem 0;
+    margin: 5rem 0 0 0;
 }
 .article-contact h1{
     /* border: 1px solid; */
     width: 83%;
-    margin: 4rem 0 2.5rem 0;
+    margin: 6rem 0 2.5rem 0;
     font-size: 1.8rem;
 }
 
