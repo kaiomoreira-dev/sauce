@@ -156,7 +156,7 @@ module.exports = function Recipes(){
                     ]  
                 },  
                 {
-                    title: "Peito de frango suculento peruano",
+                    title: "Strogonoff de carne",
                     img: "/images/strogonoff-de-carne.webp",
                     path: "",
                     yield: 8,
