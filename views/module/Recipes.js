@@ -34,6 +34,40 @@ module.exports = function Recipes(){
                     ]
                 },
                 {
+                    title: "Cupim no forno fatiado",
+                    img: "/images/Cupim-no-forno-fatiado.jpg",
+                    path:"",
+                    yield: 5,
+                    timeWait: 90,
+                    levelPrice: "preco médio",
+                    rating: 5,
+                    ingredients: [
+                        "1 colher de pimenta, cominho e sal",
+                        "1 colher de cominho",
+                        "1 colher de sal",
+                        "4 dentes de alho amassados",
+                        "1-2 kg de cupim",
+                        "2 ramos de alecrim",
+                        "Água o suficiente para cobrir o cupim dentro da panela de pressão",
+                        "4 batatas com casca cortadas em cruz",
+                    ],
+                    preparations: [
+                        "Espalhe o tempero e os dentes de alho por toda a superfície do cupim.",
+
+                        "Coloque os ramos de alecrim por cima da carne.",
+
+                        "Coloque o cupim na panela de pressão, cobrindo toda a carne com água.",
+
+                        "Deixe cozinhar por cerca de 1 hora.",
+
+                        "Quando a carne estiver macia, adicione as batatas e cozinhe por mais 10 minutos, ou até elas amolecerem. Acerte o sal.",
+
+                        "Depois, em uma assadeira, coloque a carne rodeada de batatas, adicionando o líquido que sobrou do cozimento e leve ao forno",
+
+                        "Cozinhe por cerca de meia hora, ou até a carne e as batatas ficarem coradas. Sirva em seguida."
+                    ]
+                },
+                {
                     title: "Peru de Natal",
                     img: "/images/Peru-de-Natal.jpg.webp",
                     path: "",
