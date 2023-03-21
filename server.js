@@ -31,7 +31,7 @@ app.get("/", (request, response) =>{
             }
         }
 
-        for(let recipe of category.mainCourse){
+        for(let recipe of category.mainCourses){
             if(recipe.rating > 4  && articleMain.length <= 2){
                 articleMain.push(recipe);
             }else if(recipe.rating <= 4  && articleSecondary.length <= 3){
@@ -58,10 +58,8 @@ app.get("/categoria/carnes", (request, response) =>{
     const articleSecondary = [];
 
     recipes.forEach(category => {
-        let maxImgMain = 0;
         for(let meat of category.meats){
-            if(meat.rating >= 4  && maxImgMain <=3){
-                maxImgMain += 1;
+            if(meat.rating >= 4  && articleMain.length <= 2){
                 articleMain.push(meat);
             }else{
                 articleSecondary.push(meat);
@@ -69,6 +67,21 @@ app.get("/categoria/carnes", (request, response) =>{
         }
     });
     response.render("pages/recipes/meat.ejs", {articleMain, articleSecondary})
+});
+app.get("/categoria/massas", (request, response) =>{
+    const articleMain = [];
+    const articleSecondary = [];
+
+    recipes.forEach(category => {
+        for(let dough of category.doughs){
+            if(dough.rating >= 4  && articleMain.length <= 2){  
+                articleMain.push(dough);
+            }else{
+                articleSecondary.push(dough);
+            }
+        }
+    });
+    response.render("pages/recipes/dough.ejs", {articleMain, articleSecondary})
 });
 
 // <---------- Carnes ---------->
@@ -85,6 +98,8 @@ app.get("/categoria/carne/tambaqui-assado-no-forno", (request, response) =>{
 
     response.render("pages/categories/meats/tambaqui.ejs", {tambaqui})
 });
+
+
 
 // <---------- Sevidor conectado na porta 8080 ---------->
 app.listen(8080, () =>{
