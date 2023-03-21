@@ -253,7 +253,7 @@ module.exports = function Recipes(){
                     ]  
                 }
             ],
-            mainCourse:[
+            mainCourses:[
                 {
                     title: "Yakisoba de miojo",
                     img: "/images/Yakisoba-de-miojo.jpg.webp",
@@ -388,6 +388,252 @@ module.exports = function Recipes(){
                         "Seque em um papel toalha.",
 
                         "Por fim é só servir.",
+                    ]  
+                },
+            ],
+            doughs:[
+                {
+                    title: "Pizza escarola de liquidificador",
+                    img: "/images/pizza-escarola.jpg",
+                    path: "",
+                    yield: 8,
+                    timeWait: 60,
+                    levelPrice: "preço econômico",
+                    rating: 3,
+                    ingredients: [
+                        "1 xícara (chá) de leite",
+                        "1 ovo",
+                        "1/2 colher de chá de sal",
+                        "1 pitada de açúcar",
+                        "1 colher de sopa de manteiga sem sal",
+                        "1/2 xícara de chá de farinha de trigo",
+                        "1/2 colher de sopa de fermento em pó",
+                        "1 colher de sopa de azeite",
+                        "3 dentes de alho picado",
+                        "3 colheres de sopa de polpa de tomate",
+                        "1 maço grande (400 gramas) de escarola picado grosseiramente",
+                        "1 sachê de Tempero em Pó Knorr Vegetais",
+                        "200 gramas de queijo muçarela ralado",
+                        "8 tomates cereja cortados ao meio (opcional)"
+                    ],
+                    preparations: [
+                        "Pré-aqueça o forno em temperatura média (180° C).",
+
+                        "No copo do liquidificador, coloque o leite, o ovo, o sal, o açúcar, a manteiga, a farinha de trigo e o fermento, e bata rapidamente, até ficar homogêneo.",
+
+                        "Disponha a massa em uma assadeira redonda (30 cm de diâmetro), untada e enfarinhada, e leve ao forno por 30 minutos, ou até a massa começar a dourar.",
+
+                        "Enquanto isso, prepare a escarola: em uma panela aqueça o azeite e refogue o alho até dourar. Junte a escarola e o sachê do Tempero em Pó Knorr Vegetais. Cozinhe por 5 minutos, ou até a escarola murchar levemente.",
+
+                        "Retire a massa do forno, espalhe a polpa de tomate, a escarola refogada e cubra com a muçarela e o tomate-cereja.",
+
+                        "Volte ao forno por mais 20 minutos, ou até que o queijo derreta. Retire do forno e sirva em seguida."
+                    ]  
+                },
+                {
+                    title: "Rondelli de Presunto e Queijo",
+                    img: "/images/rondeli.jpeg",
+                    path: "",
+                    yield: 6,
+                    timeWait: 60,
+                    levelPrice: "preço econômico",
+                    rating: 5,
+                    ingredients: [
+                        "500g de massa fresca pré-cozida para lasanha",
+                        "300g de queijo muçarela em fatias",
+                        "200g de molho de tomate",
+                        "2 dentes de alho",
+                        "folhas de manjericão fresco",
+                        "300g de presunto em fatias",
+                        "1 lata de tomates pelados",
+                        "sal a gosto",
+                        "1 cebola",
+                        "azeite de oliva ou manteiga",
+                        "queijo parmesão ralado para gratinar (opcional)",
+                    ],
+                    preparations: [
+                        "Primeiramente, descasque e pique fino a cebola e os dentes de alho. Abra a lata de tomates pelados (você pode utilizar tomates frescos sem casca) e pique os tomates em cubinhos menores.",
+
+                        "Em seguida, em uma panela, aqueça um fio generoso de azeite ou uma colher de manteiga e coloque a cebola e o alho para fritar.",
+
+                        "Quando dourarem, adicione o tomate pelado (ou tomate fresco em cubinhos) e o molho de tomate.",
+
+                        "Refogue bem esse molho e tempere com sal e folhas de manjericão a gosto. Reserve.",
+
+                        "Em seguida, em uma bancada lisa, abra a massa fresca e comece a colocar as fatias de presunto e queijo.",
+
+                        "Corte a massa com o presunto e queijo em pedaços de aproximadamente 20x30cm. Enrole como um rocambole e corte os rondellis a cada 4cm de massa.",
+
+                        "Em uma forma refratária grande, distribua os rolinhos sem sobrepor uns aos outros. Em seguida, regue com o molho de tomate por toda a forma. Para finalizar, polvilhe o queijo parmesão e algumas folhinhas de manjericão, se preferir.",
+
+                        "Então leve ao forno a 180°C por aproximadamente 30 minutos.",
+
+                        "Por fim, sirva como preferir."
+                    ]  
+                },
+                {
+                    title: "Pizza 3 Queijos",
+                    img: "/images/pizza-3-queijo.jpg",
+                    path: "",
+                    yield: 8,
+                    timeWait: 60,
+                    levelPrice: "preço médio",
+                    rating: 5,
+                    ingredients: [
+                        "1 bolinha de massa de 200 g",
+                        "30 gramas de nata",
+                        "30 gramas de pesto de manjericão",
+                        "150 gramas de mozzarella de búfala",
+                        "80 gramas de tomates cereja verdes e vermelhos",
+                        "2 dentes de alho",
+                        "40 gramas de azeite",
+                        "40 gramas de queijo minas curado ralado"
+                    ],
+                    preparations: [
+                        "Abra a massa de pizza no tamanho de 30 cm.",
+
+                        "Espalhe a nata e o pesto de manjericão na base. Acomode a mozzarella de búfala.",
+
+                        "Leve ao forno por 15minutos.",
+
+                        "Enquanto assa a pizza, frite os tomatinhos verdes e vermelhos no alho e azeite.",
+
+                        "Acomode os tomatinhos fritos.",
+
+                        "Espalhe o queijo minas curado.",
+
+                        "Sirva."
+                    ]  
+                },
+                {
+                    title: "Pizza de Calabresa",
+                    img: "/images/pizza-calabresa.webp",
+                    path: "",
+                    yield: 8,
+                    timeWait: 60,
+                    levelPrice: "preço médio",
+                    rating: 5,
+                    ingredients: [
+                        "1 Massa pré assada para pizza",
+                        "1 Massa de tomate",
+                        "200g Mussarela",
+                        "200g Linguiça calabresa",
+                        "1 Cebola",
+                        "1 pitada de orégano",
+                    ],
+                    preparations: [
+                        "Espalhe a massa de tomate sobre a massa da pizza.",
+
+                        "Cubra toda a pizza com mussarela, cebola, linguiça calabresa e orégano.",
+
+                        "Leve ao forno por 15 minutos e pronto.",
+                    ]  
+                },
+
+                {
+                    title: "Lasanha de carne moída",
+                    img: "/images/lasanha-de-carne-moida.jpg.jpg",
+                    path: "",
+                    yield: 15,
+                    timeWait: 50,
+                    levelPrice: "preço econômico",
+                    rating: 3,
+                    ingredients: [
+                        "500 g de massa de lasanha",
+                        "500 g de carne moída",
+                        "2 caixas de creme de leite",
+                        "3 colheres de manteiga",
+                        "3 colheres de farinha de trigo",
+                        "500 g de presunto",
+                        "500 g de mussarela",
+                        "sal a gosto",
+                        "2 copos de leite",
+                        "1 cebola ralada",
+                        "3 colheres de óleo",
+                        "1 caixa de molho de tomate",
+                        "3 dentes de alho amassados",
+                        "1 pacote de queijo ralado"
+                    ],
+                    preparations: [
+                        "Cozinhe a massa segundo as orientações do fabricante, despeje em um refratário com água gelada para não grudar e reserve.",
+
+                        "Refogue o alho, a cebola, a carne moída, o molho de tomate, deixe cozinhar por 3 minutos e reserve.",
+
+                        "Derreta a margarina, coloque as 3 colheres de farinha de trigo e mexa.",
+
+                        "Despeje o leite aos poucos e continue mexendo.",
+
+                        "Por último, coloque o creme de leite, mexa por 1 minuto e desligue o fogo.",
+
+                        "Despeje uma parte do molho à bolonhesa em um refratário, a metade da massa, a metade do presunto, a metade da mussarela, todo o molho branco e o restante da massa.",
+
+                        "Repita as camadas até a borda do recipiente.",
+
+                        "Finalize com o queijo ralado e leve ao forno alto (220° C), preaquecido, por cerca de 20 minutos."
+                    ]  
+                },               
+                {
+                    title: "Macarrão ao molho branco",
+                    img: "/images/macarrao-branco.webp",
+                    path: "",
+                    yield: 4,
+                    timeWait: 20,
+                    levelPrice: "preço econômico",
+                    rating: 4,
+                    ingredients: [
+                        "1/2 pacote do macarrão de sua preferência",
+                        "3 colheres de sopa de óleo",
+                        "Água para cozinhar o macarrão",
+                        "1/2 cebola picada",
+                        "2 dentes de alho picados",
+                        "1 copo de requeijão",
+                        "Cebolinha e salsinha a gosto",
+                        "1 caixinha de creme de leite",
+                        "Sal a gosto"
+                    ],
+                    preparations: [
+                        "Coloque água em uma panela, leve-a ao fogo médio, e, assim que começar a ferver, adicione o macarrão; quando a massa chegar ao ponto que te agrada (bem cozida ou al dente), desligue o fogo, escorra a água e reserve.",
+
+                        "Enquanto o macarrão cozinha, em outra panela, refogue o alho e a cebola no óleo.",
+
+                        "Acrescente o requeijão e espere ele derreter.",
+
+                        "Na sequência, adicione a cebolinha, a salsinha, o sal, o creme de leite e misture.",
+
+                        "Junte o molho ao macarrão cozido, misture e sirva.",
+
+                        "Corte a massa com o presunto e queijo em pedaços de aproximadamente 20x30cm. Enrole como um rocambole e corte os rondellis a cada 4cm de massa.",
+
+                        "Rale queijo encima",
+
+                        "Por fim, sirva como preferir."
+                    ]  
+                },
+                {
+                    title: "Macarrão caprese",
+                    img: "/images/macarrao-caprese.jpg",
+                    path: "",
+                    yield: 3,
+                    timeWait: 20,
+                    levelPrice: "preço econômico",
+                    rating: 4,
+                    ingredients: [
+                        "1 lata de tomate pelado",
+                        "1 xícara de macarrão penne",
+                        "1 dente de alho picado",
+                        "1/2 cebola fatiada",
+                        "10 tomates-cereja cortados ao meio",
+                        "Folhas de manjericão a gosto",
+                        "Azeite a gosto",
+                        "Pimenta a gosto",
+                        "Sal a gosto",
+                        "Água",
+                        "5 mussarelas de búfala pequena",
+                    ],
+                    preparations: [
+                        "Em uma panela, coloque o tomate pelado, o macarrão, o alho, a cebola, os tomates-cereja, o manjericão e o azeite. Tempere com sal e pimenta, coloque água até cobrir todos os ingredientes, misture e ligue o fogo em temperatura média.",
+
+                        "Assim que o macarrão cozinhar, coloque a mussarela de búfala, espere derreter e sirva na sequência.",
                     ]  
                 },
             ]
