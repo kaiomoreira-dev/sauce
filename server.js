@@ -1,5 +1,6 @@
 const express = require('express');
 const { request } = require('http');
+const Recipes = require('./views/module/Recipes');
 
 const app = express();
 
@@ -27,7 +28,19 @@ app.get("/categoria/carnes", (request, response) =>{
 
 // <---------- Carnes ---------->
 app.get("/categoria/carne/tambaqui-assado-no-forno", (request, response) =>{
-    response.render("pages/categories/meats/tambaqui.ejs")
+    const recipes = Recipes();
+
+    let tambaqui = {};
+
+    recipes.forEach(category =>{
+        for(let meat of category.meats){
+            if(meat.name.indexOf("tambaqui")){
+                tambaqui = meat;
+            }
+        }
+    });
+    console.log(tambaqui);
+    response.render("pages/categories/meats/tambaqui.ejs", {tambaqui})
 });
 
 // <---------- Sevidor conectado na porta 8080 ---------->
