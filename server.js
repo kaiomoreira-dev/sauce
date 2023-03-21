@@ -34,7 +34,7 @@ app.get("/", (request, response) =>{
             }
         }
     });
-    
+
     response.render("pages/index.ejs", {articleMain, articleSecondary, articleMeats})
 });
 
@@ -63,7 +63,7 @@ app.get("/categoria/carne/tambaqui-assado-no-forno", (request, response) =>{
             }
         }
     });
-    console.log(tambaqui);
+    
     response.render("pages/categories/meats/tambaqui.ejs", {tambaqui})
 });
 
