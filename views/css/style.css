@@ -57,7 +57,7 @@ header{
 .navbar-global .navItem-search{
     display: none;
     position: relative;
-    left: 19rem;
+    left: 25rem;
 }
 /* Efeito na Div para mudar o ponteiro do mouse no icone de pesquisa */
 .navbar-global .navItem-search:hover{
@@ -1020,6 +1020,8 @@ main .hight-view{
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 1rem;
+    margin-top: 7rem;
 }
 .about-sauce figure{
     margin-top: 4rem;
@@ -1029,12 +1031,6 @@ main .hight-view{
     height: 100%;
     width: 20vw;
 }
-/* #removeZom{
-    border-radius: none;
-    -webkit-transform: unset;
-    transform: unset;
-} */
-
 .about-sauce h1{
     /* border: 1px solid; */
     width: 80%;
@@ -1064,6 +1060,65 @@ main .hight-view{
 }
 /* <------------------- Final Sobre  ------------------->*/
 
+/* <------------------- Inicio Política de privacidade  ------------------->*/
+.privacy-policies{
+    /* border: 1px solid; */
+    box-shadow: 0 0 10px rgb(232 234 237 / 80%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin: 0 0 5rem 0; */
+    width: 85%;
+    box-sizing: content-box;
+    padding: 0 2rem 4rem 2rem;
+    margin-top: 7rem;
+    margin-bottom: 1rem;
+}
+
+.privacy-policies h1{
+    /* border: 1px solid; */
+    width: 90%;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.privacy-policies p{
+    /* border: 1px solid; */
+    margin-bottom: 1rem;
+    width: 90%;
+    text-align: justify;
+}
+
+.privacy-policies ul{
+    margin-bottom: 0.5rem;
+    width: 90%;
+}
+
+
+.privacy-policies ul li{
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.privacy-policies h2{
+    margin-bottom: 1rem;
+    width: 90%;
+}
+
+.privacy-policies h3{
+    margin-bottom: 0.5rem;
+    width: 90%;
+}
+
+.privacy-policies span{
+    margin-top: 1rem;
+    width: 90%;
+}
+
+/* <------------------- Final Política de privacidade  ------------------->*/
+
+
 
 /* <------------------- Inicio Contact  ------------------->*/
 .article-contact{
@@ -1075,11 +1130,12 @@ main .hight-view{
     justify-content: center;
     /* margin: 0 0 5rem 0; */
     width: 90%;
+    margin: 7rem 0 1rem 0;
 }
 .article-contact h1{
     /* border: 1px solid; */
-    width: 79%;
-    margin: 10rem 0 2.5rem 0;
+    width: 83%;
+    margin: 4rem 0 2.5rem 0;
     font-size: 1.8rem;
 }
 
@@ -1087,14 +1143,14 @@ main .hight-view{
 
     border: 0.1px solid rgba(0, 0, 0, 0.10);
     box-shadow: 0 0 10px rgb(232 234 237 / 80%);
-    width: 73%;
+    width: 77%;
     margin-top: 1rem;
     overflow: hidden;
     box-sizing: content-box;
     display: flex;
     flex-direction: column;
     padding: 2rem 2rem 1rem 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 .article-contact form div{
@@ -1169,7 +1225,7 @@ main .hight-view{
 #btn-format{
     width: 5rem;
     height: 2.5rem;
-    margin: 2.5rem 0;
+    margin: 2.5rem 0 1rem 0;
 }
 
 @media screen and (max-width: 500px){
