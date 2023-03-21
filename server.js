@@ -16,20 +16,25 @@ app.get("/", (request, response) =>{
 
     recipes.forEach(category => {
         for(let meat of category.meats){
-            if(meat.rating >= 4){
+            if(meat.rating > 4  && articleMain.length <= 2){
                 articleMain.push(meat);
-            }else{
+
+            }else if(meat.rating < 4  && articleMeats.length <= 3){
                 articleMeats.push(meat);
             }
         }
         for(let salad of category.salads){
-            if(salad.rating > 4){
+            if(salad.rating > 4  && articleMain.length <= 2){
                 articleMain.push(salad);
+            }else if(salad.rating <= 5  && articleSecondary.length <= 3){
+                articleSecondary.push(salad);
             }
         }
 
         for(let recipe of category.mainCourse){
-            if(recipe.rating <= 4){
+            if(recipe.rating > 4  && articleMain.length <= 2){
+                articleMain.push(recipe);
+            }else if(recipe.rating <= 4  && articleSecondary.length <= 3){
                 articleSecondary.push(recipe);
             }
         }
@@ -49,7 +54,21 @@ app.get("/contato", (request, response) =>{
 
 // <---------- Categorias das Receitas ---------->
 app.get("/categoria/carnes", (request, response) =>{
-    response.render("pages/recipes/meat.ejs")
+    const articleMain = [];
+    const articleSecondary = [];
+
+    recipes.forEach(category => {
+        let maxImgMain = 0;
+        for(let meat of category.meats){
+            if(meat.rating >= 4  && maxImgMain <=3){
+                maxImgMain += 1;
+                articleMain.push(meat);
+            }else{
+                articleSecondary.push(meat);
+            }
+        }
+    });
+    response.render("pages/recipes/meat.ejs", {articleMain, articleSecondary})
 });
 
 // <---------- Carnes ---------->
@@ -63,7 +82,7 @@ app.get("/categoria/carne/tambaqui-assado-no-forno", (request, response) =>{
             }
         }
     });
-    
+
     response.render("pages/categories/meats/tambaqui.ejs", {tambaqui})
 });
 
