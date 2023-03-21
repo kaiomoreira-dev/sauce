@@ -32,9 +32,9 @@
             <article class="article-main-recipe">                
                 <%for(let recipe of articleMain){ %>
                     <section>
-                        <figure>
+                        <figure >
                             <a href="<%= recipe.path %>">
-                                <img id="image-1" src="<%= recipe.img %>" alt="">
+                                <img id="onBorderRadiues" src="<%= recipe.img %>" alt="">
                             </a>
                         </figure>
                         <div class="title">
@@ -59,8 +59,8 @@
                 <%for(let recipe of articleSecondary){ %>
                     <section>
                         <figure>
-                            <a href="<%= recipe.path %>">
-                                <img id="image-1" src="<%= recipe.img %>" alt="">
+                            <a  href="<%= recipe.path %>">
+                                <img src="<%= recipe.img %>" alt="">
                             </a>
                         </figure>
                         <div class="title">
