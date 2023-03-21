@@ -10,23 +10,23 @@
         <main>
             <article class="article-post">
                 <section class="section-presentation">
-                    <h1>Tambaqui assado no forno</h1>
+                    <h1><%= tambaqui.name %></h1>
 
                     <figure>
-                        <img src="/images/tambaqui-assado-no-forno.jpg" alt="" id="removeZom">
+                        <img src="<%= tambaqui.img %>" alt="" id="removeZom">
                     </figure>
                     <div class="recipe-info">
                         <div class="yield">
                             <img src="/images/avatar.png" alt="">
-                            <div class="no-break"><span>5</span>pessoas</div>
+                            <div class="no-break"><span><%= tambaqui.yield%></span>pessoas</div>
                         </div>
                         <div class="time-wait">
                             <img src="/images/relogio2.png" alt="">
-                            <div class="no-break"><span>30</span>minutos</div>
+                            <div class="no-break"><span><%= tambaqui.timeWait%></span>minutos</div>
                         </div>
                         <div class="level-price">
                             <img src="/images/bolsa-de-dinheiro.png" alt="">
-                            <div class="no-break">preço médio</div>
+                            <div class="no-break"><%= tambaqui.levelPrice%></div>
                         </div>
                     </div>
                </section>
@@ -34,38 +34,20 @@
                <section class="section-ingredients">
                     <h1>Ingredientes</h1>
                     <ul>
-                        <li>1 unidade de tambaqui de 3kg</li>
-                        <li>4 unidades de limão</li>
-                        <li>3 dentes alho amassados</li>
-                        <li>1 cebola aberta no meio</li>
-                        <li>4 colheres de sopa de azeite</li>
-                        <li>Sal a gosto</li>
-                        <li>Pimenta à gosto opcional</li>
+                        <%for(let ingredient of tambaqui.ingredients){ %>
+                            <% const toUpperFirstLatter = ingredient.charAt(0).toUpperCase()+ ingredient.slice(1); %>
+                            <li><%= toUpperFirstLatter %></li>
+                        <% }%>
                     </ul>
                </section>
 
                <section class="section-preparation">
                     <h1>Modo de preparo</h1>
                     <ul>
-                        <li>
-                            Primeiramente abra a barriga do peixe para limpar bem. Depois faça alguns cortes transversais dos dois lados do peixe. E lave com água e 2 limões
-                        </li>
-                        <li>
-                            Coloque uma vasilha e coloque o suco de 2 limão, alho, sal e pimenta à gosto. Deixe marinar por 1 hora no mínimo até 3 horas se preferir. Dessa forma, pega bem tempero.
-                        </li>
-                        <li>
-                            Após esse tempo está na hora de assar. Pegue o peixe coloque em um papel alumínio grande, e sobre o peixe passe cebola e o azeite, salpique sal se precisar.
-                        </li>
-                        <li>
-                            Agora embrulhe, fechando o papel alumínio com o peixe já temperado e coloque-o em uma travessa de vidro ou assadeira de bolo para poder assar.
-                        </li>
-
-                        <li>
-                            Leve para assar em forno pré aquecido à 190°C por 20 minutos. Após os minutos, retire o papel alumínio e vire o peixe e termine de assar até ficar bem dourado.
-                        </li>
-                        <li>
-                            Quando estiver bem dourado estará pronto. Só servir o seu Tambaqui Assado de Forno acompanhado de arroz, salada, purê ou como desejar. Bom Apetite.
-                        </li>
+                        <%for(let preparation of tambaqui.preparations){ %>
+                            <% const toUpperFirstLatter = preparation.charAt(0).toUpperCase()+ preparation.slice(1); %>
+                            <li><%= toUpperFirstLatter %></li>
+                        <% }%>
                     </ul>
                </section>
             </article>
