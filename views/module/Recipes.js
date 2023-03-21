@@ -432,8 +432,8 @@ module.exports = function Recipes(){
                 },
                 {
                     title: "Rondelli de Presunto e Queijo",
-                    img: "/images/rondeli.jpeg",
-                    path: "",
+                    img: "/images/rondelli.jpeg",
+                    path: "/categoria/massa/rondelli-presunto-e-queijo",
                     yield: 6,
                     timeWait: 60,
                     levelPrice: "preço econômico",
