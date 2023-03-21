@@ -385,7 +385,7 @@ main .hight-view{
     transform: scale(1.1); 
 }
 /* Div categorias de secundario */
-.meat{
+.meats{
     /* border: 1px solid; */
     height: auto;
     width: 96%;
@@ -966,7 +966,7 @@ main .hight-view{
         width: 100%;
     }    
     /* Div categorias de secundario */
-    .meat{
+    .meats{
         /* border: 1px solid; */
         width: 94%;
         position: relative;
