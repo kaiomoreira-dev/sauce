@@ -7,6 +7,7 @@ const recipes = Recipes();
 
 //engine para entender o ejs na pasta views
 app.set("view engine", "ejs");
+
 app.use(express.static("views"));
 
 app.get("/", (request, response) =>{
@@ -43,9 +44,11 @@ app.get("/", (request, response) =>{
     response.render("pages/index.ejs", {articleMain, articleSecondary, articleMeats})
 });
 
-
 app.get("/sobre", (request, response) =>{
     response.render("pages/about.ejs")
+});
+app.get("/privacy-policies", (request, response) =>{
+    response.render("pages/privacyAndPolicies.ejs")
 });
 
 app.get("/contato", (request, response) =>{
