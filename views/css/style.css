@@ -127,7 +127,7 @@ header{
     /* border: 1px solid; */
     position: absolute;
     top: 4.5rem;
-    right: 15.5rem;
+    right: 22rem;
     height: 18rem;
     width: 10rem;
     list-style: none;
@@ -691,6 +691,7 @@ main .hight-view{
         font-size: 0.9rem;
 
         text-decoration: none;
+        white-space: nowrap;
     }
     
     .navbar-menu .item-category-recipes{
@@ -1235,7 +1236,7 @@ main .hight-view{
     }
     .article-contact form{
         /* border: 1px solid; */
-        width: 90%;
+        width: 77%;
         margin-top: 1rem;
         overflow: hidden;
         box-sizing: content-box;
