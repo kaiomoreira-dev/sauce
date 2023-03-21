@@ -99,7 +99,20 @@ app.get("/categoria/carne/tambaqui-assado-no-forno", (request, response) =>{
     response.render("pages/categories/meats/tambaqui.ejs", {tambaqui})
 });
 
+// <---------- Massas ---------->
+app.get("/categoria/massa/rondelli-presunto-e-queijo", (request, response) =>{
+    let rondelli = {};
 
+    recipes.forEach(category =>{
+        for(let dough of category.doughs){
+            if(dough.title.includes("Rondelli")){
+                rondelli = dough;
+            }
+        }
+    });
+
+    response.render("pages/categories/doughs/rondelli.ejs", {rondelli})
+});
 
 // <---------- Sevidor conectado na porta 8080 ---------->
 app.listen(8080, () =>{
