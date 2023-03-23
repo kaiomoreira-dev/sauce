@@ -205,8 +205,68 @@ async function createArticleSecondaryMainCourses(){
     mainIndex.insertBefore(articleSecondary, loaderArticleElement);
 }
 
+async function createArticleSecondaryDessert(){
+    const recipes = (await import("../module/RecipeTest.js")).default;
+
+    let recipesDessert = []
+
+    const emphasis = document.createElement("div");
+    const h2 = document.createElement("h2");
+    emphasis.appendChild(h2);
+    emphasis.classList.add("emphasis")
+    h2.innerHTML = "Sobremesas";
+    mainIndex.insertBefore(emphasis, loaderArticleElement);
+    
+    recipes.forEach(recipe => {
+        for(let desserts of recipe.desserts){
+            if(recipesDessert.length <= 3){
+                recipesDessert.push(desserts);
+            }
+        }
+        
+    })
+    
+    const articleSecondaryDessert = document.createElement("article")
+
+    for(let dessert of recipesDessert){
+        const section = document.createElement("section");
+        const figure = document.createElement("figure");
+        const a_link = document.createElement("a");
+        const image = document.createElement("img");
+
+        const divTitle = document.createElement("div");
+        const h1 = document.createElement("h1");
+        const divStars = document.createElement("div");
+
+        articleSecondaryDessert.classList.add("article-second-recipe");
+        a_link.setAttribute("href", dessert.path)
+        image.setAttribute("src", dessert.img)
+        divTitle.classList.add("title");
+        h1.innerHTML = dessert.title;
+        divStars.classList.add("stars");
+
+        section.appendChild(figure);
+        figure.appendChild(a_link);
+        a_link.appendChild(image);
+
+        section.appendChild(divTitle);
+        divTitle.appendChild(h1);
+        divTitle.appendChild(divStars);
+
+        for(let i = 0; i < 5; i++){
+            const i_star = document.createElement("i");
+            divStars.appendChild(i_star);
+        }
+
+        articleSecondaryDessert.appendChild(section);
+    }
+
+    mainIndex.insertBefore(articleSecondaryDessert, loaderArticleElement);
+}
+
 async function handleInfiniteScroll(){
     const endOfPage = window.innerHeight + window.pageYOffset >= mainIndex.offsetHeight;
+    console.log(mainIndex.children.length)
     if (endOfPage && mainIndex.children.length === 9) {
         createArticleSecondaryDough();
 
@@ -216,6 +276,10 @@ async function handleInfiniteScroll(){
     }
 
     if(endOfPage && mainIndex.children.length === 13){
+        createArticleSecondaryDessert()  
+    }
+
+    if(endOfPage && mainIndex.children.length === 15){
         window.removeEventListener("scroll", handleInfiniteScroll);
         loaderArticleElement.remove();
     }
