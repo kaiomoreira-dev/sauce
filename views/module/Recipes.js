@@ -255,6 +255,145 @@ module.exports = function Recipes(){
             ],
             mainCourses:[
                 {
+                    title: "Feijão Preto na Panela de pressão",
+                    img: "/images/Feijão-Preto-na-Panela-de-pressão.jpg.webp",
+                    path: "",
+                    yield: 4,
+                    timeWait: 20,
+                    levelPrice: "preço econômico",
+                    rating: 5,
+                    ingredients: [
+                        "500 g de feijão preto",
+                        "2 colheres sopa de óleo",
+                        "1 folha de louro",
+                        "1/2 gomo de linguiça calabresa de preferência da (Aurora)",
+                        "1 litro de água fervente",
+                        "1/2 maço de alho picado fresco",
+                        "1 cebola roxa picada",
+                        "1/2 maço de cheiro verde",
+                        "1 tomate vermelho grande",
+                        "1 pitada de colorau"
+                    ],
+                    preparations: [
+                        "Lave o feijão em água corrente e escorra por 3 vezes.",
+
+                        "Deixe o feijão de molho em um recipiente com água natural por 48 horas faendo remolhos sempre que fermentar bastante.",
+
+                        "Refogue o alho e a cebola no óleo. Adicione o feijão, o liguiça calabresa, tomate, a folha de louro e misture.",
+
+                        "Complete com água fervente (atenção para o limite máximo da panela de pressão).",
+
+                        "Tampe a panela de pressão e deixe cozinhar no fogo alto até pegar pressão.",
+
+                        "Coloque no fogo baixo e deixe cozinhar por aproximadamente 20 minutos.",
+                        
+                        "Após sair toda a pressão da válvula, destampe a panela e verifique o ponto de cozimento. Adicione o tempero verde, colorau e se necessário, sal a gosto.",
+
+                        "Por fim é só servir.",
+                    ]  
+                },
+                {
+                    title: "Bolinho de arroz quatro queijos",
+                    img: "/images/Bolinho-de-arroz-quatro-queijos.jpg",
+                    path: "",
+                    yield: 5,
+                    timeWait: 20,
+                    levelPrice: "preço médio",
+                    rating: 3,
+                    ingredients: [
+                        "3 xícaras de chá de arroz cozido",
+                        "2 ovos inteiros",
+                        "4 colheres de sopa de queijo parmesão ralado",
+                        "Sal a gosto",
+                        "1/2 xícara de cheiro verde picado",
+                        "1 cebola pequena ralada",
+                        "1 xícara de farinha de trigo",
+                        "100 g de mussarela cortadas em cubinhos",
+                        "4 colheres de sopa de queijo provolone",
+                        "4 colheres de sopa de queijo meia cura",
+                        "4 colheres de sopa de queijo mussarela"
+                    ],
+                    preparations: [
+                        "Misturar em uma tigela todos os ingredientes, menos a mussarela, até formar uma massa.",
+
+                        "Fazer bolinhas dessa massa e abrir ao meio para rechear com cada cubinho de mussarela.",
+
+                        "Depois que fechar a bolinha levar para fritar.",
+
+                        "Seque em um papel toalha.",
+
+                        "Por fim é só servir.",
+                    ]  
+                },              
+                {
+                    title: "Arroz de Sobra",
+                    img: "/images/receita-arroz-de-forno-02.jpg",
+                    path: "",
+                    yield: 5,
+                    timeWait: 30,
+                    levelPrice: "preço econômico",
+                    rating: 3,
+                    ingredients: [
+                        "4 xícaras de chá de arroz cozido",
+                        "100 gramas de muçarela ralada",
+                        "100 gramas de presunto cortado em cubos pequenos",
+                        "1 cenoura ralada",
+                        "2 colheres de sopa de salsa picada",
+                        "2 ovos",
+                        "Meio pote de requeijão",
+                        "3 colheres de sopa de queijo parmesão ralado",
+                        "Pimenta a gosto",
+                        "Sal a gosto"
+                    ],
+                    preparations: [
+                        "Em uma tigela, misture o arroz, a mussarela, o presunto, a cenoura e a salsa.",
+
+                        "Coloque em um refratário untado com margarina.",
+
+                        "No liquidificador, bata os ovos, o leite, o requeijão, o queijo ralado, o sal e a pimenta.",
+
+                        "Despeje sobre o arroz e asse no forno preaquecido a 200 graus Celsius durante 30 minutos ou até dourar.",
+
+                        "Quando o queijo estiver dourado é só tirar e servir essa delícia.",
+                    ]  
+                },
+                {
+                    title: "Omelete de Espinafre",
+                    img: "/images/omelete.jpg.webp",
+                    path: "",
+                    yield: 1,
+                    timeWait: 10,
+                    levelPrice: "preço econômico",
+                    rating: 3,
+                    ingredients: [
+                        "1 Xícara (chá) de Espinafre picado",
+                        "3 Ovos",
+                        "1/2 Cebola picada",
+                        "1 Colher (sopa) de Queijo Vegetal  ralado",
+                        "1 Colher (sopa) de Salsinha picada",
+                        "1 Colher (chá) de Azeite de Oliva",
+                        "Sal e pimenta-do-reino a gosto",
+                        "3 colheres de sopa de queijo parmesão ralado",
+                        "Pimenta a gosto",
+                        "Sal a gosto"
+                    ],
+                    preparations: [
+                        "Bata os ovos com o garfo até obter  uma mistura homogênea.",
+
+                        "Em uma frigideira aquecida com  o azeite de oliva, refogue a cebola  até dourar.",
+
+                        "Acrescente o espinafre  picado e deixe apenas murchar.  Não é preciso refogar.",
+
+                        "Adicione os ovos batidos, o queijo  vegetal, a salsinha picada e tempere  com o sal e a pimenta-do-reino a  gosto.",
+
+                        "Deixe que fique firme e dourado  de um lado e depois vire para dourar  do outro.",
+
+                        "Acomode o Omelete de Espinafre em um prato e sirva em seguida.",
+
+                        "Pronto, pode servir!"
+                    ]  
+                },
+                {
                     title: "Yakisoba de miojo",
                     img: "/images/Yakisoba-de-miojo.jpg.webp",
                     path: "",
@@ -288,38 +427,6 @@ module.exports = function Recipes(){
                         "Agora é o momento de colocar o miojo cozido e também o molho shoyu. Vá misturando.",
 
                         "Deixe por cerca de 5 minutos em fogo baixo para que o macarrão pegue o sabor do molho shoyu antes de servir.",
-                    ]  
-                },
-                {
-                    title: "Arroz de Sobra",
-                    img: "/images/receita-arroz-de-forno-02.jpg",
-                    path: "",
-                    yield: 5,
-                    timeWait: 30,
-                    levelPrice: "preço econômico",
-                    rating: 3,
-                    ingredients: [
-                        "4 xícaras de chá de arroz cozido",
-                        "100 gramas de muçarela ralada",
-                        "100 gramas de presunto cortado em cubos pequenos",
-                        "1 cenoura ralada",
-                        "2 colheres de sopa de salsa picada",
-                        "2 ovos",
-                        "Meio pote de requeijão",
-                        "3 colheres de sopa de queijo parmesão ralado",
-                        "Pimenta a gosto",
-                        "Sal a gosto"
-                    ],
-                    preparations: [
-                        "Em uma tigela, misture o arroz, a mussarela, o presunto, a cenoura e a salsa.",
-
-                        "Coloque em um refratário untado com margarina.",
-
-                        "No liquidificador, bata os ovos, o leite, o requeijão, o queijo ralado, o sal e a pimenta.",
-
-                        "Despeje sobre o arroz e asse no forno preaquecido a 200 graus Celsius durante 30 minutos ou até dourar.",
-
-                        "Quando o queijo estiver dourado é só tirar e servir essa delícia.",
                     ]  
                 },
                 {
@@ -357,39 +464,8 @@ module.exports = function Recipes(){
                         "Tempere com sal e pimenta. Desligue o fogo, acrescente o arroz reservado e o cheiro-verde e misture delicadamente antes de servir."
                     ]  
                 },
-                {
-                    title: "Bolinho de arroz quatro queijos",
-                    img: "/images/Bolinho-de-arroz-quatro-queijos.jpg",
-                    path: "",
-                    yield: 5,
-                    timeWait: 20,
-                    levelPrice: "preço médio",
-                    rating: 3,
-                    ingredients: [
-                        "3 xícaras de chá de arroz cozido",
-                        "2 ovos inteiros",
-                        "4 colheres de sopa de queijo parmesão ralado",
-                        "Sal a gosto",
-                        "1/2 xícara de cheiro verde picado",
-                        "1 cebola pequena ralada",
-                        "1 xícara de farinha de trigo",
-                        "100 g de mussarela cortadas em cubinhos",
-                        "4 colheres de sopa de queijo provolone",
-                        "4 colheres de sopa de queijo meia cura",
-                        "4 colheres de sopa de queijo mussarela"
-                    ],
-                    preparations: [
-                        "Misturar em uma tigela todos os ingredientes, menos a mussarela, até formar uma massa.",
-
-                        "Fazer bolinhas dessa massa e abrir ao meio para rechear com cada cubinho de mussarela.",
-
-                        "Depois que fechar a bolinha levar para fritar.",
-
-                        "Seque em um papel toalha.",
-
-                        "Por fim é só servir.",
-                    ]  
-                },
+                
+                
             ],
             doughs:[
                 {
@@ -634,6 +710,259 @@ module.exports = function Recipes(){
                         "Em uma panela, coloque o tomate pelado, o macarrão, o alho, a cebola, os tomates-cereja, o manjericão e o azeite. Tempere com sal e pimenta, coloque água até cobrir todos os ingredientes, misture e ligue o fogo em temperatura média.",
 
                         "Assim que o macarrão cozinhar, coloque a mussarela de búfala, espere derreter e sirva na sequência.",
+                    ]  
+                },
+            ],
+            desserts:[
+                {
+                    title: "Gelatina Colorida",
+                    img: "/images/gelatina_colorida.jpg",
+                    path: "",
+                    yield: 12,
+                    timeWait: 1440,
+                    levelPrice: "preço médio",
+                    rating: 4,
+                    ingredients: [
+                        "4 a 6 pacotes de gelatina de sabores variados.",
+                        "Água fervente e gelada (100ml de cada para cada sabor de gelatina)",
+                        "1 lata de leite condensado",
+                        "1 vidro de leite de côco (200ml)",
+                        "óleo para juntar (se for preparar em forma)",
+                    ],
+                    preparations: [
+                        "Faça a gelatina conforme as instruções do pacote, porém, usando 100ml de água gelada e 100ml de água quente.",
+
+                        "Despeje metade do volume total (ou seja 100ml) em uma forma decorada com buraco no meio, untada com óleo.",
+
+                        "Leve para o congelador por 10 minutos, ou até endurecer um pouco.",
+
+                        "Misture na outra parte (100ml) 3 colheres (sopa) de leite condensado e 2 colheres (sopa) de leite de côco e misture bem.",
+
+                        "Coloque por cima da primeira camada já gelada com cuidado pelas paredes da forma, leve para endurecer novamente por mais 10 minutos.",
+
+                        "Siga os mesmos passos com todas as cores de gelatina, na ordem que quiser.",
+
+                        "Depois de terminado o processo, coloque a forma na geladeira e só desenforme no dia seguinte.",
+
+                        "Pronto pode servir!"
+
+                    ]  
+                },
+                {
+                    title: "Bolo de Chocolate de Liquidificador",
+                    img: "/images/Bolo-de-chocolate-de-liquidificador-1.jpg",
+                    path: "",
+                    yield: 12,
+                    timeWait: 30,
+                    levelPrice: "preço médio",
+                    rating: 5,
+                    ingredients: [
+                        "2 ovos",
+                        "1 xícara de leite integral",
+                        "1 xícara de Doriana sem sal derretida",
+                        "1 xícara de chocolate em pó",
+                        "2 xícaras de farinha de trigo",
+                        "400ml xícaras de creme de leite",
+                        "1 colher de sopa de fermento em pó",
+                        "1 colher de sopa de Doriana sem sal",
+                        "3 colheres de sopa de chocolate em pó",
+                        "3 colheres de sopa em açúcar",
+                        "1 xícara de leite"
+                    ],
+                    preparations: [
+                        "Preaqueça o forno a 180ºC",
+
+                        "Em um liquidificador, adicione os ovos, o leite, a Doriana sem sal derretida, o chocolate em pó e o açúcar. Bata bem, por cerca de 5 minutos",
+
+                        "Transfira a mistura para uma tigela, adicione a farinha de trigo e o fermento. Misture delicadamente.",
+
+                        "Adicione a massa em uma assadeira untada e leve ao forno por 30 minutos.",
+
+                        "Em uma panelinha, junte a Doriana sem sal, o chocolate em pó, o açúcar e o leite.",
+
+                        "Leve a panela ao fogo alto, mexendo sempre com um batedor de arame até ferver.",
+
+                        "Desligue o fogo e regue a calda sobre o bolo.",
+
+                        "Pronto pode servir!"
+
+                    ]  
+                },
+                {
+                    title: "Pavê de Morango Simples",
+                    img: "/images/pavê-de-morango-simples.jpeg.webp",
+                    path: "",
+                    yield: 12,
+                    timeWait: 90,
+                    levelPrice: "preço médio",
+                    rating: 3,
+                    ingredients: [
+                        "1 pacote de bolachas maria ao leite",
+                        "1 xícara de café de açúcar refinado",
+                        "2 bandejas de morango",
+                        "2 latas de leite condensado",
+                        "2 latas de creme de leite",
+                        "2 latas de leite: a mesma medida da lata de leite condensado",
+                        "2 colheres de sopa de chocolate em pó",
+                        "Morangos, Amendoim triturado ou paçoca para decorar"
+                    ],
+                    preparations: [
+                        "Para começar, corte os morangos em pequenas fatias e, logo depois, coloque-os em uma travessa e cubra com açúcar.",
+
+                        "Deixe descansar por um tempo para formar uma espécie de calda de morango. Caso ache melhor, pode deixar ferver na panela 1 xícara de açúcar com os morangos até realmente virar uma calda, sempre mexendo para não grudar.",
+
+                        "Agora coloque o leite condensado em uma panela, junto do leite e do amido de milho.",
+
+                        "Na travessa, você terá a primeira camada do morango em calda.",
+
+                        "Coloque agora o chocolate em pó em uma parte do creme e cubra com a calda.",
+
+                        "Coloque na geladeira e deixe resfriar por cerca de 3 horas. Sirva à vontade!"
+                    ]  
+                },
+                {
+                    title: "Bolo baltazar",
+                    img: "/images/Bolo-Baltazar.jpeg.webp",
+                    path: "",
+                    yield: 12,
+                    timeWait: 40,
+                    levelPrice: "preço médio",
+                    rating: 3,
+                    ingredients: [
+                        "300 g de chocolate para culinária",
+                        "6 ovos",
+                        "150 g de açúcar",
+                        "70 g de manteiga",
+                        "100 g de farinha de trigo",
+                        "2 colheres café de fermento em pó",
+                        "4 colheres sobremesa de rum",
+                        "Chantilly"
+                    ],
+                    preparations: [
+                        "Parta 150 g de chocolate para cozinhar e derreta em banho maria. Quando estiver em creme, junte a manteiga e mantenha em banho maria, mexendo com a colher de pau até a manteiga estar completamente incorporada.",
+
+                        "À parte, bata as gemas com o açúcar e, quando estiverem leves e espumosas, acrescente a farinha, previamente misturada com o fermento, a mistura do chocolate e rum. Por fim, envolva delicadamente as claras batidas em neve firme.",
+
+                        "Coloque o preparado numa forma de furo, e leve para o forno quente por cerca de 20 minutos. Convém tapar o bolo com papel vegetal, para não tostar muito rapidamente na superfície.",
+
+                        "Derreta 150 g de chocolate para a culinária em banho-maria com 4 colheres (sopa) de água e incorpore 30 g de manteiga.",
+
+                        "Acrescente 3 colheres (sopa) de rum.",
+
+                        "E por fim coloque este preparado sobre o bolo, depois de desenformado e frio. Termine com chantilly. E pode servir!"
+                    ]  
+                },
+                {
+                    title: "Mousse de Maracujá Com Fruta",
+                    img: "/images/Mousse-de-Maracujá-Com-Fruta.jpeg.webp",
+                    path: "",
+                    yield: 8,
+                    timeWait: 40,
+                    levelPrice: "preço médio",
+                    rating: 5,
+                    ingredients: [
+                        "7 gramas de gelatina sem sabor",
+                        "1/4 xícara de água",
+                        "1/2 xícara de concentrado ou suco puro de maracujá, sem açúcar",
+                        "1 colher de sopa de suco de limão",
+                        "2 xícaras de açúcar – apenas 1 xícara é usada se o leite condensado for usado",
+                        "400ml xícaras de creme de leite",
+                        "6 claras de ovos batidas até a neve",
+                        "2-3 polpa fresca de maracujá e sementes opcionais"
+                    ],
+                    preparations: [
+                        "Misture suco de maracujá, açúcar e suco de limão em uma panela em fogo baixo.",
+
+                        "Mexa bem e aqueça até que o açúcar se dissolva, retire do fogo e deixe esfriar um pouco.",
+
+                        "Polvilhe a gelatina sobre o 1/4 xícara de água.",
+
+                        "Combine a mistura de suco de maracujá com a gelatina diluída e mexa bem.",
+
+                        "Deixe descansar e esfriar por 30 minutos, mexendo ocasionalmente.",
+
+                        "Use uma batedeira elétrica para bater o creme até que os picos comecem a se formar e fique muito firme.",
+
+                        "Combine o chantilly, usando uma colher, com a mistura de gelatina e maracujá.",
+
+                        "Use uma espátula ou colher para combinar os brancos batidos com a mistura do creme e maracujá.",
+
+                        "Você pode começar combinando apenas uma parte (um terço) e depois misturar o resto pouco a pouco. É importante misturá-lo suavemente para manter essa consistência fofa da mousse.",
+
+                        "Se desejar, adicione a polpa e as sementes de maracujá fresco (opcional).",
+
+                        "Coloque a mousse em um molde grande ou pequenos moldes individuais, cubra e leve à geladeira por 4-6 horas.",
+
+                        "Pronto pode servir!"
+
+                    ]  
+                },
+                
+                {
+                    title: "Gelatina Colorida com Creme de Leite",
+                    img: "/images/gelatina_colorida-com-creme-de-leite.jpg",
+                    path: "",
+                    yield: 12,
+                    timeWait: 1440,
+                    levelPrice: "preço médio",
+                    rating: 5,
+                    ingredients: [
+                        "4 a 6 pacotes de gelatina de sabores variados.",
+                        "Água fervente e gelada (100ml de cada para cada sabor de gelatina)",
+                        "1 lata de leite condensado",
+                        "1 caixinha de creme de leite (200g)",
+                        "1 envelope de gelatina em pó sem sabor (incolor).",
+                    ],
+                    preparations: [
+                        "Prepare cada gelatina seguindo a instrução do fabricante (aqui também use menos água do que o indicado para obter uma gelatina mais firme para corte).",
+
+                        "Prepare cada sabor, coloque em um pote pequeno (de preferência quadrado ou retangular!) e leve para gelar.",
+
+                        "Quando estiverem firmes, corte todas as gelatinas em cubos.",
+
+                        "No liquidificador bata o leite condensado (use metade se preferir uma versão menos doce!) , o creme de leite e a gelatina sem sabor dissolvida confirme instrução da embalagem.",
+
+                        "Coloque os cubos de gelatina em uma travessa de vidro ou forma de buraco no meio (se for desenformar não esqueça de untar a forma!), cuidando para intercalar e misturar as cores para garantir um efeito ainda mais bonito.",
+
+                        "Siga os mesmos passos com todas as cores de gelatina, na ordem que quiser.",
+
+                        "Depois, acrescente a mistura batida no liquidificador e leve para gelar 24h.",
+
+                        "Pronto pode servir!"
+
+                    ]  
+                },
+                {
+                    title: "Peras ao vinho",
+                    img: "/images/pera-ao-vinho.jpg.jpg",
+                    path: "",
+                    yield: 5,
+                    timeWait: 15,
+                    levelPrice: "preço relevante",
+                    rating: 5,
+                    ingredients: [
+                        "2 xícaras de vinho tinto de preferência (Cabernet Sauvignon ou Merlot)",
+                        "1 pedaço grande de casca de laranja",
+                        "8 a 10 cravos",
+                        "1 pau de canela",
+                        "1/2 xícara de água ou suco de laranja",
+                        "2 colheres de chá de extrato de baunilha",
+                        "3 a 6 peras médias"
+                    ],
+                    preparations: [
+                        "Coloque todos os ingredientes (exceto as peras) em uma panela.",
+
+                        "Leve ao fogo mexendo até que o açúcar esteja dissolvido.",
+
+                        "Espere o vinho começar a ferver.",
+
+                        "Descasque as peras mantendo o cabinho para facilitar na remoção da panela.",
+
+                        "Não manter as peras descascadas por muito tempo, pois faz com que comecem a escurecer rapidamente.",
+
+                        "Retire a massa do forno, espalhe a polpa de tomate, a escarola refogada e cubra com a muçarela e o tomate-cereja.",
+
+                        "Volte ao forno por mais 20 minutos, ou até que o queijo derreta. Retire do forno e sirva em seguida."
                     ]  
                 },
             ]
