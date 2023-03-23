@@ -5,7 +5,7 @@
 body{
     overflow-x: hidden;
 }
-/* <------------------- Inicio Home  ------------------->*/
+/* <------------------- Inicio Index  ------------------->*/
 /* Container */
 .container {
     /* border: 1px solid; */
@@ -187,7 +187,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    
     /* margin-top: 0.5rem; */
 }
 /* Seção titulo na Main */
@@ -258,11 +258,10 @@ main .section-search form div button > img{
     width: 4vh;
 }
 /* Div mais visitados */
-main .hight-view{
+.emphasis{
     /* border: 1px solid; */
     height: auto;
     width: 96%;
-    margin-top: 3rem;
     margin-bottom: 1rem;
     font-size: 1.2rem;
 }
@@ -275,7 +274,7 @@ main .hight-view{
     display: flex;
     justify-content: center;
     gap: 1%;
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
     position: relative; 
 }
 /* Seção do Artigo principal */
@@ -357,51 +356,13 @@ main .hight-view{
     transition: all 1.3s;
     
 }
-/* Efeito zom na Image da seção do Artigo principal */
-.zomImageArticleMain{
+
+.article-main-recipe section figure a > img:hover{
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-}
-.new-recipes{
-    /* border: 1px solid; */
-    height: auto;
-    width: 96%;
-
-    color:#000000d7;
     
-    margin-bottom: 1rem;
-
-    display: flex;
-    align-items: center;
-    
-    /* justify-content: center; */
-
-    font-size: 1.2em;
-    font-weight: bold;
 }
-/* Efeito zom na Image da seção do Artigo */
-.zomImageArticle{
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1); 
-}
-/* Div categorias de secundario */
-.meats{
-    /* border: 1px solid; */
-    height: auto;
-    width: 96%;
 
-    color:#000000d7;
-    
-    margin-bottom: 1rem;
-
-    display: flex;
-    align-items: center;
-    
-    /* justify-content: center; */
-
-    font-size: 1.2em;
-    font-weight: bold;
-}
 /* Artigo de secundario */
 .article-second-recipe{
     /* border: 1px solid; */
@@ -410,7 +371,7 @@ main .hight-view{
 
     display: flex;
     flex-wrap: wrap;
-  
+    margin-bottom: 3rem;
     align-items: center;
     gap: 1%;
 }
@@ -423,10 +384,9 @@ main .hight-view{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 3rem;
     overflow: hidden;
 }
-.article-second-recipe section > div{
+.article-second-recipe section .title{
     /* border: 1px solid; */
     color: #000;
     width: 100%;
@@ -498,20 +458,6 @@ main .hight-view{
     height: 100%;
     width: 100%;
 }
-/* Div title na Seção do Artigo secundário */
-.article-second-recipe section > div{
-   /* border: 1px solid; */
-   color: #000;
-   width: 97%;
-   display: flex;
-   flex-direction: column;
-   align-items: start;
-
-   margin-top: 0.5rem;
-   position: relative;
-
-   font-size: 1rem;
-}
 /* Imagem da seção do Artigo secundário */
 .article-second-recipe section img{
     height: 100%;
@@ -520,6 +466,12 @@ main .hight-view{
     -webkit-transition: -webkit-transform .5s ease;
     transition: all 1.3s;
 }
+.article-second-recipe section img:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
 /* Descrição da seção do Artigo secundário */
 .article-second-recipe section > p{
     margin-top: 0.5rem;
@@ -540,7 +492,7 @@ main .hight-view{
     display: flex;
     align-items: center;
     justify-content: space-around;
-
+    margin-top: 3rem;
 }
 /* Descrição do Copyrigth no Rodapé */
 .footer-info div {
@@ -572,6 +524,62 @@ main .hight-view{
     height: 5vh;
     width: 2vw;
 }
+
+#loader-article{
+    /* border: 1px solid; */
+    width: 96%;
+    height: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+  
+    align-items: center;
+    gap: 1%;
+}
+
+.skeleton-section{
+    height: 35vh;
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    overflow: hidden;
+    transition: all 200ms ease-in-out;
+    background-color: #eaeaea;
+    position: relative;
+}
+
+.skeleton-section::after{
+    /* border: 1px solid; */
+    content: "";
+    position: absolute;
+    height: 35vh;
+    right: 0;
+    left: 0;
+    transform: translateX(-100%);
+    background-image: linear-gradient(
+        90deg, 
+        rgba(255, 255, 255, 0) 0, 
+        rgba(255, 255, 255, 0.2) 20%, 
+        rgba(255, 255, 255, 0.5) 60%, 
+        rgba(255, 255, 255, 0)
+        );
+    animation: load 1.3s infinite;
+}
+
+@keyframes load {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+@media screen and (prefers-reduced-motion: reduce) {
+    .skeleton-card::after {
+      animation: none;
+    }
+  }
 
 /* Formatação para dispositivos de 500px */
 @media screen and (max-width: 500px) {
@@ -977,6 +985,7 @@ main .hight-view{
     
     /* Rodapé do artigo secundário na Barra de navegação mobile */
     .footer-info{
+            
             border-top: 2px solid rgba(0, 0, 0, 0.20);
             box-shadow: 0 0 10px rgb(232 234 237 / 60%);
             font-size: 0.8rem;
@@ -987,7 +996,8 @@ main .hight-view{
             width: 3vw;
     }
 }
-/* <------------------- Final Home  ------------------->*/
+/* <------------------- Final Index  ------------------->*/
+
 
 /* <------------------- Inicio Recipes  ------------------->*/
 .meat-title{
@@ -1102,11 +1112,12 @@ main .hight-view{
 
 .privacy-policies h2{
     margin-bottom: 1rem;
+    margin-top: 1.3rem;
     width: 90%;
 }
 
 .privacy-policies h3{
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     width: 90%;
 }
 
@@ -1262,11 +1273,7 @@ main .hight-view{
 
 
 /* <------------------- Inicio Post ------------------->*/
-#removeZom{
-    border-radius: none;
-    -webkit-transform: unset;
-    transform: unset;
-}
+
 .article-post{
     width: 95%;
     display: flex;
@@ -1416,11 +1423,7 @@ main .hight-view{
 }
 
 @media screen and (max-width: 500px){
-    .zomImageArticleMain{
-        border-radius: unset;
-        -webkit-transform: unset;
-        transform: unset;
-    } 
+ 
     .article-post .section-presentation figure{
         /* border: 1px solid; */
         height: 70vh;
