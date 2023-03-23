@@ -20,10 +20,7 @@ const ulCategories = document.querySelector(".navbar-menu .categories");
 const iconeAngleDown = document.querySelector(".navbar-menu li + li i");
 const header = document.querySelector("header");
 
-// const lastChildArticle = document.getElementById("#loader-article").previousElementSibling;
-const loaderArticle = document.getElementById("#loader-article");
 const loaderArticleElement = document.querySelector("main").lastElementChild;
-const emphasisH2 = document.querySelectorAll("h2");
 
 imagesPost.forEach(image => {
     image.setAttribute("title", "Ler mais")
@@ -92,9 +89,6 @@ mainIndex.addEventListener("click", () =>{
     iconeAngleDown.removeAttribute("id","rotateInverse")
     ulCategories.removeAttribute("id","showCategories")
 })
-
-// lastChildArticle
-// loaderArticle
 
 async function createArticleSecondaryDough(){
     const recipes = (await import("../module/RecipeTest.js")).default;
