@@ -883,16 +883,6 @@ main .section-search form div button > img{
         margin-top: 1rem;
         text-align: justify;
     }
-   /* Div mais visitados */
-    main .hight-view{
-        /* border: 1px solid; */
-        height: auto;
-        width: 94.5%;
-        margin-top: 3rem;
-        position: relative;
-        right: 0;
-        font-size: 1.2rem;
-    }
     /* Artigo principal */
     .article-main-recipe{
         /* border: 1px solid; */
@@ -930,16 +920,6 @@ main .section-search form div button > img{
         border-radius: 0.3rem;
 
     }
-
-     /* Barra de secundário  */
-    .new-recipes{
-        /* border: 1px solid; */
-        height: 5vh;
-        width: 94%;
-        position: relative;
-        right: 0;
-        font-size: 1.2rem;
-    }
     /* Artigo secundário */
     .article-second-recipe{
         /* border: 1px solid; */
@@ -965,7 +945,7 @@ main .section-search form div button > img{
         align-items: center;
         /* justify-content: center; */
         overflow: hidden;
-        margin-bottom: 4.5rem;
+        margin-bottom: 3rem;
     }
 
     .article-second-recipe section .title h1{
@@ -974,15 +954,62 @@ main .section-search form div button > img{
         height: auto;
         width: 100%;
     }    
-    /* Div categorias de secundario */
-    .meats{
+
+
+    #loader-article{
         /* border: 1px solid; */
-        width: 94%;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0;
+    }   
+    .skeleton-section{
+        /* border: 1px solid; */
+        height: 35vh;
+        width: 47.5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        margin-bottom: 3rem;
+        overflow: hidden;
+        transition: all 200ms ease-in-out;
+        background-color: #eaeaea;
         position: relative;
-        right: 0;
-        font-size: 1.2rem;
+    }
+
+    .skeleton-section:nth-child(3){
+        display: none;
     }
     
+   .skeleton-section:nth-child(4){
+        display: none;
+    }
+    
+    
+    .skeleton-section::after{
+        /* border: 1px solid; */
+        content: "";
+        position: absolute;
+        height: 35vh;
+        right: 0;
+        left: 0;
+        transform: translateX(-100%);
+        background-image: linear-gradient(
+            90deg, 
+            rgba(255, 255, 255, 0) 0, 
+            rgba(255, 255, 255, 0.2) 20%, 
+            rgba(255, 255, 255, 0.5) 60%, 
+            rgba(255, 255, 255, 0)
+            );
+        animation: load 1.3s infinite;
+    }
+
     /* Rodapé do artigo secundário na Barra de navegação mobile */
     .footer-info{
             
