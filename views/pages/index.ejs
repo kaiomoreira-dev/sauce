@@ -7,7 +7,7 @@
     <div class="container">
         <!-- Barra de Navegação -->
         <%- include('../partials/header') -%>
-        <main>
+        <main id="main-1">
             <!-- Pesquisar -->
             <section class="section-search">
                 <form action="">
@@ -25,7 +25,7 @@
                 <p>Venha conhecer as melhores receitas culinárias com o sabor caseiro. Só no Sauce voce encontra as mais variádas receitas!</p>
             </div>
             <!-- Destaque da semana -->
-            <div class="hight-view">
+            <div class="emphasis">
                 <h2>Destaques da semana</h2>
             </div>
             <!-- Artigo principal -->
@@ -51,7 +51,7 @@
                 <% } %>
             </article>
             <!-- Mais destaques -->
-            <div class="new-recipes">
+            <div class="emphasis">
                 <h2>Novidades</h2>
             </div> 
             <!-- Artigo secundario -->
@@ -77,7 +77,7 @@
                 <% } %>
             </article>
               <!-- Destaques de Carne -->
-              <div class="meats">
+              <div class="emphasis">
                 <h2>Carnes</h2>
             </div> 
             <article class="article-second-recipe">
@@ -85,7 +85,7 @@
                     <section>
                         <figure>
                             <a href="<%= recipe.path %>">
-                                <img id="image-1" src="<%= recipe.img %>" alt="">
+                                <img src="<%= recipe.img %>" alt="">
                             </a>
                         </figure>
                         <div class="title">
@@ -101,6 +101,14 @@
                     </section>
                 <% } %>
             </article>
+
+            <!-- Destaque socundário -->
+            <div id="loader-article">
+                <div class="skeleton-section"></div>
+                <div class="skeleton-section"></div>
+                <div class="skeleton-section"></div>
+                <div class="skeleton-section"></div>
+            </div>
         </main>
         <!-- Rodapé -->
         <%- include('../partials/footer') -%>
