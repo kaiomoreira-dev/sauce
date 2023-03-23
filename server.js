@@ -86,6 +86,21 @@ app.get("/categoria/massas", (request, response) =>{
     });
     response.render("pages/recipes/dough.ejs", {articleMain, articleSecondary})
 });
+app.get("/categoria/sobremesas", (request, response) =>{
+    const articleMain = [];
+    const articleSecondary = [];
+
+    recipes.forEach(category => {
+        for(let dessert of category.desserts){
+            if(dessert.rating >= 4  && articleMain.length <= 2){  
+                articleMain.push(dessert);
+            }else{
+                articleSecondary.push(dessert);
+            }
+        }
+    });
+    response.render("pages/recipes/dessert.ejs", {articleMain, articleSecondary})
+});
 
 // <---------- Carnes ---------->
 app.get("/categoria/carne/tambaqui-assado-no-forno", (request, response) =>{
