@@ -492,7 +492,6 @@ main .section-search form div button > img{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 3rem;
 }
 /* Descrição do Copyrigth no Rodapé */
 .footer-info div {
