@@ -229,6 +229,7 @@ main .section-search form{
 main .section-search form div{
     height: 60%;
     border: 3px solid;
+    background-color: #ffffff;
     color: #898989;
     border-radius: 3rem;
     display: flex;
@@ -239,7 +240,7 @@ main .section-search form div{
 }
 /* Input text da <div> na section pesquisar titulo na Main */
 main .section-search form div input{
-    background-color: #f7f7f7;
+    background-color: #ffffff;
     box-shadow: 0 0 0 0;
     outline: 0;
     border: none;
