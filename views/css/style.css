@@ -179,6 +179,7 @@ header{
 main{
     /* border: 1px solid; */
     color: #000000d7;
+   
     /* box-shadow: 0 0 10px rgb(232 234 237 / 80%); */
     box-sizing: border-box;
     width: 100%;
@@ -194,10 +195,9 @@ main{
 main .title-main {
     /* border: 1px solid; */
     
-    width: 60%;
-    padding: 1.5rem 2rem;
+    width: auto;
+    padding: 1.5rem 0;
     margin-top: 11rem;
-   
     display: flex;
     flex-direction: column;
     align-items: center;  
@@ -205,13 +205,15 @@ main .title-main {
 }
 /* Descrição na section titulo na Main */
 main .title-main p {
+    /* border: 1px solid; */
+    width: 60%;
     font-size: 1.25rem;
-    margin-top: 1.5rem;
+    margin-bottom: 3rem;
 }
 /* Section pesquisar titulo na Main */
 main .section-search {
     /* border: 1px solid; */
-    width: 70%;
+    width: 60%;
     height: 7vh;
     display: flex;
     justify-content: center;
@@ -219,10 +221,15 @@ main .section-search {
     margin: 1.5rem 0;
     
 }
+main .section-search form{
+    border: 1px solid;
+    width: 100%;
+}
 /* Div na section pesquisar titulo na Main */
 main .section-search form div{
     height: 60%;
-    border: 3px solid #ff7875;
+    border: 3px solid;
+    color: #c2c2c2;
     border-radius: 3rem;
     display: flex;
     position: relative;
