@@ -213,7 +213,6 @@ async function createArticleSecondaryMainCourses(){
 
 async function handleInfiniteScroll(){
     const endOfPage = window.innerHeight + window.pageYOffset >= mainIndex.offsetHeight;
-    console.log(mainIndex.children.length)
     if (endOfPage && mainIndex.children.length === 9) {
         createArticleSecondaryDough();
 
