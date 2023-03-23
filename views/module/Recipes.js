@@ -855,7 +855,7 @@ module.exports = function Recipes(){
                 {
                     title: "Mousse de Maracujá Com Fruta",
                     img: "/images/Mousse-de-Maracujá-Com-Fruta.jpeg.webp",
-                    path: "",
+                    path: "/categoria/sobremesas/mousse-de-maracuja-com-frutas",
                     yield: 8,
                     timeWait: 40,
                     levelPrice: "preço médio",

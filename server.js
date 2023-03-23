@@ -132,6 +132,20 @@ app.get("/categoria/massa/rondelli-presunto-e-queijo", (request, response) =>{
     response.render("pages/categories/doughs/rondelli.ejs", {rondelli})
 });
 
+// <---------- Sobremesas ---------->
+app.get("/categoria/sobremesas/mousse-de-maracuja-com-frutas", (request, response) =>{
+    let mousse = {};
+
+    recipes.forEach(category =>{
+        for(let dessert of category.desserts){
+            if(dessert.title.includes("Mousse")){
+                mousse = dessert; 
+            }
+        }
+    });
+    response.render("pages/categories/desserts/mousseMaracuja.ejs", {mousse})
+});
+
 // <---------- Sevidor conectado na porta 8080 ---------->
 app.listen(8080, () =>{
     console.log('Server listening on port 8080. . .')
