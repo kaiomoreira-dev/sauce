@@ -14,6 +14,7 @@ const iconeShowMenuMobile = document.querySelector(".btnShowMenuMobile");
 const navbarMenu = document.querySelector(".navbar-menu")
 
 const mainIndex = document.querySelector("#main-1");
+const mainElement = document.querySelector("main");
 
 const liShowCategories = document.querySelector(".navbar-menu li + li");
 const ulCategories = document.querySelector(".navbar-menu .categories");
@@ -85,7 +86,7 @@ liShowCategories.addEventListener("click", () =>{
     
 })
 
-mainIndex.addEventListener("click", () =>{
+mainElement.addEventListener("click", () =>{
     iconeAngleDown.removeAttribute("id","rotateInverse")
     ulCategories.removeAttribute("id","showCategories")
 })
