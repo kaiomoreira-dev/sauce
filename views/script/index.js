@@ -213,15 +213,20 @@ async function createArticleSecondaryMainCourses(){
 
 async function handleInfiniteScroll(){
     const endOfPage = window.innerHeight + window.pageYOffset >= mainIndex.offsetHeight;
-    if (endOfPage && mainIndex.offsetHeight < 2000) {
+    console.log(mainIndex.children.length)
+    if (endOfPage && mainIndex.children.length === 9) {
         createArticleSecondaryDough();
+
     }
-    if(endOfPage && mainIndex.offsetHeight > 2000) {
+    if(endOfPage && mainIndex.children.length === 11) {
         createArticleSecondaryMainCourses();
     }
-    if(endOfPage && mainIndex.offsetHeight > 2500 ){
+
+    if(endOfPage && mainIndex.children.length === 13){
         window.removeEventListener("scroll", handleInfiniteScroll);
         loaderArticleElement.remove();
     }
+    
+    
   };
 window.addEventListener("scroll", handleInfiniteScroll);
