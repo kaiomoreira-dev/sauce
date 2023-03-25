@@ -1033,15 +1033,25 @@ main .section-search form div button > img{
 
 
 /* <------------------- Inicio Recipes  ------------------->*/
-.meat-title{
+.section-title{
+    /* border: 1px solid; */
+    width: 96%;
+    margin-bottom: 1rem;
+    margin-top: 13rem;
+}
+.section-title h1{
+    font-size: 1.8rem
+}
+.search-title{
     /* border: 1px solid; */
     width: 96%;
     margin-bottom: 1rem;
     margin-top: 2rem;
 }
-.meat-title h1{
+.search-title h1{
     font-size: 1.8rem
 }
+
 @media screen and (max-width: 500px){
     .meat-title{
         /* border: 1px solid; */
