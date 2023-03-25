@@ -14,6 +14,7 @@ const iconeShowMenuMobile = document.querySelector(".btnShowMenuMobile");
 const navbarMenu = document.querySelector(".navbar-menu")
 
 const mainIndex = document.querySelector("#main-1");
+const mainIndex2 = document.querySelector("#main-2");
 const mainElement = document.querySelector("main");
 
 const liShowCategories = document.querySelector(".navbar-menu li + li");
@@ -270,25 +271,31 @@ async function createArticleSecondaryDessert(){
 }
 
 async function handleInfiniteScroll(){
-    const endOfPage = window.innerHeight + window.pageYOffset >= mainIndex.offsetHeight;
-    console.log(mainIndex.children.length)
-    if (endOfPage && mainIndex.children.length === 7) {
-        createArticleSecondaryDough();
+    try {
+        const endOfPage = window.innerHeight + window.pageYOffset >= mainIndex.offsetHeight;
+        console.log(mainIndex.children.length)
+        if (endOfPage && mainIndex.children.length === 7) {
+            createArticleSecondaryDough();
 
-    }
-    if(endOfPage && mainIndex.children.length === 9) {
-        createArticleSecondaryMainCourses();
-    }
+        }
+        if(endOfPage && mainIndex.children.length === 9) {
+            createArticleSecondaryMainCourses();
+        }
 
-    if(endOfPage && mainIndex.children.length === 11){
-        createArticleSecondaryDessert()  
-    }
+        if(endOfPage && mainIndex.children.length === 11){
+            createArticleSecondaryDessert()  
+        }
 
-    if(endOfPage && mainIndex.children.length === 13){
-        window.removeEventListener("scroll", handleInfiniteScroll);
-        loaderArticleElement.remove();
-    }
+        if(endOfPage && mainIndex.children.length === 13){
+            window.removeEventListener("scroll", handleInfiniteScroll);
+            loaderArticleElement.remove();
+        }
     
+    } catch (error) {
+        console.log(error);
+        window.removeEventListener("scroll", handleInfiniteScroll);
+    }
     
   };
 window.addEventListener("scroll", handleInfiniteScroll);
+
