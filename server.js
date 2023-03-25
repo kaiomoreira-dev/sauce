@@ -199,7 +199,6 @@ app.get("/search", async (request, response) =>{
     response.render("pages/search.ejs", {articleMain, articleSecondary});
 });
 
-
 app.get("/sobre", (request, response) =>{
     response.render("pages/about.ejs")
 });

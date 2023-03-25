@@ -50,32 +50,6 @@
                     </section>
                 <% } %>
             </article>
-            <!-- Mais destaques -->
-            <div class="emphasis">
-                <h2>Novidades</h2>
-            </div> 
-            <!-- Artigo secundario -->
-            <article class="article-second-recipe">
-                <%for(let recipe of articleSecondary){ %>
-                    <section>
-                        <figure>
-                            <a  href="<%= recipe.path %>">
-                                <img src="<%= recipe.img %>" alt="">
-                            </a>
-                        </figure>
-                        <div class="title">
-                            <h1><%= recipe.title %></h1>
-                            <div class="stars">
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                            </div>
-                        </div>
-                    </section>
-                <% } %>
-            </article>
               <!-- Destaques de Carne -->
               <div class="emphasis">
                 <h2>Carnes</h2>
