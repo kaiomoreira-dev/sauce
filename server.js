@@ -216,7 +216,7 @@ app.get("/categoria/carnes", (request, response) =>{
     const articleSecondary = [];
 
     recipes.recipes.forEach(category => {
-        for(let meat of category.salads){
+        for(let meat of category.meats){
             if(meat.rating >= 4  && articleMain.length <= 2){
                 articleMain.push(meat);
             }else{
