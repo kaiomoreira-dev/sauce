@@ -4,11 +4,26 @@
     <%- include('../partials/head') -%>
     <title>Procurar Receita</title>
 <body>
-    <div class="container">
+    <div class="container-2">
          <!-- Header -->
          <%- include('../partials/header') -%>
-        <main>
-           <h1>Procure uma receita!</h1>
+        <main id="main-2">
+           <div class="search-recipe">
+                <h1>Já encontrou a sua receita?</h1>
+                <form action="/search" method="get">
+                    <div>
+                        <input type="search" name="recipe" placeholder="Pesquise uma receita">
+                        <button type="submit">
+                            <img src="/images/lupa.png" alt="">
+                        </button>
+                    </div>
+                </form>
+           </div>
+           <div class="found-result">
+                <p>
+                    Encontrei <strong><%= amountRecipesFound %></strong> resultados: "<%= sectionCategory %>"
+                </p>   
+           </div>
              <!-- Artigo principal -->
              <div class="meat-title">
                 <h1>Receitas</h1>
