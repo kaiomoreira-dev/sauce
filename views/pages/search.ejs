@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <!-- Head -->
+    <%- include('../partials/head') -%>
+    <title>Procurar Receita</title>
+<body>
+    <div class="container">
+         <!-- Header -->
+         <%- include('../partials/header') -%>
+        <main>
+           <h1>Procure uma receita!</h1>
+             <!-- Artigo principal -->
+             <div class="meat-title">
+                <h1>Receitas</h1>
+            </div>
+             <article class="article-main-recipe">                
+                <%for(let recipe of articleMain){ %>
+                    <section>
+                        <figure >
+                            <a href="<%= recipe.path %>">
+                                <img id="onBorderRadiues" src="<%= recipe.img %>" alt="">
+                            </a>
+                        </figure>
+                        <div class="title">
+                            <h1><%= recipe.title %></h1>
+                            <div class="stars">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </div>
+                        </div>
+                    </section>
+                <% } %>
+            </article>
+            <!-- Mais destaques -->
+            <div class="emphasis">
+                <h2>Mais receitas</h2>
+            </div> 
+            <!-- Artigo secundario -->
+            <article class="article-second-recipe">
+                <%for(let recipe of articleSecondary){ %>
+                    <section>
+                        <figure>
+                            <a  href="<%= recipe.path %>">
+                                <img src="<%= recipe.img %>" alt="">
+                            </a>
+                        </figure>
+                        <div class="title">
+                            <h1><%= recipe.title %></h1>
+                            <div class="stars">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </div>
+                        </div>
+                    </section>
+                <% } %>
+            </article>
+        </main>
+        <!-- Footer -->
+        <%- include('../partials/footer') -%>
+    </div>
+</body>
+<script src="/script/index.js"></script>
+</html>
