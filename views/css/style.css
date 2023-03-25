@@ -729,6 +729,7 @@ main .section-search form div button > img{
         /* border: 1px solid; */
         height: auto;
         font-size: 0.9rem;
+        background-color: #f7f7f7;
     }
     .item-recipes{
         color: rgba(0, 0, 0, 0.70);
@@ -803,7 +804,6 @@ main .section-search form div button > img{
         /* border: 1px solid; */
         color: #000000d7;
         
-        background-color: #f7f7f7;
         
         max-width: 100%;
         min-height: 100%;
@@ -818,7 +818,7 @@ main .section-search form div button > img{
     /* Section pesquisar titulo na Main */
     main .section-search {
         /* border: 1px solid; */
-        width: 70%;
+        width: 69%;
         height: 7vh;
         display: flex;
         justify-content: center;
@@ -826,28 +826,31 @@ main .section-search form div button > img{
        
         
     }
-    /* Div na section pesquisar titulo na Main */
+    /* Div na section pesquisar receita na Main */
     main .section-search form div{
-        height: 60%;
-        width: 86vw;
-        border: 3px solid #ff7875;
+        height: 2.5rem;
+        border: 2px solid;
+        background-color: #ffffff;
+        color: #000000d7;
         border-radius: 3rem;
         display: flex;
         position: relative;
-        padding: 0.5rem;
+        margin-top: 8rem;
+        z-index: 0;
+        width: 100%;
     }
     /* Input text da <div> na section pesquisar titulo na Main */
     main .section-search form div input{
-        background-color: #f7f7f7;
+        background-color: #ffffff;
         box-shadow: 0 0 0 0;
-        outline: 0;
-        border: none;
         border-radius: 3rem;
+        border: none;
+        outline: 0;
         height: 100%;
-        width: 80vw;
+        width: 60vw;
         padding-left: 1rem;
         font-size: 1.3rem;
-    
+
     }
     /* Botão da <div> na section pesquisar titulo na Main */
     main .section-search form div button{
@@ -861,10 +864,8 @@ main .section-search form div button > img{
     }
     /* Seção titulo na Main */
     main .title-main {
-        /* border: 1px solid; */
-        
-        width: 100%;
-        padding: 1.5rem 2rem 1rem;
+        /* border: 1px solid; */ 
+        width: 67%;
         margin-top: 10rem;
        
         display: flex;
@@ -875,20 +876,22 @@ main .section-search form div button > img{
     main .title-main h1 {
         /* border: 1px solid; */
         font-size: 2rem;
-        width: 89%;
+        width: 100%;
         display: flex;
-        justify-content: center;
-        position: relative;
-        right: 1.5rem;
     }
     /* Descrição na section titulo na Main */
     main .title-main p {
         /* border: 1px solid; */
-        width: 78%;
+        width: 100%;
         font-size: 1.25rem;
         margin-top: 1rem;
         text-align: justify;
     }
+    .emphasis{
+        /* border: 1px solid; */
+        width: 95%;        
+    }
+    
     /* Artigo principal */
     .article-main-recipe{
         /* border: 1px solid; */
@@ -897,10 +900,10 @@ main .section-search form div button > img{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 4rem;
+        gap: 3rem;
         
         overflow: hidden;
-        margin-bottom: 4.5rem;
+        margin-bottom: 4rem;
     }
     /* Seção do Artigo principal */
     .article-main-recipe section{
@@ -918,12 +921,23 @@ main .section-search form div button > img{
         overflow: hidden;
 
     }
+    .article-main-recipe section .title {
+        margin-top: 0.8rem;
+    }
+    .article-main-recipe section .title h1 {
+        margin-top: 0;
+    }
     /* Figura da seção do Artigo principal */
     .article-main-recipe section > figure{
         /* border: 1px solid; */
-        height: 55vh;
+        height: 56vh;
         overflow: hidden;
         border-radius: 0.3rem;
+
+    }
+    .article-main-recipe section figure a > img{
+        /* border: 1px solid; */
+        height: 100%;
 
     }
     /* Artigo secundário */
@@ -960,8 +974,6 @@ main .section-search form div button > img{
         height: auto;
         width: 100%;
     }    
-
-
     #loader-article{
         /* border: 1px solid; */
         width: 100%;
@@ -1053,10 +1065,11 @@ main .section-search form div button > img{
 }
 
 @media screen and (max-width: 500px){
-    .meat-title{
+    .search-title{
         /* border: 1px solid; */
         width: 94%;
-        margin-top: 9rem;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
     }
 }
 
@@ -1545,5 +1558,31 @@ main .section-search form div button > img{
 }
 .container-2 .found-result p{
     font-size: 1.3rem;
+}
+@media screen and (max-width: 500px){
+    .container-2 main .search-recipe {
+        /* border: 1px solid; */
+        margin-top: 9rem;
+    }
+    .container-2 .search-recipe h1{
+        /* border: 1px solid; */
+        width: 100%;
+        font-size: 1.9rem;
+    }
+
+    .container-2 .search-recipe form{
+        display: flex;
+        justify-content: center;
+    }
+    .container-2 .search-recipe form div{
+       width: 80%;
+    }
+    .container-2 .found-result{
+        /* border: 1px solid; */
+
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        width: 94%;
+    }
 }
 /* <------------------- Final Search ------------------->*/
