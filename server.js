@@ -48,8 +48,10 @@ app.get("/", (request, response) =>{
 app.get("/search", async (request, response) =>{
     const articleMain = [];
     const articleSecondary = [];
-
+    let sectionCategory;
     let translatedText = [];
+    let amountRecipesFound = 0;
+    
     let searchedRecipe = request.query.recipe;
 
     const options = {
@@ -80,8 +82,10 @@ app.get("/search", async (request, response) =>{
       const translatedTextFormatted = translatedText.join("").toLocaleLowerCase().replace(" ", "");      
     for(let category of recipes.recipes){
         if(translatedTextFormatted === "pastas" || translatedTextFormatted === "pasta"){
+            sectionCategory = "Massa";
+            amountRecipesFound = category.doughs.length;
             for(let dough of category.doughs){
-                if(dough.rating === 5){
+                if(articleMain.length <=2 && dough.rating === 5){
                     articleMain.push(dough);
                 }else{
                     articleSecondary.push(dough);
@@ -89,8 +93,10 @@ app.get("/search", async (request, response) =>{
             }
         }
         if(translatedTextFormatted === "salads" || translatedTextFormatted === "salad"){
+            sectionCategory = "Salada";
+            amountRecipesFound = category.salads.length;
             for(let salad of category.salads){
-                if(salad.rating === 5){
+                if(articleMain.length <=2 && salad.rating === 5){
                     articleMain.push(salad);
                 }else{
                     articleSecondary.push(salad);
@@ -98,8 +104,10 @@ app.get("/search", async (request, response) =>{
             }
         }
         if(translatedTextFormatted === "meats" || translatedTextFormatted === "meat"){
+            sectionCategory = "Carne";
+            amountRecipesFound = category.meats.length;
             for(let meat of category.meats){
-                if(meat.rating === 5){
+                if(articleMain.length <=2 && meat.rating === 5){
                     articleMain.push(meat);
                 }else{
                     articleSecondary.push(meat);
@@ -107,8 +115,10 @@ app.get("/search", async (request, response) =>{
             }
         }
         if(translatedTextFormatted === "desserts" || translatedTextFormatted === "dessert"){
+            sectionCategory = "Sobremesa";
+            amountRecipesFound = category.desserts.length;
             for(let dessert of category.desserts){
-                if(dessert.rating === 5){
+                if(articleMain.length <=2 && dessert.rating === 5){
                     articleMain.push(dessert);
                 }else{
                     articleSecondary.push(dessert);
@@ -116,8 +126,10 @@ app.get("/search", async (request, response) =>{
             }
         }
         if(translatedTextFormatted === "maincourses" || translatedTextFormatted === "maincourse"){
+            sectionCategory = "Prato Principal";
+            amountRecipesFound = category.mainCourses.length;
             for(let mainCourse of category.mainCourses){
-                if(mainCourse.rating === 5){
+                if(articleMain.length <=2 && mainCourse.rating === 5){
                     articleMain.push(mainCourse);
                 }else{
                     articleSecondary.push(mainCourse);
@@ -129,6 +141,8 @@ app.get("/search", async (request, response) =>{
             let recipeTitle = recipe.title.toLowerCase();
 
             if(searchedRecipeFormatted === recipeTitle && recipe.category === "meats"){
+                sectionCategory = recipe.title;
+                amountRecipesFound = category.meats.length;
                 articleMain.push(recipe);     
                 for(let category of recipes.recipes){
                     for(let meat of category.meats){
@@ -142,6 +156,8 @@ app.get("/search", async (request, response) =>{
 
             }
             if(searchedRecipeFormatted === recipeTitle && recipe.category === "desserts"){
+                sectionCategory = recipe.title;
+                amountRecipesFound = category.desserts.length;
                 articleMain.push(recipe);     
                 for(let category of recipes.recipes){
                     for(let dessert of category.desserts){
@@ -155,6 +171,8 @@ app.get("/search", async (request, response) =>{
 
             }
             if(searchedRecipeFormatted === recipeTitle && recipe.category === "doughs"){
+                sectionCategory = recipe.title;
+                amountRecipesFound = category.doughs.length;
                 articleMain.push(recipe);     
                 for(let category of recipes.recipes){
                     for(let dough of category.doughs){
@@ -168,6 +186,8 @@ app.get("/search", async (request, response) =>{
 
             }
             if(searchedRecipeFormatted === recipeTitle && recipe.category === "mainCourses"){
+                sectionCategory = recipe.title;
+                amountRecipesFound = category.mainCourses.length;
                 articleMain.push(recipe);     
                 for(let category of recipes.recipes){
                     for(let mainCourse of category.mainCourses){
@@ -181,6 +201,8 @@ app.get("/search", async (request, response) =>{
 
             }
             if(searchedRecipeFormatted === recipeTitle && recipe.category === "salads"){
+                sectionCategory = recipe.title;
+                amountRecipesFound = category.salads.length;
                 articleMain.push(recipe);     
                 for(let category of recipes.recipes){
                     for(let salad of category.salads){
@@ -196,7 +218,7 @@ app.get("/search", async (request, response) =>{
            
         }
     }
-    response.render("pages/search.ejs", {articleMain, articleSecondary});
+    response.render("pages/search.ejs", {articleMain, articleSecondary, sectionCategory, amountRecipesFound});
 });
 
 app.get("/sobre", (request, response) =>{
