@@ -23,6 +23,10 @@ const header = document.querySelector("header");
 
 const loaderArticleElement = document.querySelector("main").lastElementChild;
 
+const formSearch = document.querySelector(".section-search form");
+const inputSearch = document.querySelector(".section-search input");
+const buttonSearch = document.querySelector(".section-search button");
+
 imagesPost.forEach(image => {
     image.setAttribute("title", "Ler mais")
 })
