@@ -122,8 +122,6 @@ header{
     transition: 1s; 
 }
 
-/* Efeito na lista de itens do menu */
-
 /* Ul com lista de categorias */
 .navbar-menu .categories{
     /* border: 1px solid; */
