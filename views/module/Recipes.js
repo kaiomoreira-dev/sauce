@@ -10,6 +10,7 @@ module.exports = function Recipes(){
                     timeWait: 30,
                     levelPrice: "preco médio",
                     rating: 5,
+                    category: "meats",
                     ingredients: [
                         "1 unidade de tambaqui de 3kg",
                         "4 unidades de limão",
@@ -41,6 +42,7 @@ module.exports = function Recipes(){
                     timeWait: 90,
                     levelPrice: "preco médio",
                     rating: 5,
+                    category: "meats",
                     ingredients: [
                         "1 colher de pimenta, cominho e sal",
                         "1 colher de cominho",
@@ -75,6 +77,7 @@ module.exports = function Recipes(){
                     timeWait: 2,
                     levelPrice: "preco médio",
                     rating: 5,
+                    category: "meats",
                     ingredients: [
                         "1 peru de 4 a 5 kg",
                         "1 cebola grande",
@@ -99,6 +102,7 @@ module.exports = function Recipes(){
                     timeWait: 50,
                     levelPrice: "preco médio",
                     rating: 3,
+                    category: "meats",
                     ingredients: [
                         "2 Filés de peixe (sem espinhas)",
                         "Pimenta do reino a gosto",
@@ -133,6 +137,7 @@ module.exports = function Recipes(){
                     timeWait: 30,
                     levelPrice: "preco médio",
                     rating: 3,
+                    category: "meats",
                     ingredients: [
                         "1 kg de carne moída",
                         "2 colheres de azeite",
@@ -164,6 +169,7 @@ module.exports = function Recipes(){
                     timeWait: 45,
                     levelPrice: "preco médio",
                     rating: 2,
+                    category: "meats",
                     ingredients: [
                         "2 peitos de frango",
                         "1 unidade de cebola",
@@ -197,6 +203,7 @@ module.exports = function Recipes(){
                     timeWait: 30,
                     levelPrice: "preco médio",
                     rating: 3,
+                    category: "meats",
                     ingredients: [
                         "1 kg de carne de sua preferência, como patinho ou coxão mole",
                         "3 cebolas médias",
@@ -231,6 +238,7 @@ module.exports = function Recipes(){
                     timeWait: 10,
                     levelPrice: "preço econômico",
                     rating: 5,
+                    category: "salads",
                     ingredients: [
                         "2 mamões papaia pequenos",
                         "1 laranja média",
@@ -262,6 +270,7 @@ module.exports = function Recipes(){
                     timeWait: 20,
                     levelPrice: "preço econômico",
                     rating: 5,
+                    category: "mainCourses",
                     ingredients: [
                         "500 g de feijão preto",
                         "2 colheres sopa de óleo",
@@ -300,6 +309,7 @@ module.exports = function Recipes(){
                     timeWait: 20,
                     levelPrice: "preço médio",
                     rating: 3,
+                    category: "mainCourses",
                     ingredients: [
                         "3 xícaras de chá de arroz cozido",
                         "2 ovos inteiros",
@@ -333,6 +343,7 @@ module.exports = function Recipes(){
                     timeWait: 30,
                     levelPrice: "preço econômico",
                     rating: 3,
+                    category: "mainCourses",
                     ingredients: [
                         "4 xícaras de chá de arroz cozido",
                         "100 gramas de muçarela ralada",
@@ -364,7 +375,8 @@ module.exports = function Recipes(){
                     yield: 1,
                     timeWait: 10,
                     levelPrice: "preço econômico",
-                    rating: 3,
+                    rating: 5,
+                    category: "mainCourses",
                     ingredients: [
                         "1 Xícara (chá) de Espinafre picado",
                         "3 Ovos",
@@ -401,6 +413,7 @@ module.exports = function Recipes(){
                     timeWait: 7,
                     levelPrice: "preço econômico",
                     rating: 4,
+                    category: "mainCourses",
                     ingredients: [
                         "1 cebola grande cortada em pedaços grandes",
                         "1 pimentão grande cortado em rodelas",
@@ -436,7 +449,8 @@ module.exports = function Recipes(){
                     yield: 4,
                     timeWait: 30,
                     levelPrice: "preço médio",
-                    rating: 4,
+                    rating: 5,
+                    category: "mainCourses",
                     ingredients: [
                         "1 colher sopa de óleo",
                         "1 cebola picada",
@@ -476,6 +490,7 @@ module.exports = function Recipes(){
                     timeWait: 60,
                     levelPrice: "preço econômico",
                     rating: 3,
+                    
                     ingredients: [
                         "1 xícara (chá) de leite",
                         "1 ovo",
@@ -514,6 +529,7 @@ module.exports = function Recipes(){
                     timeWait: 60,
                     levelPrice: "preço econômico",
                     rating: 5,
+                    category: "doughs",
                     ingredients: [
                         "500g de massa fresca pré-cozida para lasanha",
                         "300g de queijo muçarela em fatias",
@@ -555,6 +571,7 @@ module.exports = function Recipes(){
                     timeWait: 60,
                     levelPrice: "preço médio",
                     rating: 5,
+                    category: "doughs",
                     ingredients: [
                         "1 bolinha de massa de 200 g",
                         "30 gramas de nata",
@@ -589,6 +606,7 @@ module.exports = function Recipes(){
                     timeWait: 60,
                     levelPrice: "preço médio",
                     rating: 5,
+                    category: "doughs",
                     ingredients: [
                         "1 Massa pré assada para pizza",
                         "1 Massa de tomate",
@@ -614,6 +632,7 @@ module.exports = function Recipes(){
                     timeWait: 50,
                     levelPrice: "preço econômico",
                     rating: 3,
+                    category: "doughs",
                     ingredients: [
                         "500 g de massa de lasanha",
                         "500 g de carne moída",
@@ -656,6 +675,7 @@ module.exports = function Recipes(){
                     timeWait: 20,
                     levelPrice: "preço econômico",
                     rating: 4,
+                    category: "doughs",
                     ingredients: [
                         "1/2 pacote do macarrão de sua preferência",
                         "3 colheres de sopa de óleo",
@@ -693,6 +713,7 @@ module.exports = function Recipes(){
                     timeWait: 20,
                     levelPrice: "preço econômico",
                     rating: 4,
+                    category: "doughs",
                     ingredients: [
                         "1 lata de tomate pelado",
                         "1 xícara de macarrão penne",
@@ -722,6 +743,7 @@ module.exports = function Recipes(){
                     timeWait: 1440,
                     levelPrice: "preço médio",
                     rating: 4,
+                    category: "desserts",
                     ingredients: [
                         "4 a 6 pacotes de gelatina de sabores variados.",
                         "Água fervente e gelada (100ml de cada para cada sabor de gelatina)",
@@ -756,6 +778,7 @@ module.exports = function Recipes(){
                     timeWait: 30,
                     levelPrice: "preço médio",
                     rating: 5,
+                    category: "desserts",
                     ingredients: [
                         "2 ovos",
                         "1 xícara de leite integral",
@@ -796,6 +819,7 @@ module.exports = function Recipes(){
                     timeWait: 90,
                     levelPrice: "preço médio",
                     rating: 3,
+                    category: "desserts",
                     ingredients: [
                         "1 pacote de bolachas maria ao leite",
                         "1 xícara de café de açúcar refinado",
@@ -828,6 +852,7 @@ module.exports = function Recipes(){
                     timeWait: 40,
                     levelPrice: "preço médio",
                     rating: 3,
+                    category: "desserts",
                     ingredients: [
                         "300 g de chocolate para culinária",
                         "6 ovos",
@@ -860,6 +885,7 @@ module.exports = function Recipes(){
                     timeWait: 40,
                     levelPrice: "preço médio",
                     rating: 5,
+                    category: "desserts",
                     ingredients: [
                         "7 gramas de gelatina sem sabor",
                         "1/4 xícara de água",
@@ -906,6 +932,7 @@ module.exports = function Recipes(){
                     timeWait: 1440,
                     levelPrice: "preço médio",
                     rating: 5,
+                    category: "desserts",
                     ingredients: [
                         "4 a 6 pacotes de gelatina de sabores variados.",
                         "Água fervente e gelada (100ml de cada para cada sabor de gelatina)",
@@ -940,6 +967,7 @@ module.exports = function Recipes(){
                     timeWait: 15,
                     levelPrice: "preço relevante",
                     rating: 5,
+                    category: "desserts",
                     ingredients: [
                         "2 xícaras de vinho tinto de preferência (Cabernet Sauvignon ou Merlot)",
                         "1 pedaço grande de casca de laranja",
@@ -968,6 +996,24 @@ module.exports = function Recipes(){
             ]
         },
     ];
+    let allRecipes = [];
+    recipes.forEach(category =>{
+        for(let recipe of category.desserts){
+            allRecipes.push(recipe);
+        }
+        for(let recipe of category.doughs){
+            allRecipes.push(recipe);
+        }
+        for(let recipe of category.mainCourses){
+            allRecipes.push(recipe);
+        }
+        for(let recipe of category.meats){
+            allRecipes.push(recipe);
+        }
+        for(let recipe of category.salads){
+            allRecipes.push(recipe);
+        }
+    })
 
-    return recipes;
+    return {recipes, allRecipes}
 }
