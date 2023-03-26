@@ -28,6 +28,8 @@ const formSearch = document.querySelector(".section-search form");
 const inputSearch = document.querySelector(".section-search input");
 const buttonSearch = document.querySelector(".section-search button");
 
+const ulInfoSearchHelper = document.getElementById("search-helper");
+
 imagesPost.forEach(image => {
     image.setAttribute("title", "Ler mais")
 })
@@ -299,3 +301,12 @@ async function handleInfiniteScroll(){
   };
 window.addEventListener("scroll", handleInfiniteScroll);
 
+window.onload = () =>{
+    console.log(mainIndex2.offsetHeight);
+    if(mainIndex2.offsetHeight <= 1000){
+        ulInfoSearchHelper.style.display = "block";
+    }else{
+        ulInfoSearchHelper.style.display = "none";
+    }
+
+}
