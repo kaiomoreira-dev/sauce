@@ -1514,12 +1514,10 @@ main .section-search form div button > img{
 }
 .container-2 main .search-recipe{
     /* border: 1px solid; */
-    margin-top: 10rem;
+    margin-top: 9rem;
     display: flex;
     flex-direction: column;
 }
-.container-2 .search-recipe h1{}
-.container-2 .search-recipe form{}
 .container-2 .search-recipe form div{
     height: 60%;
     border-bottom: 1px solid;
@@ -1559,10 +1557,26 @@ main .section-search form div button > img{
 .container-2 .found-result p{
     font-size: 1.3rem;
 }
+#search-helper{
+    display:block;
+    font-size: 1.1rem;
+}
+#search-helper p{
+    /* border: 1px solid; */
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+#search-helper ul{
+    list-style: url("/images/check.png");
+}
+#search-helper ul li{
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+}
 @media screen and (max-width: 500px){
     .container-2 main .search-recipe {
         /* border: 1px solid; */
-        margin-top: 9rem;
+        margin-top: 7rem;
     }
     .container-2 .search-recipe h1{
         /* border: 1px solid; */
