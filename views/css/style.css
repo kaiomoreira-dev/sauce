@@ -96,7 +96,7 @@ header{
 }
 #search-header{
     display: none;
-    border: 0.1px solid rgba(0, 0, 0, 0.10);
+    border: 1px solid rgba(0, 0, 0, 0.20);
     height: 20rem;
     width: 50%;
     position: absolute;
@@ -104,8 +104,17 @@ header{
     left: 25%;
     z-index: 1;
     background-color: #ffffff;
-    box-shadow: 0 0 10px rgb(232 234 237 / 80%);
 }
+#search-shadow{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(104, 123, 146, 0.469);
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    display: none;
+
+} 
 /* Menu de navegação desktop */
 .navbar-menu{
     /* border: 1px solid; */
@@ -754,7 +763,8 @@ main .section-search form div button > img{
   
     #showNavbarMenu{
         display: block;
-    }   
+    }  
+  
     /* li categorias de receitas */
     .navbar-menu .item-category-recipes {
         /* border: 1px solid; */
@@ -816,7 +826,7 @@ main .section-search form div button > img{
     /* Div para conter o icone de pesquisa */
     .navbar-global .navItem-search{
         /* border: 1px solid; */
-        display: block;
+        display: none;
         position: inherit;
         left: 10rem;
         
