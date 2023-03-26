@@ -290,6 +290,23 @@ app.get("/categoria/sobremesas", (request, response) =>{
     });
     response.render("pages/recipes/dessert.ejs", {articleMain, articleSecondary})
 });
+app.get("/categoria/mainCourse", (request, response) =>{
+    const articleMain = [];
+    const articleSecondary = [];
+    let sectionCategory;
+    recipes.recipes.forEach(category => {
+        for(let mainCourse of category.mainCourses){
+            sectionCategory = "Prato Principal";
+            if(mainCourse.rating >= 4  && articleMain.length <= 2){  
+                articleMain.push(mainCourse);
+            }else{
+                articleSecondary.push(mainCourse);
+            }
+        }
+    });
+    response.render("pages/recipes/mainCourse.ejs", {articleMain, articleSecondary, sectionCategory})
+});
+
 
 // <---------- Carnes ---------->
 app.get("/categoria/carne/tambaqui-assado-no-forno", (request, response) =>{
