@@ -48,11 +48,12 @@ app.get("/", (request, response) =>{
 app.get("/search", async (request, response) =>{
     const articleMain = [];
     const articleSecondary = [];
-    let sectionCategory;
     let translatedText = [];
     let amountRecipesFound = 0;
+    let textRecipe;
     
-    let searchedRecipe = request.query.recipe;
+    let searchedRecipe = request.query.recipe.toLocaleLowerCase();
+    let sectionCategory = searchedRecipe;
 
     const options = {
         method: 'POST',
@@ -67,7 +68,7 @@ app.get("/search", async (request, response) =>{
             format: "text",
             key: "AIzaSyDxCJQUwoEz4GN9-o5Y6HQzsRc61IptTNQ"
         }
-      };
+    };
       const data = await axios.request(options).then(function (response) {
         return JSON.stringify(response.data);
       
@@ -79,146 +80,157 @@ app.get("/search", async (request, response) =>{
             translatedText.push(data[element]);
         }
       }
-      const translatedTextFormatted = translatedText.join("").toLocaleLowerCase().replace(" ", "");      
-    for(let category of recipes.recipes){
-        if(translatedTextFormatted === "pastas" || translatedTextFormatted === "pasta"){
-            sectionCategory = "Massa";
-            amountRecipesFound = category.doughs.length;
-            for(let dough of category.doughs){
-                if(articleMain.length <=2 && dough.rating === 5){
-                    articleMain.push(dough);
-                }else{
-                    articleSecondary.push(dough);
-                }
-            }
-        }
-        if(translatedTextFormatted === "salads" || translatedTextFormatted === "salad"){
-            sectionCategory = "Salada";
-            amountRecipesFound = category.salads.length;
-            for(let salad of category.salads){
-                if(articleMain.length <=2 && salad.rating === 5){
-                    articleMain.push(salad);
-                }else{
-                    articleSecondary.push(salad);
-                }
-            }
-        }
-        if(translatedTextFormatted === "meats" || translatedTextFormatted === "meat"){
-            sectionCategory = "Carne";
-            amountRecipesFound = category.meats.length;
-            for(let meat of category.meats){
-                if(articleMain.length <=2 && meat.rating === 5){
-                    articleMain.push(meat);
-                }else{
-                    articleSecondary.push(meat);
-                }
-            }
-        }
-        if(translatedTextFormatted === "desserts" || translatedTextFormatted === "dessert"){
-            sectionCategory = "Sobremesa";
-            amountRecipesFound = category.desserts.length;
-            for(let dessert of category.desserts){
-                if(articleMain.length <=2 && dessert.rating === 5){
-                    articleMain.push(dessert);
-                }else{
-                    articleSecondary.push(dessert);
-                }
-            }
-        }
-        if(translatedTextFormatted === "maincourses" || translatedTextFormatted === "maincourse"){
-            sectionCategory = "Prato Principal";
-            amountRecipesFound = category.mainCourses.length;
-            for(let mainCourse of category.mainCourses){
-                if(articleMain.length <=2 && mainCourse.rating === 5){
-                    articleMain.push(mainCourse);
-                }else{
-                    articleSecondary.push(mainCourse);
-                }
-            }
-        }  
-        let searchedRecipeFormatted = searchedRecipe.toLowerCase();
-        for(let recipe of recipes.allRecipes){
-            let recipeTitle = recipe.title.toLowerCase();
-
-            if(searchedRecipeFormatted === recipeTitle && recipe.category === "meats"){
-                sectionCategory = recipe.title;
-                amountRecipesFound = category.meats.length;
-                articleMain.push(recipe);     
-                for(let category of recipes.recipes){
-                    for(let meat of category.meats){
-                        if(searchedRecipeFormatted !== meat.title.toLocaleLowerCase() && articleMain.length <=2 && meat.rating === 5){
-                            articleMain.push(meat);
-                        }else if(searchedRecipeFormatted !== meat.title.toLocaleLowerCase() && meat.rating <= 5){
-                            articleSecondary.push(meat);
-                        }
-                    }
-                }
-
-            }
-            if(searchedRecipeFormatted === recipeTitle && recipe.category === "desserts"){
-                sectionCategory = recipe.title;
-                amountRecipesFound = category.desserts.length;
-                articleMain.push(recipe);     
-                for(let category of recipes.recipes){
-                    for(let dessert of category.desserts){
-                        if(searchedRecipeFormatted !== dessert.title.toLocaleLowerCase() && articleMain.length <=2 && dessert.rating === 5){
-                            articleMain.push(dessert);
-                        }else if(searchedRecipeFormatted !== dessert.title.toLocaleLowerCase() && dessert.rating <= 5){
-                            articleSecondary.push(dessert);
-                        }
-                    }
-                }
-
-            }
-            if(searchedRecipeFormatted === recipeTitle && recipe.category === "doughs"){
-                sectionCategory = recipe.title;
+      const translatedTextFormatted = translatedText.join("").replace(" ", "");      
+      for(let category of recipes.recipes){
+            if(translatedTextFormatted === "pastas" || translatedTextFormatted === "pasta"){
+                sectionCategory = "Massa";
                 amountRecipesFound = category.doughs.length;
-                articleMain.push(recipe);     
-                for(let category of recipes.recipes){
-                    for(let dough of category.doughs){
-                        if(searchedRecipeFormatted !== dough.title.toLocaleLowerCase() && articleMain.length <=2 && dough.rating === 5){
-                            articleMain.push(dough);
-                        }else if(searchedRecipeFormatted !== dough.title.toLocaleLowerCase() && dough.rating <= 5){
-                            articleSecondary.push(dough);
-                        }
+                textRecipe = "Receitas";
+
+                for(let dough of category.doughs){
+                    if(articleMain.length <=2 && dough.rating === 5){
+                        articleMain.push(dough);
+                    }else{
+                        articleSecondary.push(dough);
                     }
                 }
-
             }
-            if(searchedRecipeFormatted === recipeTitle && recipe.category === "mainCourses"){
-                sectionCategory = recipe.title;
-                amountRecipesFound = category.mainCourses.length;
-                articleMain.push(recipe);     
-                for(let category of recipes.recipes){
-                    for(let mainCourse of category.mainCourses){
-                        if(searchedRecipeFormatted !== mainCourse.title.toLocaleLowerCase() && articleMain.length <=2 && mainCourse.rating === 5){
-                            articleMain.push(mainCourse);
-                        }else if(searchedRecipeFormatted !== mainCourse.title.toLocaleLowerCase() && mainCourse.rating <= 5){
-                            articleSecondary.push(mainCourse);
-                        }
-                    }
-                }
-
-            }
-            if(searchedRecipeFormatted === recipeTitle && recipe.category === "salads"){
-                sectionCategory = recipe.title;
+            if(translatedTextFormatted === "salads" || translatedTextFormatted === "salad"){
+                sectionCategory = "Salada";
                 amountRecipesFound = category.salads.length;
-                articleMain.push(recipe);     
-                for(let category of recipes.recipes){
-                    for(let salad of category.salads){
-                        if(searchedRecipeFormatted !== salad.title.toLocaleLowerCase() && articleMain.length <=2 && salad.rating === 5){
-                            articleMain.push(salad);
-                        }else if(searchedRecipeFormatted !== salad.title.toLocaleLowerCase() && salad.rating <= 5){
-                            articleSecondary.push(salad);
-                        }
+                textRecipe = "Receitas";
+                for(let salad of category.salads){
+                    if(articleMain.length <=2 && salad.rating === 5){
+                        articleMain.push(salad);
+                    }else{
+                        articleSecondary.push(salad);
                     }
                 }
-
             }
-           
+            if(translatedTextFormatted === "meats" || translatedTextFormatted === "meat"){
+                sectionCategory = "Carne";
+                amountRecipesFound = category.meats.length;
+                textRecipe = "Receitas";
+                for(let meat of category.meats){
+                    if(articleMain.length <=2 && meat.rating === 5){
+                        articleMain.push(meat);
+                    }else{
+                        articleSecondary.push(meat);
+                    }
+                }
+            }
+            if(translatedTextFormatted === "desserts" || translatedTextFormatted === "dessert"){
+                sectionCategory = "Sobremesa";
+                amountRecipesFound = category.desserts.length;
+                textRecipe = "Receitas";
+                for(let dessert of category.desserts){
+                    if(articleMain.length <=2 && dessert.rating === 5){
+                        articleMain.push(dessert);
+                    }else{
+                        articleSecondary.push(dessert);
+                    }
+                }
+            }
+            if(translatedTextFormatted === "maincourses" || translatedTextFormatted === "maincourse"){
+                sectionCategory = "Prato Principal";
+                textRecipe = "Receitas";
+                amountRecipesFound = category.mainCourses.length;
+                for(let mainCourse of category.mainCourses){
+                    if(articleMain.length <=2 && mainCourse.rating === 5){
+                        articleMain.push(mainCourse);
+                    }else{
+                        articleSecondary.push(mainCourse);
+                    }
+                }
+            }  
+            let searchedRecipeFormatted = searchedRecipe.toLowerCase();
+            for(let recipe of recipes.allRecipes){
+                let recipeTitle = recipe.title.toLowerCase();
+
+                if(searchedRecipeFormatted === recipeTitle && recipe.category === "meats"){
+                    sectionCategory = recipe.title;
+                    amountRecipesFound = category.meats.length;
+                    textRecipe = "Receitas";
+                    articleMain.push(recipe);     
+                    for(let category of recipes.recipes){
+                        for(let meat of category.meats){
+                            if(searchedRecipeFormatted !== meat.title.toLocaleLowerCase() && articleMain.length <=2 && meat.rating === 5){
+                                articleMain.push(meat);
+                            }else if(searchedRecipeFormatted !== meat.title.toLocaleLowerCase() && meat.rating <= 5){
+                                articleSecondary.push(meat);
+                            }
+                        }
+                    }
+
+                }
+                if(searchedRecipeFormatted === recipeTitle && recipe.category === "desserts"){
+                    sectionCategory = recipe.title;
+                    amountRecipesFound = category.desserts.length;
+                    textRecipe = "Receitas";
+                    articleMain.push(recipe);     
+                    for(let category of recipes.recipes){
+                        for(let dessert of category.desserts){
+                            if(searchedRecipeFormatted !== dessert.title.toLocaleLowerCase() && articleMain.length <=2 && dessert.rating === 5){
+                                articleMain.push(dessert);
+                            }else if(searchedRecipeFormatted !== dessert.title.toLocaleLowerCase() && dessert.rating <= 5){
+                                articleSecondary.push(dessert);
+                            }
+                        }
+                    }
+
+                }
+                if(searchedRecipeFormatted === recipeTitle && recipe.category === "doughs"){
+                    sectionCategory = recipe.title;
+                    amountRecipesFound = category.doughs.length;
+                    textRecipe = "Receitas";
+                    articleMain.push(recipe);     
+                    for(let category of recipes.recipes){
+                        for(let dough of category.doughs){
+                            if(searchedRecipeFormatted !== dough.title.toLocaleLowerCase() && articleMain.length <=2 && dough.rating === 5){
+                                articleMain.push(dough);
+                            }else if(searchedRecipeFormatted !== dough.title.toLocaleLowerCase() && dough.rating <= 5){
+                                articleSecondary.push(dough);
+                            }
+                        }
+                    }
+
+                }
+                if(searchedRecipeFormatted === recipeTitle && recipe.category === "mainCourses"){
+                    sectionCategory = recipe.title;
+                    amountRecipesFound = category.mainCourses.length;
+                    textRecipe = "Receitas";
+                    articleMain.push(recipe);     
+                    for(let category of recipes.recipes){
+                        for(let mainCourse of category.mainCourses){
+                            if(searchedRecipeFormatted !== mainCourse.title.toLocaleLowerCase() && articleMain.length <=2 && mainCourse.rating === 5){
+                                articleMain.push(mainCourse);
+                            }else if(searchedRecipeFormatted !== mainCourse.title.toLocaleLowerCase() && mainCourse.rating <= 5){
+                                articleSecondary.push(mainCourse);
+                            }
+                        }
+                    }
+
+                }
+                if(searchedRecipeFormatted === recipeTitle && recipe.category === "salads"){
+                    sectionCategory = recipe.title;
+                    amountRecipesFound = category.salads.length;
+                    textRecipe = "Receitas";
+                    articleMain.push(recipe);     
+                    for(let category of recipes.recipes){
+                        for(let salad of category.salads){
+                            if(searchedRecipeFormatted !== salad.title.toLocaleLowerCase() && articleMain.length <=2 && salad.rating === 5){
+                                articleMain.push(salad);
+                            }else if(searchedRecipeFormatted !== salad.title.toLocaleLowerCase() && salad.rating <= 5){
+                                articleSecondary.push(salad);
+                            }
+                        }
+                    }
+
+                }
+            
+            }
         }
-    }
-    response.render("pages/search.ejs", {articleMain, articleSecondary, sectionCategory, amountRecipesFound});
+    response.render("pages/search.ejs", {articleMain, articleSecondary, sectionCategory, amountRecipesFound, textRecipe});
 });
 
 app.get("/sobre", (request, response) =>{
