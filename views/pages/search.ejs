@@ -24,11 +24,31 @@
                     <strong>
                         Encontrei <%= amountRecipesFound %> resultados: "<%= sectionCategory %>"
                     </strong>
-                </p>   
+                </p> 
+                <br>
+                <div id="search-helper">
+                    <p>
+                        Aumente suas chances de busca:
+                    </p>
+                    <ul>
+                        <li>
+                            Use palavras curtas na pesquisa
+                        </li>
+                        <li>
+                            Não busca por frases
+                        </li>
+                        <li>
+                            Veja se a palavra de busca está correta
+                        </li>
+                        <li>
+                            Procure por categorias e títulos
+                        </li>
+                    </ul> 
+                </div>
            </div>
              <!-- Artigo principal -->
              <div class="search-title">
-                <h1>Receitas</h1>
+                <h1><%= textRecipe %></h1>
             </div>
              <article class="article-main-recipe">                
                 <%for(let recipe of articleMain){ %>
@@ -51,10 +71,6 @@
                     </section>
                 <% } %>
             </article>
-            <!-- Mais destaques -->
-            <div class="emphasis">
-                <h2>Mais receitas</h2>
-            </div> 
             <!-- Artigo secundario -->
             <article class="article-second-recipe">
                 <%for(let recipe of articleSecondary){ %>
