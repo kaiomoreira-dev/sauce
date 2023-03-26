@@ -5,6 +5,23 @@
 body{
     overflow-x: hidden;
 }
+body::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+    
+  }
+.scrollStyle::-webkit-scrollbar-thumb {
+    display: none;
+  }
+
+
 /* <------------------- Inicio Index  ------------------->*/
 /* Container */
 .container {
@@ -21,8 +38,9 @@ header{
     width: 100%;
     height: 20vh;
     position: fixed;
-
+    
     z-index: 1;
+    
 }
 /* Barra de navegação desktop*/
 .navbar-global{
@@ -72,6 +90,21 @@ header{
 /* Estilo para alterar o display para block */
 #showIconeSearch{
     display: block;
+}
+.hiddenNavbarGlobal{
+    display: none;
+}
+#search-header{
+    display: none;
+    border: 0.1px solid rgba(0, 0, 0, 0.10);
+    height: 20rem;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 25%;
+    z-index: 1;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgb(232 234 237 / 80%);
 }
 /* Menu de navegação desktop */
 .navbar-menu{
@@ -477,8 +510,6 @@ main .section-search form div button > img{
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
-
-
 /* Descrição da seção do Artigo secundário */
 .article-second-recipe section > p{
     margin-top: 0.5rem;
@@ -785,7 +816,7 @@ main .section-search form div button > img{
     /* Div para conter o icone de pesquisa */
     .navbar-global .navItem-search{
         /* border: 1px solid; */
-        display: none;
+        display: block;
         position: inherit;
         left: 10rem;
         
