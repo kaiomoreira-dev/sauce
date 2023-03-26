@@ -7,7 +7,7 @@ const divShadowMainPost = document.querySelectorAll("main > article section figu
 
 const body = document.querySelector("body");
 
-const navItemSearch = document.querySelector("header nav").lastElementChild;
+const navItemSearch = document.querySelector(".navItem-search");
 
 const iconeShowMenuMobile = document.querySelector(".btnShowMenuMobile");
 
@@ -29,6 +29,12 @@ const inputSearch = document.querySelector(".section-search input");
 const buttonSearch = document.querySelector(".section-search button");
 
 const ulInfoSearchHelper = document.getElementById("search-helper");
+
+const iconSearch = document.querySelector(".navItem-search img");
+const navbarGlobal = document.querySelector(".navbar-global");
+const container = document.querySelector("body > div");
+const searchHeader = document.getElementById("search-header");
+
 
 imagesPost.forEach(image => {
     image.setAttribute("title", "Ler mais")
@@ -94,8 +100,20 @@ liShowCategories.addEventListener("click", () =>{
 })
 
 mainElement.addEventListener("click", () =>{
+
     iconeAngleDown.removeAttribute("id","rotateInverse")
     ulCategories.removeAttribute("id","showCategories")
+
+    searchHeader.style.display = "none";
+    document.body.style.overflow = "initial";
+    navbarGlobal.classList.remove("hiddenNavbarGlobal");
+
+    $("#search-header").fadeOut((speed, easing)=>{
+        speed = "slow";
+    });
+    body.classList.remove("scrollStyle")
+    enableScrollTop();
+    // console.log();
 })
 
 async function createArticleSecondaryDough(){
@@ -302,11 +320,41 @@ async function handleInfiniteScroll(){
 window.addEventListener("scroll", handleInfiniteScroll);
 
 window.onload = () =>{
-    console.log(mainIndex2.offsetHeight);
+    try {
     if(mainIndex2.offsetHeight <= 1000){
         ulInfoSearchHelper.style.display = "block";
     }else{
         ulInfoSearchHelper.style.display = "none";
     }
 
+    } catch (error) {
+        console.log(error);
+    }
 }
+
+function disableScrollTop(){
+    let scrollbarTop = window.pageYOffset || document.documentElement.scrollTop;
+    window.onscroll = () => {
+        window.scrollTo(0, scrollbarTop)
+    }
+    
+}
+function enableScrollTop(){
+    window.onscroll = () => {}
+}
+// <----- Jquery ----->
+iconSearch.addEventListener("click", ()=>{
+    searchHeader.style.marginTop = "5%";
+    let getClassesNavbarglobal = navbarGlobal.getAttribute("class");
+    if(getClassesNavbarglobal.includes("navbar-global")){
+        navbarGlobal.classList.add("hiddenNavbarGlobal");
+        
+
+    }
+    $("#search-header").slideDown((speed, easing)=>{
+        easing = "swing";
+        speed = "slow";
+    });
+    body.classList.add("scrollStyle")
+    disableScrollTop();
+})
