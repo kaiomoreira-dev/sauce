@@ -330,8 +330,10 @@ window.addEventListener("scroll", handleInfiniteScroll);
 
 window.onload = () =>{
     try {
-    if(mainIndex2.offsetHeight <= 1000){
+    if(mainIndex2.offsetHeight <= 900){
         ulInfoSearchHelper.style.display = "block";
+    console.log(mainIndex2.offsetHeight)
+
     }else{
         ulInfoSearchHelper.style.display = "none";
     }
