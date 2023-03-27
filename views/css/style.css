@@ -111,6 +111,8 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    margin-top: 5%;
 }
 #search-header #search-close{
     /* border: 1px solid; */
@@ -912,7 +914,9 @@ main .section-search form div button > img{
         width: 100%;
         top: 0;
         left: 0%;
-        height: 20rem; 
+        height: 100vh; 
+        background-color: #f7f7f7;
+        margin-top: 0;
     } 
     #search-header h1{
         /* border: 1px solid; */
@@ -926,15 +930,15 @@ main .section-search form div button > img{
         
         box-sizing: border-box;
         overflow: hidden;  
-        height: 20%;       
+        height: 15%;       
     } 
     #search-header form div{
         margin: 0;  
         height: auto;
     } 
     #search-header form div input{
-        width: 80%;
-        padding: 0.8rem 2.4rem 0.8rem 1rem;
+        width: 84%;
+        padding: 0.9rem 2.4rem 0.9rem 1rem;
         position: relative;
     }
     #search-header form div button{
