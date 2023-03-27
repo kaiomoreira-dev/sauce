@@ -928,10 +928,10 @@ main .section-search form div button > img{
     }
     #search-header form{
         /* border: 1px solid; */
-        
         box-sizing: border-box;
         overflow: hidden;  
-        height: 15%;       
+        height: 15%; 
+        margin-bottom: 8rem;      
     } 
     #search-header form div{
         margin: 0;  
