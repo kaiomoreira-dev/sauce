@@ -347,7 +347,6 @@ function enableScrollTop(){
 }
 // <----- Jquery ----->
 $(".navbar-global .navItem-search img").on("click",()=>{
-    searchHeader.style.marginTop = "5%";
     $("#search-header").slideDown();
 })
 iconSearch.addEventListener("click", ()=>{
