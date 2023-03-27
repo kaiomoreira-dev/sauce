@@ -38,6 +38,9 @@ const searchShadow = document.getElementById("search-shadow");
 const iconeCloseSearch = document.querySelector("header #search-header button");
 
 
+$(".navbar-global .navItem-search img").on("click",()=>{
+    $("#search-header").slideDown();
+})
 imagesPost.forEach(image => {
     image.setAttribute("title", "Ler mais")
 })
@@ -62,7 +65,6 @@ document.addEventListener("scroll", (event) => {
 })
 
 // <------- Efeito Show menu de Naegação Mobile ------->
-// navbarIcon.addEventListener("click", toggleNavbarMenuMobile)
 iconeShowMenuMobile.addEventListener("click", event =>{
     const iconeIdLength = iconeShowMenuMobile.getAttribute("id");
     if(iconeIdLength === null){
@@ -78,15 +80,7 @@ iconeShowMenuMobile.addEventListener("click", event =>{
 
 })
 
-liShowCategories.addEventListener("click", () =>{
-    let liShowCategory = liShowCategories.getAttribute("id");
-    if(!liShowCategory){
-        liShowCategories.setAttribute("id", "upHeightItemCategoryRecipes")
-    }else{
-        liShowCategories.removeAttribute("id", "upHeightItemCategoryRecipes")
 
-    }
-});
 liShowCategories.addEventListener("click", () =>{
     let categoriesId = ulCategories.getAttribute("id");
     if(!categoriesId){
@@ -99,7 +93,19 @@ liShowCategories.addEventListener("click", () =>{
         ulCategories.removeAttribute("id","showCategories")
     }
     
-})
+});
+
+liShowCategories.addEventListener("click", () =>{
+        let liShowCategory = liShowCategories.getAttribute("id");
+        if(!liShowCategory){
+            liShowCategories.setAttribute("id", "upHeightItemCategoryRecipes")
+        }else{
+            liShowCategories.removeAttribute("id", "upHeightItemCategoryRecipes")
+
+        }
+    });
+
+
 
 mainElement.addEventListener("click", () =>{
     iconeAngleDown.removeAttribute("id","rotateInverse")
@@ -346,9 +352,8 @@ function enableScrollTop(){
     window.onscroll = () => {}
 }
 // <----- Jquery ----->
-$(".navbar-global .navItem-search img").on("click",()=>{
-    $("#search-header").slideDown();
-})
+
+
 iconSearch.addEventListener("click", ()=>{
     searchShadow.style.display = "block";
     searchHeader.style.display = "flex";
