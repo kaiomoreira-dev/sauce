@@ -787,7 +787,7 @@ main .section-search form div button > img{
     .navbar-menu{
         /* border: 1px solid; */
         width: 100vw;
-        height: 74vh;
+        height: 83vh;
         display: none;
         padding: 0;
         top: 4.9rem;
@@ -798,11 +798,10 @@ main .section-search form div button > img{
     /* Lista de itens do menu */
     .navbar-menu li { 
         /* border: 1px solid; */
-        height: 3vh;
         display: flex;
         align-items: center;
         /* /padding-left: 10rem; */  
-        padding: 1.5rem 0;  
+        padding: 0;
     } 
     /* Links do menu de navegação */
     .navbar-menu li a{
@@ -813,7 +812,8 @@ main .section-search form div button > img{
         background-color: #f7f7f7;
         color: rgba(0, 0, 0, 0.70); 
         
-        padding: 1.5rem 100vw 1.5rem 2.3rem;
+        padding: 1.85rem 100vw 1.85rem 2.3rem;
+        /* 2rem 100vw 2rem 2.3rem; */
 
         font-size: 0.9rem;
 
@@ -844,23 +844,24 @@ main .section-search form div button > img{
         height: auto;
         font-size: 0.9rem;
         background-color: #f7f7f7;
+        padding: 1.85rem 2.2rem;
     }
     .item-recipes{
         color: rgba(0, 0, 0, 0.70);
     }
 
     #upHeightItemCategoryRecipes{
-        height: 80vh;
+        height: 74vh;
     }
     /* ul categorias */
     .navbar-menu .categories{
         /* border: 1px solid; */
         width: 100%;  
-        height: 100%;
+        height: 85%;
         flex-direction: column;
         z-index: 0;
         position: absolute;
-        top: 7.5rem;
+        top: 8.5rem;
         left: 0;
         display: none;
         box-sizing: border-box;
