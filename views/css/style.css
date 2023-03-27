@@ -67,7 +67,7 @@ header{
     display: flex;
 }
 /* Imagem da logo da barra de navegação desktop */
-.logo > img {
+.logo a > img {
     height: 7rem;
     width: 7rem;
 
@@ -947,7 +947,7 @@ main .section-search form div button > img{
     }
     #search-header form div button{
         /* border: 1px solid; */   
-        padding: 1.5rem 2rem 1rem 0.8rem;
+        padding: 1.5rem 2rem 1.38rem 0.8rem;
 
     }
     /* Estilo para alterar o display para block */
@@ -1694,6 +1694,9 @@ main .section-search form div button > img{
 .container-2 .search-recipe form button{
     background-color: transparent;
     border: none;
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0.5rem;
 }
 .container-2 .search-recipe form button:hover{
     cursor: pointer;
