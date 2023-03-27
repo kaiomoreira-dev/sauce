@@ -104,9 +104,6 @@ liShowCategories.addEventListener("click", () =>{
 
         }
     });
-
-
-
 mainElement.addEventListener("click", () =>{
     iconeAngleDown.removeAttribute("id","rotateInverse")
     ulCategories.removeAttribute("id","showCategories")
@@ -126,8 +123,11 @@ searchShadow.addEventListener("click", () =>{
     enableScrollTop();
 });
 async function createArticleSecondaryDough(){
-    const recipes = (await import("../module/RecipeTest.js")).default;
+    const recipes = (await import("../module/Recipes.js")).default;
+    
+    const recipesCategories = recipes.recipesCategories;
 
+    
     let recipesDough = []
 
     const emphasis = document.createElement("div");
@@ -137,7 +137,7 @@ async function createArticleSecondaryDough(){
     h2.innerHTML = "Massa";
     mainIndex.insertBefore(emphasis, loaderArticleElement);
     
-    recipes.forEach(recipe => {
+    recipesCategories.forEach(recipe => {
         for(let dough of recipe.doughs){
             if(recipesDough.length <= 3){
                 recipesDough.push(dough);
@@ -184,8 +184,9 @@ async function createArticleSecondaryDough(){
     mainIndex.insertBefore(articleSecondaryDough, loaderArticleElement);
 }
 async function createArticleSecondaryMainCourses(){
-    const recipes = (await import("../module/RecipeTest.js")).default;
-
+    const recipes = (await import("../module/Recipes.js")).default;
+    
+    const recipesCategories = recipes.recipesCategories;
     let mainCourses = []
 
     const emphasis = document.createElement("div");
@@ -195,7 +196,7 @@ async function createArticleSecondaryMainCourses(){
     h2.innerHTML = "Prato Principal";
     mainIndex.insertBefore(emphasis, loaderArticleElement);
     
-    recipes.forEach(recipe => {
+    recipesCategories.forEach(recipe => {
         for(let course of recipe.mainCourses){
             if(mainCourses.length <= 3){
                 mainCourses.push(course);
@@ -241,7 +242,9 @@ async function createArticleSecondaryMainCourses(){
 }
 
 async function createArticleSecondaryDessert(){
-    const recipes = (await import("../module/RecipeTest.js")).default;
+    const recipes = (await import("../module/Recipes.js")).default;
+    
+    const recipesCategories = recipes.recipesCategories;
 
     let recipesDessert = []
 
@@ -252,7 +255,7 @@ async function createArticleSecondaryDessert(){
     h2.innerHTML = "Sobremesas";
     mainIndex.insertBefore(emphasis, loaderArticleElement);
     
-    recipes.forEach(recipe => {
+    recipesCategories.forEach(recipe => {
         for(let desserts of recipe.desserts){
             if(recipesDessert.length <= 3){
                 recipesDessert.push(desserts);
@@ -354,8 +357,6 @@ function enableScrollTop(){
     window.onscroll = () => {}
 }
 // <----- Jquery ----->
-
-
 iconSearch.addEventListener("click", ()=>{
     searchShadow.style.display = "block";
     searchHeader.style.display = "flex";
