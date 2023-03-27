@@ -94,9 +94,12 @@ header{
 .hiddenNavbarGlobal{
     display: none;
 }
+#search-header button:hover{
+    cursor: pointer;
+}
 #search-header{
-    display: none;
     border: 1px solid rgba(0, 0, 0, 0.20);
+    box-shadow: 0 0 10px rgb(232 234 237 / 10%);
     height: 20rem;
     width: 50%;
     position: absolute;
@@ -104,17 +107,84 @@ header{
     left: 25%;
     z-index: 1;
     background-color: #ffffff;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+#search-header #search-close{
+    /* border: 1px solid; */
+    width: 4rem;
+    height: 1.1rem;
+    background-color: transparent;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    padding: 1rem 1rem 2rem 1rem;
+    position: absolute;
+    top:0;
+    right: 0;
+    border: none;
+}
+
 #search-shadow{
     height: 100vh;
     width: 100%;
-    background-color: rgba(104, 123, 146, 0.469);
+    background-color: rgba(113, 125, 139, 0.469);
     position: absolute;
     z-index: 0;
     top: 0;
     display: none;
-
 } 
+#search-header h1{
+    /* border: 1px solid; */
+    font-size: 2.3rem;
+    margin-top: 1rem;
+} 
+#search-header form{
+    /* border: 1px solid; */
+    width: 70%;
+    display: flex;
+    justify-content: center;    
+} 
+#search-header form div{
+    border: 1px solid;
+    height: 40%;
+    width: 100%;
+    background-color: #ffffff;
+    color: #000000d7;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 2rem;
+    z-index: 0;
+} 
+#search-header form div input{
+    background-color: #ffffff;
+    width: 96%;
+    box-shadow: 0 0 0 0;
+    border: none;
+    height: 4rem;
+    position: relative;
+    padding: 0.8rem 0.1rem 0.8rem 1rem;
+    font-size: 1.2rem;  
+
+}
+#search-header form div button{
+    /* border: 1px solid; */
+    width: 2rem;
+    padding: 1rem 2rem 0.6rem 0.8rem;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: -1%;
+    right: -0.3%;
+   
+
+}
+#search-header form div button > img{
+    height: 4vh;
+    width: 4vh;
+}
 /* Menu de navegação desktop */
 .navbar-menu{
     /* border: 1px solid; */

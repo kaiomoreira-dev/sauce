@@ -30,9 +30,22 @@
             <li><a href="/contato">Contato</a></li>
         </ul>
         <div class="navItem-search">
-            <img src="/images/lupa.png" alt="">
+            <img src="/images/lupa.png" alt="image da lupa">
         </div> 
     </nav>
-    <div id="search-header"></div>  
+    <div id="search-header">
+        <button id="search-close">
+            <img src="/images/close.png" alt="image do fechar pesquisa">
+        </button>
+        <h1>Procurando algo especial?</h1>
+        <form action="/search" method="get">
+            <div>
+                <input type="text" name="recipe" id="" placeholder="Pesquise uma receita">
+                <button type="submit">
+                    <img src="/images/lupa.png" alt="image da lupa de pesquisa">
+                </button>
+            </div>
+        </form>
+    </div>  
     <div id="search-shadow"></div>  
 </header>
