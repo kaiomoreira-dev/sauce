@@ -346,24 +346,25 @@ function enableScrollTop(){
     window.onscroll = () => {}
 }
 // <----- Jquery ----->
+$(".navbar-global .navItem-search img").on("click",()=>{
+    searchHeader.style.marginTop = "5%";
+    $("#search-header").slideDown();
+})
 iconSearch.addEventListener("click", ()=>{
-    disableScrollTop();
     searchShadow.style.display = "block";
     searchHeader.style.display = "flex";
-    searchHeader.style.marginTop = "5%";
+
+    
     let getClassesNavbarglobal = navbarGlobal.getAttribute("class");
     if(getClassesNavbarglobal.includes("navbar-global")){
         navbarGlobal.classList.add("hiddenNavbarGlobal");
         
 
     }
-    $("#search-header").slideDown((speed, easing)=>{
-        easing = "swing";
-        speed = "slow";
-    });
     body.classList.add("scrollStyle")
-})
+    disableScrollTop();
 
+})
 iconeCloseSearch.addEventListener("click", ()=>{
     searchHeader.style.display = "none";
     document.body.style.overflow = "initial";
