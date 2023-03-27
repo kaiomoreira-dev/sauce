@@ -1,10 +1,11 @@
 const { default: axios, all } = require('axios');
 const express = require('express');
-const Messages = require('./views/module/Messages');
-const Recipes = require('./views/module/Recipes');
+const { recipesCategories, allRecipes } = require('./views/module/Recipes');
 
 const app = express();
-const recipes = Recipes();
+
+const recipes = recipesCategories;
+const recipesAll = allRecipes;
 
 //engine para entender o ejs na pasta views
 app.set("view engine", "ejs");
@@ -16,7 +17,7 @@ app.get("/", (request, response) =>{
     const articleSecondary = [];
     const articleMeats = []
 
-    recipes.recipes.forEach(category => {
+    recipes.forEach(category => {
         for(let meat of category.meats){
             if(meat.rating > 4  && articleMain.length <= 2){
                 articleMain.push(meat);
@@ -82,7 +83,7 @@ app.get("/search", async (request, response) =>{
         }
       }
       const translatedTextFormatted = translatedText.join("").replace(" ", "");      
-      for(let category of recipes.recipes){
+      for(let category of recipes){
             if(translatedTextFormatted === "pastas" || translatedTextFormatted === "pasta"){
                 sectionCategory = "Massa";
                 amountRecipesFound = category.doughs.length;
@@ -145,7 +146,7 @@ app.get("/search", async (request, response) =>{
                 }
             }  
             let searchedRecipeFormatted = searchedRecipe.toLowerCase();
-            for(let recipe of recipes.allRecipes){
+            for(let recipe of recipesAll){
                 let recipeTitle = recipe.title.toLowerCase();
 
                 if(searchedRecipeFormatted === recipeTitle && recipe.category === "meats"){
@@ -153,7 +154,7 @@ app.get("/search", async (request, response) =>{
                     amountRecipesFound = category.meats.length;
                     textRecipe = "Receitas";
                     articleMain.push(recipe);     
-                    for(let category of recipes.recipes){
+                    for(let category of recipes){
                         for(let meat of category.meats){
                             if(searchedRecipeFormatted !== meat.title.toLocaleLowerCase() && articleMain.length <=2 && meat.rating === 5){
                                 articleMain.push(meat);
@@ -169,7 +170,7 @@ app.get("/search", async (request, response) =>{
                     amountRecipesFound = category.desserts.length;
                     textRecipe = "Receitas";
                     articleMain.push(recipe);     
-                    for(let category of recipes.recipes){
+                    for(let category of recipes){
                         for(let dessert of category.desserts){
                             if(searchedRecipeFormatted !== dessert.title.toLocaleLowerCase() && articleMain.length <=2 && dessert.rating === 5){
                                 articleMain.push(dessert);
@@ -185,7 +186,7 @@ app.get("/search", async (request, response) =>{
                     amountRecipesFound = category.doughs.length;
                     textRecipe = "Receitas";
                     articleMain.push(recipe);     
-                    for(let category of recipes.recipes){
+                    for(let category of recipes){
                         for(let dough of category.doughs){
                             if(searchedRecipeFormatted !== dough.title.toLocaleLowerCase() && articleMain.length <=2 && dough.rating === 5){
                                 articleMain.push(dough);
@@ -201,7 +202,7 @@ app.get("/search", async (request, response) =>{
                     amountRecipesFound = category.mainCourses.length;
                     textRecipe = "Receitas";
                     articleMain.push(recipe);     
-                    for(let category of recipes.recipes){
+                    for(let category of recipes){
                         for(let mainCourse of category.mainCourses){
                             if(searchedRecipeFormatted !== mainCourse.title.toLocaleLowerCase() && articleMain.length <=2 && mainCourse.rating === 5){
                                 articleMain.push(mainCourse);
@@ -217,7 +218,7 @@ app.get("/search", async (request, response) =>{
                     amountRecipesFound = category.salads.length;
                     textRecipe = "Receitas";
                     articleMain.push(recipe);     
-                    for(let category of recipes.recipes){
+                    for(let category of recipes){
                         for(let salad of category.salads){
                             if(searchedRecipeFormatted !== salad.title.toLocaleLowerCase() && articleMain.length <=2 && salad.rating === 5){
                                 articleMain.push(salad);
@@ -259,7 +260,7 @@ app.get("/categoria/carnes", (request, response) =>{
     const articleMain = [];
     const articleSecondary = [];
 
-    recipes.recipes.forEach(category => {
+    recipes.forEach(category => {
         for(let meat of category.meats){
             if(meat.rating >= 4  && articleMain.length <= 2){
                 articleMain.push(meat);
@@ -268,13 +269,13 @@ app.get("/categoria/carnes", (request, response) =>{
             }
         }
     });
-    response.render("pages/recipes/meat.ejs", {articleMain, articleSecondary})
+    response.render("pages/categories/meat.ejs", {articleMain, articleSecondary})
 });
 app.get("/categoria/massas", (request, response) =>{
     const articleMain = [];
     const articleSecondary = [];
 
-    recipes.recipes.forEach(category => {
+    recipes.forEach(category => {
         for(let dough of category.doughs){
             if(dough.rating >= 4  && articleMain.length <= 2){  
                 articleMain.push(dough);
@@ -283,13 +284,13 @@ app.get("/categoria/massas", (request, response) =>{
             }
         }
     });
-    response.render("pages/recipes/dough.ejs", {articleMain, articleSecondary})
+    response.render("pages/categories/dough.ejs", {articleMain, articleSecondary})
 });
 app.get("/categoria/sobremesas", (request, response) =>{
     const articleMain = [];
     const articleSecondary = [];
 
-    recipes.recipes.forEach(category => {
+    recipes.forEach(category => {
         for(let dessert of category.desserts){
             if(dessert.rating >= 4  && articleMain.length <= 2){  
                 articleMain.push(dessert);
@@ -298,13 +299,13 @@ app.get("/categoria/sobremesas", (request, response) =>{
             }
         }
     });
-    response.render("pages/recipes/dessert.ejs", {articleMain, articleSecondary})
+    response.render("pages/categories/dessert.ejs", {articleMain, articleSecondary})
 });
 app.get("/categoria/mainCourse", (request, response) =>{
     const articleMain = [];
     const articleSecondary = [];
     let sectionCategory;
-    recipes.recipes.forEach(category => {
+    recipes.forEach(category => {
         for(let mainCourse of category.mainCourses){
             sectionCategory = "Prato Principal";
             if(mainCourse.rating >= 4  && articleMain.length <= 2){  
@@ -314,7 +315,7 @@ app.get("/categoria/mainCourse", (request, response) =>{
             }
         }
     });
-    response.render("pages/recipes/mainCourse.ejs", {articleMain, articleSecondary, sectionCategory})
+    response.render("pages/categories/mainCourse.ejs", {articleMain, articleSecondary, sectionCategory})
 });
 
 
@@ -322,21 +323,21 @@ app.get("/categoria/mainCourse", (request, response) =>{
 app.get("/categoria/carne/tambaqui-assado-no-forno", (request, response) =>{
     let tambaqui = {};
 
-    recipes.recipes.forEach(category =>{
+    recipes.forEach(category =>{
         for(let meat of category.meats){
             if(meat.title.includes("Tambaqui")){
                 tambaqui = meat;
             }
         }
     });
-    response.render("pages/categories/meats/tambaqui.ejs", {tambaqui})
+    response.render("pages/recipes/meats/tambaqui.ejs", {tambaqui})
 });
 
 // <---------- Massas ---------->
 app.get("/categoria/massa/rondelli-presunto-e-queijo", (request, response) =>{
     let rondelli = {};
 
-    recipes.recipes.forEach(category =>{
+    recipes.forEach(category =>{
         for(let dough of category.doughs){
             if(dough.title.includes("Rondelli")){
                 rondelli = dough;
@@ -344,21 +345,21 @@ app.get("/categoria/massa/rondelli-presunto-e-queijo", (request, response) =>{
         }
     });
 
-    response.render("pages/categories/doughs/rondelli.ejs", {rondelli})
+    response.render("pages/recipes/doughs/rondelli.ejs", {rondelli})
 });
 
 // <---------- Sobremesas ---------->
 app.get("/categoria/sobremesas/mousse-de-maracuja-com-frutas", (request, response) =>{
     let mousse = {};
 
-    recipes.recipes.forEach(category =>{
+    recipes.forEach(category =>{
         for(let dessert of category.desserts){
             if(dessert.title.includes("Mousse")){
                 mousse = dessert; 
             }
         }
     });
-    response.render("pages/categories/desserts/mousseMaracuja.ejs", {mousse})
+    response.render("pages/recipes/desserts/mousseMaracuja.ejs", {mousse})
 });
 
 
