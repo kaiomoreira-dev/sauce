@@ -35,6 +35,7 @@ const navbarGlobal = document.querySelector(".navbar-global");
 const container = document.querySelector("body > div");
 const searchHeader = document.getElementById("search-header");
 const searchShadow = document.getElementById("search-shadow");
+const iconeCloseSearch = document.querySelector("header #search-header button");
 
 
 imagesPost.forEach(image => {
@@ -348,6 +349,7 @@ function enableScrollTop(){
 iconSearch.addEventListener("click", ()=>{
     disableScrollTop();
     searchShadow.style.display = "block";
+    searchHeader.style.display = "flex";
     searchHeader.style.marginTop = "5%";
     let getClassesNavbarglobal = navbarGlobal.getAttribute("class");
     if(getClassesNavbarglobal.includes("navbar-global")){
@@ -361,3 +363,18 @@ iconSearch.addEventListener("click", ()=>{
     });
     body.classList.add("scrollStyle")
 })
+
+iconeCloseSearch.addEventListener("click", ()=>{
+    searchHeader.style.display = "none";
+    document.body.style.overflow = "initial";
+
+    navbarGlobal.classList.remove("hiddenNavbarGlobal");
+
+    $("#search-header").fadeOut((speed, easing)=>{
+        speed = "slow";
+    });
+    
+    body.classList.remove("scrollStyle")
+    searchShadow.style.display = "none";
+    enableScrollTop();
+});
