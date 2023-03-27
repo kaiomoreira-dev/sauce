@@ -68,8 +68,8 @@ header{
 }
 /* Imagem da logo da barra de navegação desktop */
 .logo a > img {
-    height: 7rem;
-    width: 7rem;
+    height: 5rem;
+    width: 5rem;
 
 }
 /* Div para conter o icone de pesquisa */
@@ -779,9 +779,9 @@ main .section-search form div button > img{
         
     }
     /* Imagem da logo da barra de navegação desktop */
-    .logo > img {
-        height: 5.5rem;
-        width: 5.5rem;
+    .logo a > img {
+        height: 4.5rem;
+        width: 4.5rem;
     }
     /* Menu de navegação desktop */
     .navbar-menu{
