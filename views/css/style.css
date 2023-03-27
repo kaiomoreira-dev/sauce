@@ -103,7 +103,7 @@ header{
     height: 20rem;
     width: 50%;
     position: absolute;
-    top: 0;
+    top: 0rem;
     left: 25%;
     z-index: 1;
     background-color: #ffffff;
@@ -909,23 +909,38 @@ main .section-search form div button > img{
     }
 
     #search-header{
-        width: 80%;
-        top: 25%;
-        left: 10%;
+        width: 100%;
+        top: 0;
+        left: 0%;
+        height: 20rem; 
     } 
     #search-header h1{
         /* border: 1px solid; */
-        width: 80%;
+        width: 70%;
+        margin-top: 0;
+        /* margin-bottom: 2rem; */
+        padding-bottom: 1rem;
     }
     #search-header form{
         /* border: 1px solid; */
+        
         box-sizing: border-box;
-        overflow: hidden;
-         
+        overflow: hidden;  
+        height: 20%;       
+    } 
+    #search-header form div{
+        margin: 0;  
+        height: auto;
     } 
     #search-header form div input{
         width: 80%;
         padding: 0.8rem 2.4rem 0.8rem 1rem;
+        position: relative;
+    }
+    #search-header form div button{
+        /* border: 1px solid; */   
+        padding: 1.5rem 2rem 1rem 0.8rem;
+
     }
     /* Estilo para alterar o display para block */
     #showIconeSearch{
