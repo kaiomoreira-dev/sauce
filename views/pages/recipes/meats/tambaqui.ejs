@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <!-- Head -->
+    <%- include('../../../partials/head') -%>
+    <title>Tambaqui assado no forno</title>
+<body>
+    <div class="container">
+         <!-- Header -->
+         <%- include('../../../partials/header') -%>
+        <main>
+            <article class="article-post">
+                <section class="section-presentation">
+                    <h1><%= tambaqui.title %></h1>
+
+                    <figure>
+                        <img src="<%= tambaqui.img %>" alt="" id="removeZom">
+                    </figure>
+                    <div class="recipe-info">
+                        <div class="yield">
+                            <img src="/images/avatar.png" alt="">
+                            <div class="no-break"><span><%= tambaqui.yield%></span>pessoas</div>
+                        </div>
+                        <div class="time-wait">
+                            <img src="/images/relogio2.png" alt="">
+                            <div class="no-break"><span><%= tambaqui.timeWait%></span>minutos</div>
+                        </div>
+                        <div class="level-price">
+                            <img src="/images/bolsa-de-dinheiro.png" alt="">
+                            <div class="no-break"><%= tambaqui.levelPrice%></div>
+                        </div>
+                    </div>
+               </section>
+
+               <section class="section-ingredients">
+                    <h1>Ingredientes</h1>
+                    <ul>
+                        <%for(let ingredient of tambaqui.ingredients){ %>
+                            <% const toUpperFirstLatter = ingredient.charAt(0).toUpperCase() + ingredient.slice(1); %>
+                            <li><%= toUpperFirstLatter %></li>
+                        <% }%>
+                    </ul>
+               </section>
+
+               <section class="section-preparation">
+                    <h1>Modo de preparo</h1>
+                    <ul>
+                        <%for(let preparation of tambaqui.preparations){ %>
+                            <% const toUpperFirstLatter = preparation.charAt(0).toUpperCase()+ preparation.slice(1); %>
+                            <li><%= toUpperFirstLatter %></li>
+                        <% }%>
+                    </ul>
+               </section>
+            </article>
+        </main>
+        <!-- Footer -->
+        <%- include('../../../partials/footer') -%>
+    </div>
+</body>
+<script src="/script/index.js"></script>
+</html>
