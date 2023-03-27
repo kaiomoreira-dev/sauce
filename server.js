@@ -1,5 +1,6 @@
 const { default: axios, all } = require('axios');
 const express = require('express');
+const Messages = require('./views/module/Messages');
 const Recipes = require('./views/module/Recipes');
 
 const app = express();
@@ -244,6 +245,15 @@ app.get("/contato", (request, response) =>{
     response.render("pages/contact.ejs")
 });
 
+app.get("/sendMenssage", (request, response) =>{
+    const message = request.query;
+
+    Messages.push(message);
+
+    console.log(message);
+
+    response.render("pages/messageReceived.ejs")
+});
 // <---------- Categorias das Receitas ---------->
 app.get("/categoria/carnes", (request, response) =>{
     const articleMain = [];
