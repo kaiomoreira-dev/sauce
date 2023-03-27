@@ -313,13 +313,12 @@ app.get("/categoria/carne/tambaqui-assado-no-forno", (request, response) =>{
     let tambaqui = {};
 
     recipes.recipes.forEach(category =>{
-        for(let meat of category.salads){
+        for(let meat of category.meats){
             if(meat.title.includes("Tambaqui")){
                 tambaqui = meat;
             }
         }
     });
-
     response.render("pages/categories/meats/tambaqui.ejs", {tambaqui})
 });
 
