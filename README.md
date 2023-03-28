@@ -16,7 +16,7 @@
 - [Owner](#owner)
 
 ## Intro
-* Sauce é um Blogue pessoal de receitas culinárias. Foi desenvolvido para consolidar os conhecimentos aprendido no módulo Fundamentar do programa Discover na Rockeseat.
+* Sauce é um Blog de receitas culinárias. Foi desenvolvido para consolidar os conhecimentos aprendido no módulo Fundamentar do programa Discover na Rockeseat.
 
 ## Description
 * Desenvolveu e utilizou aplicação front-end com a engine EJS para renderizar informações criada no servidor express. Aplicação contém arrays como estruturas de dados que são importados em módulos externos. Esse dados são renderizados nas páginas/views desenvolvidas com HTML, CSS e Javascript. Desta forma é possível renderizar páginas com informações dinâmicas, além de otimizar o código html na hora criar.
