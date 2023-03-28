@@ -18,7 +18,7 @@
 * Sauce é um Blog de receitas culinárias. Foi desenvolvido para consolidar os conhecimentos aprendido no módulo Fundamentar do programa Discover na Rockeseat.
 
 ## Description
-* Desenvolveu e utilizou aplicação front-end com a engine EJS para renderizar informações criada no servidor express. Aplicação contém arrays como estruturas de dados que são importados em módulos externos. Esse dados são renderizados nas páginas/views desenvolvidas com HTML, CSS, Javascript, DOM e JQuery. Desta forma é possível renderizar páginas com informações dinâmicas, além de otimizar o código html na hora criar e trazer otimos efeitos.
+* Desenvolveu e utilizou aplicação front-end com a engine EJS para renderizar informações criada no servidor express. Aplicação contém arrays como estruturas de dados que são importados em módulos externos. Esse dados são renderizados nas páginas/views desenvolvidas com HTML, CSS, Javascript, DOM e JQuery. Desta forma é possível renderizar páginas com informações dinâmicas, além de otimizar o código html na hora criar e trazer ótimos efeitos. O sauce consome a API Translation do Google atráves do axios para auxiliar no recurso de buscar as receitas no site. Assim todas as palavras-chaves são traduzias para língua en na hora encontra-lás.
 
 ## Pré-requisitos
 * Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
