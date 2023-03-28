@@ -235,18 +235,12 @@ app.get("/search", async (request, response) =>{
         }
     response.render("pages/search.ejs", {articleMain, articleSecondary, sectionCategory, amountRecipesFound, textRecipe});
 });
-
-app.get("/sobre", (request, response) =>{
-    response.render("pages/about.ejs")
-});
 app.get("/privacy-policies", (request, response) =>{
     response.render("pages/privacyAndPolicies.ejs")
 });
-
 app.get("/contato", (request, response) =>{
     response.render("pages/contact.ejs")
 });
-
 app.get("/sendMenssage", (request, response) =>{
     const message = request.query;
 
@@ -318,8 +312,6 @@ app.get("/categoria/mainCourse", (request, response) =>{
     });
     response.render("pages/categories/mainCourse.ejs", {articleMain, articleSecondary, sectionCategory})
 });
-
-
 // <---------- Carnes ---------->
 app.get("/categoria/carne/tambaqui-assado-no-forno", (request, response) =>{
     let tambaqui = {};
@@ -333,7 +325,6 @@ app.get("/categoria/carne/tambaqui-assado-no-forno", (request, response) =>{
     });
     response.render("pages/recipes/meats/tambaqui.ejs", {tambaqui})
 });
-
 // <---------- Massas ---------->
 app.get("/categoria/massa/rondelli-presunto-e-queijo", (request, response) =>{
     let rondelli = {};
@@ -348,7 +339,6 @@ app.get("/categoria/massa/rondelli-presunto-e-queijo", (request, response) =>{
 
     response.render("pages/recipes/doughs/rondelli.ejs", {rondelli})
 });
-
 // <---------- Sobremesas ---------->
 app.get("/categoria/sobremesas/mousse-de-maracuja-com-frutas", (request, response) =>{
     let mousse = {};
@@ -362,9 +352,6 @@ app.get("/categoria/sobremesas/mousse-de-maracuja-com-frutas", (request, respons
     });
     response.render("pages/recipes/desserts/mousseMaracuja.ejs", {mousse})
 });
-
-
-
 // <---------- Sevidor conectado na porta 8080 ---------->
 app.listen(8080, () =>{
     console.log('Server listening on port 8080. . .')

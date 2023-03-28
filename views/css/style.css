@@ -989,7 +989,7 @@ main .section-search form div button > img{
         border-radius: 3rem;
         display: flex;
         position: relative;
-        margin-top: 8rem;
+        margin-top: 5rem;
         z-index: 0;
         width: 100%;
     }
@@ -1020,7 +1020,7 @@ main .section-search form div button > img{
     main .title-main {
         /* border: 1px solid; */ 
         width: 67%;
-        margin-top: 10rem;
+        margin-top: 5rem;
        
         display: flex;
         flex-direction: column;
@@ -1038,8 +1038,9 @@ main .section-search form div button > img{
         /* border: 1px solid; */
         width: 100%;
         font-size: 1.25rem;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
         text-align: justify;
+        margin-bottom: 0.5rem;
     }
     .emphasis{
         /* border: 1px solid; */
@@ -1229,57 +1230,6 @@ main .section-search form div button > img{
 
 /* <------------------- Final Recipes  ------------------->*/
 
-/* <------------------- Inicio Sobre  ------------------->*/
-
-
-.about-sauce{
-    /* border: 1px solid; */
-    width: 90%;
-    position: relative;
-    box-shadow: 0 0 10px rgb(232 234 237 / 80%);
-    background-color: #ffffff;
-    margin-top: 4rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 5rem;
-}
-.about-sauce figure{
-    margin-top: 4rem;
-
-}
-.about-sauce figure img{
-    height: 100%;
-    width: 20vw;
-}
-.about-sauce h1{
-    /* border: 1px solid; */
-    width: 80%;
-    margin: 2rem 0;
-    font-size: 1.8rem;
-}
-.about-sauce p{
-    width: 80%;
-    text-align: justify;
-}
-.about-sauce p:last-child{
-    margin-bottom: 4rem;
-}
-
-@media screen and (max-width: 500px){
-    .about-sauce figure img{
-        height: 20vh;
-        width: 40vw;
-    }
-    
-    .about-sauce h1{
-        /* border: 1px solid; */
-        width: 80%;
-        margin: 2rem 0;
-        font-size: 1.8rem;
-    }
-}
-/* <------------------- Final Sobre  ------------------->*/
 
 /* <------------------- Inicio Política de privacidade  ------------------->*/
 .privacy-policies{

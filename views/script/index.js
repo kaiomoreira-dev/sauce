@@ -17,9 +17,9 @@ const mainIndex = document.querySelector("#main-1");
 const mainIndex2 = document.querySelector("#main-2");
 const mainElement = document.querySelector("main");
 
-const liShowCategories = document.querySelector(".navbar-menu li + li");
+const liShowCategories = document.querySelector(".navbar-menu .item-category-recipes");
 const ulCategories = document.querySelector(".navbar-menu .categories");
-const iconeAngleDown = document.querySelector(".navbar-menu li + li i");
+const iconeAngleDown = document.querySelector(".navbar-menu .item-category-recipes i");
 const header = document.querySelector("header");
 
 const loaderArticleElement = document.querySelector("main").lastElementChild;
