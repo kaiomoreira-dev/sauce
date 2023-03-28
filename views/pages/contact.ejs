@@ -10,29 +10,29 @@
         <main>
             <article class="article-contact">
                 <h1>Contato</h1>
-                <form action="/sendMenssage" method="get">
+                <form action="/messageSend" method="post">
                         <div>
                             <label for="name_id">Nome<i>*</i></label>
-                            <input id="name_id" type="text" name="name" placeholder="Digite um nome">
+                            <input id="name_id" type="text" name="name" placeholder="Digite um nome" required >
                         </div>
     
                         <div>
                             <label for="lastname_id">Sobrenome<i>*</i></label>
-                            <input id="lastname_id" type="text" name="lastname" placeholder="Digite um sobrenome">
+                            <input id="lastname_id" type="text" name="lastname" placeholder="Digite um sobrenome"required>
                         </div>
                     
 
                     <div>
                         <label for="email_id">E-mail<i>*</i></label>
-                        <input id="email_id" type="text" name="email" placeholder="email@email.com">
+                        <input id="email_id" type="text" name="email" placeholder="email@email.com"required>
                     </div>
                     <div>
                         <label for="message_id"> Mensagem<i>*</i></label>
-                        <textarea name="message" id="message_id" cols="30" rows="10" placeholder="Deixe sua mensagem"></textarea>
+                        <textarea name="message" id="message_id" cols="30" rows="10" placeholder="Deixe sua mensagem"required></textarea>
                     </div>
                     <div id="check-human">
                         <div id="check-group">
-                            <input type="checkbox" name="ckeck" id="check_id">
+                            <input type="checkbox" name="ckeck" id="check_id"required>
                             <label id="label-human"for="">Não sou um robô</label>
                         </div>
                         <figure>
