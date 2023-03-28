@@ -123,11 +123,8 @@ searchShadow.addEventListener("click", () =>{
     enableScrollTop();
 });
 async function createArticleSecondaryDough(){
-    const recipes = (await import("../module/Recipes.js")).default;
-    
-    const recipesCategories = recipes.recipesCategories;
-
-    
+    const recipes = (await import("../module/Categories.js")).default;
+        
     let recipesDough = []
 
     const emphasis = document.createElement("div");
@@ -136,8 +133,7 @@ async function createArticleSecondaryDough(){
     emphasis.classList.add("emphasis")
     h2.innerHTML = "Massa";
     mainIndex.insertBefore(emphasis, loaderArticleElement);
-    
-    recipesCategories.forEach(recipe => {
+    recipes.Categories.forEach(recipe => {
         for(let dough of recipe.doughs){
             if(recipesDough.length <= 3){
                 recipesDough.push(dough);
@@ -184,9 +180,8 @@ async function createArticleSecondaryDough(){
     mainIndex.insertBefore(articleSecondaryDough, loaderArticleElement);
 }
 async function createArticleSecondaryMainCourses(){
-    const recipes = (await import("../module/Recipes.js")).default;
-    
-    const recipesCategories = recipes.recipesCategories;
+    const recipes = (await import("../module/Categories.js")).default;
+
     let mainCourses = []
 
     const emphasis = document.createElement("div");
@@ -196,7 +191,7 @@ async function createArticleSecondaryMainCourses(){
     h2.innerHTML = "Prato Principal";
     mainIndex.insertBefore(emphasis, loaderArticleElement);
     
-    recipesCategories.forEach(recipe => {
+    recipes.Categories.forEach(recipe => {
         for(let course of recipe.mainCourses){
             if(mainCourses.length <= 3){
                 mainCourses.push(course);
@@ -242,9 +237,7 @@ async function createArticleSecondaryMainCourses(){
 }
 
 async function createArticleSecondaryDessert(){
-    const recipes = (await import("../module/Recipes.js")).default;
-    
-    const recipesCategories = recipes.recipesCategories;
+    const recipes = (await import("../module/Categories.js")).default;
 
     let recipesDessert = []
 
@@ -255,7 +248,7 @@ async function createArticleSecondaryDessert(){
     h2.innerHTML = "Sobremesas";
     mainIndex.insertBefore(emphasis, loaderArticleElement);
     
-    recipesCategories.forEach(recipe => {
+    recipes.Categories.forEach(recipe => {
         for(let desserts of recipe.desserts){
             if(recipesDessert.length <= 3){
                 recipesDessert.push(desserts);
