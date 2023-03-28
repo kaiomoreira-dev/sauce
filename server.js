@@ -12,6 +12,9 @@ const recipesAll = allRecipes;
 app.set("view engine", "ejs");
 
 app.use(express.static("views"));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 
 app.get("/", (request, response) =>{
     const articleMain = [];
@@ -238,16 +241,18 @@ app.get("/search", async (request, response) =>{
 app.get("/privacy-policies", (request, response) =>{
     response.render("pages/privacyAndPolicies.ejs")
 });
-app.get("/contato", (request, response) =>{
+app.get("/contact", (request, response) =>{
     response.render("pages/contact.ejs")
 });
-app.get("/sendMenssage", (request, response) =>{
-    const message = request.query;
-
-    Messages.push(message);
+app.post("/messageSend", (request, response) =>{
+    const message = request.body;
 
     console.log(message);
-
+    
+    response.redirect("/messageReceived")
+});
+app.get("/messageReceived", (request, response) =>{
+   
     response.render("pages/messageReceived.ejs")
 });
 // <---------- Categorias das Receitas ---------->
