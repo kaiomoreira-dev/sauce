@@ -1,7 +1,7 @@
 <h1 align="center"> Sauce </h1>
 
 <p align="center">
-  <img width="200" height="200" src="https://github.com/kaiomoreira-dev/sauce/commit/6874e3ad5cca03424b958f428fce68e2b92f2de9">
+  <img width="200" height="200" src="https://github.com/kaiomoreira-dev/sauce/blob/main/views/images/Sauce500x500.png">
 </p>
 
 ## Summary
