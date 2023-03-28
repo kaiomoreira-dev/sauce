@@ -63,7 +63,7 @@ header{
 /* Div da logo da barra de navegação desktop */
 .logo{    
     position: absolute;
-    left: 8rem;
+    left: 1rem;
     display: flex;
 }
 /* Imagem da logo da barra de navegação desktop */
@@ -1200,15 +1200,44 @@ main .section-search form div button > img{
 
 
 /* <------------------- Inicio Recipes  ------------------->*/
+.page-back{
+    /* border: 1px solid; */
+    margin-top: 8rem;
+    width: 96%;
+    
+}
+.page-back a{
+    text-decoration: none;
+    color: #000000;
+}
+.page-back a:hover{
+    text-decoration: underline;
+    color: #000000;
+    font-weight: bolder;
+}
+.page-back a > h4{
+    display: inline;
+}
 .section-title{
     /* border: 1px solid; */
     width: 96%;
     margin-bottom: 1rem;
-    margin-top: 13rem;
+    margin-top: 3rem;
 }
 .section-title h1{
-    font-size: 1.8rem
+    font-size: 2rem
 }
+.section-title h3{
+    margin-top: 1.5rem;
+}
+.section-title p{
+    /* border: 1px solid; */
+    margin-top: 0.5rem;
+    width:66% ;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
 .search-title{
     /* border: 1px solid; */
     width: 96%;
@@ -1220,6 +1249,13 @@ main .section-search form div button > img{
 }
 
 @media screen and (max-width: 500px){
+    .section-title p{
+        /* border: 1px solid; */
+        margin-top: 0.5rem;
+        width:100% ;
+        margin-bottom: 0.5rem;
+        
+    }
     .search-title{
         /* border: 1px solid; */
         width: 94%;
