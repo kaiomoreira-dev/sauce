@@ -8,7 +8,6 @@
 - [Intro](#intro)
 - [Description](#description)
 - [Pré-requisitos](#pré-requisitos)
-- [Diagrama](#diagram)
 - [Acesso ao projeto](#project-access)
 - [Open && Run](#open--run)
 - [Status](#status)
@@ -19,7 +18,7 @@
 * Sauce é um Blog de receitas culinárias. Foi desenvolvido para consolidar os conhecimentos aprendido no módulo Fundamentar do programa Discover na Rockeseat.
 
 ## Description
-* Desenvolveu e utilizou aplicação front-end com a engine EJS para renderizar informações criada no servidor express. Aplicação contém arrays como estruturas de dados que são importados em módulos externos. Esse dados são renderizados nas páginas/views desenvolvidas com HTML, CSS e Javascript. Desta forma é possível renderizar páginas com informações dinâmicas, além de otimizar o código html na hora criar.
+* Desenvolveu e utilizou aplicação front-end com a engine EJS para renderizar informações criada no servidor express. Aplicação contém arrays como estruturas de dados que são importados em módulos externos. Esse dados são renderizados nas páginas/views desenvolvidas com HTML, CSS, Javascript, DOM e JQuery. Desta forma é possível renderizar páginas com informações dinâmicas, além de otimizar o código html na hora criar e trazer otimos efeitos.
 
 ## Pré-requisitos
 * Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
@@ -60,6 +59,8 @@ $ yarn dev ou npm run dev
 * ![CSS](https://img.shields.io/badge/-CSS-grey)
 * ![Javascript](https://img.shields.io/badge/-Javascript-grey)
 * ![Axios](https://img.shields.io/badge/-Axios-grey)
+* ![DOM](https://img.shields.io/badge/-DOM-grey)
+* ![JQuery](https://img.shields.io/badge/-JQuery-grey)
 
 # Owner
 [<img src="https://avatars.githubusercontent.com/u/56137536?s=400&u=a74073f1d0f605815a4f343436c791ab7b7dc184&v=4" width=115><br><sub>Kaio Moreira</sub>](https://github.com/kaiomoreira-dev)
