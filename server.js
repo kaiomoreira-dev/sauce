@@ -1,4 +1,5 @@
 const { default: axios, all } = require('axios');
+require('dotenv').config()
 const express = require('express');
 const { recipesCategories, allRecipes } = require('./views/module/Recipes');
 
@@ -68,7 +69,7 @@ app.get("/search", async (request, response) =>{
             source:"pt",
             target: "en",
             format: "text",
-            key: "AIzaSyDxCJQUwoEz4GN9-o5Y6HQzsRc61IptTNQ"
+            key: process.env.API_TRANSLATION_KEY
         }
     };
       const data = await axios.request(options).then(function (response) {
