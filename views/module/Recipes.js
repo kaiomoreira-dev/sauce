@@ -1978,4 +1978,4 @@ const allRecipes = [
     },
 ];
 
-export default  {recipesCategories, allRecipes}
+module.exports =  {recipesCategories, allRecipes}
