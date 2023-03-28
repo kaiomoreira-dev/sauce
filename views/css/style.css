@@ -166,7 +166,7 @@ header{
     width: 96%;
     box-shadow: 0 0 0 0;
     border: none;
-    height: 4rem;
+    height: 5rem;
     position: relative;
     padding: 0.8rem 0.1rem 0.8rem 1rem;
     font-size: 1.2rem;  
@@ -934,7 +934,7 @@ main .section-search form div button > img{
         box-sizing: border-box;
         overflow: hidden;  
         height: 15%; 
-        margin-bottom: 8rem;      
+        margin-bottom: 12rem;      
     } 
     #search-header form div{
         margin: 0;  
