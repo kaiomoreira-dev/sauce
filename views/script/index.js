@@ -301,7 +301,6 @@ async function createArticleSecondaryDessert(){
 async function handleInfiniteScroll(){
     try {
         const endOfPage = window.innerHeight + window.pageYOffset >= mainIndex.offsetHeight;
-        console.log(mainIndex.children.length)
         if (endOfPage && mainIndex.children.length === 7) {
             createArticleSecondaryDough();
 
@@ -331,7 +330,6 @@ window.onload = () =>{
     try {
     if(mainIndex2.offsetHeight <= 900){
         ulInfoSearchHelper.style.display = "block";
-    console.log(mainIndex2.offsetHeight)
 
     }else{
         ulInfoSearchHelper.style.display = "none";
