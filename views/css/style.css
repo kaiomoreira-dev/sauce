@@ -530,10 +530,7 @@ main .section-search form div button > img{
     position: relative;
     font-size: 1.1rem;
 }
-/* h1 da Div dentro do figure da seção do Artigo principal */
-.article-main-recipe section .title h1{
-    margin-top: 0.5rem;
-}
+
 /* Ancora da figure no Artigo main */
 .article-main-recipe section figure a{
     height: 100%;
@@ -593,10 +590,7 @@ main .section-search form div button > img{
     font-size: 1rem;
 
 }
-/* h1 da div titulo do artigo secundario */
-.article-second-recipe section .title h1{
-    margin-top: 0.3rem;
-}
+
 /* Div para receber estrelas da seção do Artigo secundario */
 .article-second-recipe section .title .stars{
     /* border: 1px solid; */
@@ -1147,9 +1141,6 @@ main .section-search form div button > img{
         overflow: hidden;
 
     }
-    .article-main-recipe section .title {
-        margin-top: 0.8rem;
-    }
     .article-main-recipe section .title h1 {
         margin-top: 0;
     }
@@ -1205,6 +1196,11 @@ main .section-search form div button > img{
         height: auto;
         width: 100%;
     } 
+    .article-second-recipe section figure a > img{
+        -webkit-transform: unset;
+        transform: unset;
+        
+    }  
     .article-second-recipe section figure a > img:hover{
         -webkit-transform: unset;
         transform: unset;
