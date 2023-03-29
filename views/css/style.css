@@ -656,10 +656,12 @@ main .section-search form div button > img{
     border-radius: 0.3rem;
     -webkit-transition: -webkit-transform .5s ease;
     transition: all 1.3s;
-}
-.article-second-recipe section img:hover{
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+}
+.article-second-recipe section img:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
 /* Descrição da seção do Artigo secundário */
 .article-second-recipe section > p{
