@@ -1196,11 +1196,6 @@ main .section-search form div button > img{
         height: auto;
         width: 100%;
     } 
-    .article-second-recipe section figure a > img{
-        -webkit-transform: unset;
-        transform: unset;
-        
-    }  
     .article-second-recipe section figure a > img:hover{
         -webkit-transform: unset;
         transform: unset;
@@ -1759,7 +1754,9 @@ main .section-search form div button > img{
         gap: 1rem;
         font-size: 0.9rem;    
     }
-
+    .article-post .section-presentation .description{
+        width: 100%;
+    }
 }
 /* <------------------- Final Post ------------------->*/
 
