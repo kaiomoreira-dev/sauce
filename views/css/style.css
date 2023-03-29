@@ -1,3 +1,4 @@
+/* <------------------- Inicio Uniformn  ------------------->*/
 *{
     margin: 0;
     font-family: 'Open Sans', sans-serif;
@@ -9,7 +10,7 @@ body::-webkit-scrollbar {
     width: 0.5rem;
   }
    
-  body::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   }
 body::-webkit-scrollbar-thumb {
@@ -19,8 +20,56 @@ body::-webkit-scrollbar-thumb {
   }
 .scrollStyle::-webkit-scrollbar-thumb {
     display: none;
-  }
+}
+.page-back-uniformn{
+    /* border: 1px solid; */
+    margin-top: 8rem;
+    margin-bottom: 1rem;
+    width: 90%;
+    font-size: 0.85rem;
+    
+}
+.page-back-uniformn a{
+    text-decoration: none;
+    color: #000000;
+}
+.page-back-uniformn a:hover{
+    text-decoration: underline;
+    color: #000000;
+    font-weight: bolder;
+}
+.page-back-uniformn a > h4{
+    display: inline;
+    padding-right: 0.5rem;
+}
+.page-back-uniformn span{
+    padding: 0 0.5rem;
+    font-weight: bolder;
+}
 
+  @media screen and (max-width: 500px) {
+    .page-back-uniformn{
+        /* border: 1px solid; */
+        display: none;
+        
+    }
+    .page-back{
+        /* border: 1px solid; */
+        display: none;
+        
+    }
+    .page-back-post{
+        /* border: 1px solid; */
+        display: none;
+        
+    }
+    .page-back-search{
+        /* border: 1px solid; */
+        display: none;
+        
+    }
+  }
+/* <------------------- Final Uniformn  ------------------->*/
 
 /* <------------------- Inicio Index  ------------------->*/
 /* Container */
@@ -1206,11 +1255,14 @@ main .section-search form div button > img{
 /* <------------------- Final Index  ------------------->*/
 
 
+
 /* <------------------- Inicio Recipes  ------------------->*/
 .page-back{
     /* border: 1px solid; */
     margin-top: 8rem;
-    width: 96%;
+    margin-bottom: 1rem;
+    width: 95%;
+    font-size: 0.85rem;
     
 }
 .page-back a{
@@ -1224,6 +1276,11 @@ main .section-search form div button > img{
 }
 .page-back a > h4{
     display: inline;
+    padding-right: 0.5rem;
+}
+.page-back span{
+    padding: 0 0.5rem;
+    font-weight: bolder;
 }
 .section-title{
     /* border: 1px solid; */
@@ -1336,6 +1393,7 @@ main .section-search form div button > img{
 
 
 /* <------------------- Inicio Contact  ------------------->*/
+
 .article-contact{
     /* border: 0.1px solid rgba(0, 0, 0, 0.10); */
     box-shadow: 0 0 10px rgb(232 234 237 / 80%);
@@ -1479,7 +1537,34 @@ main .section-search form div button > img{
 
 
 /* <------------------- Inicio Post ------------------->*/
-
+.page-back-post{
+    /* border: 1px solid; */
+    margin-top: 8rem;
+    width: 96%;
+    margin-bottom: 3rem;
+    width: 95%;
+    font-size: 0.85rem;
+}
+.page-back-post a{
+    text-decoration: none;
+    color: #000000;
+}
+.page-back-post a:hover{
+    text-decoration: underline;
+    color: #000000;
+    font-weight: bolder;
+}
+.page-back-post span{
+    padding: 0 0.5rem;
+    font-weight: bolder;
+}
+.page-back-post span:last-child{
+    color: #000000;
+}
+.page-back-post a > h4{
+    display: inline;
+    padding-right: 0.5rem;
+}
 .article-post{
     width: 95%;
     display: flex;
@@ -1497,7 +1582,7 @@ main .section-search form div button > img{
     
 }
 .article-post .section-presentation h1{
-    margin: 10rem 0 5rem 0;
+    margin: 5rem 0 5rem 0;
     font-size: 2rem;
 }
 .article-post .section-presentation figure{
@@ -1561,6 +1646,15 @@ main .section-search form div button > img{
     flex-direction: column;
     align-items:center;
     justify-content: center;
+}
+.article-post .section-presentation .description{
+    /* border: 1px solid; */
+    width: 60%;
+    display: flex;
+    background-color: #eeeeee;  
+    text-align: justify;
+    box-sizing: border-box;
+    padding: 2rem;
 }
 .article-post .section-ingredients{
     /* border: 1px solid; */
@@ -1651,6 +1745,30 @@ main .section-search form div button > img{
 /* <------------------- Final Post ------------------->*/
 
 /* <------------------- Inicio Search ------------------->*/
+.page-back-search{
+    /* border: 1px solid; */
+    margin-top: 8rem;
+    width: 95%;
+    font-size: 0.85rem;
+    
+}
+.page-back-search a{
+    text-decoration: none;
+    color: #000000;
+}
+.page-back-search a:hover{
+    text-decoration: underline;
+    color: #000000;
+    font-weight: bolder;
+}
+.page-back-search a > h4{
+    display: inline;
+    padding-right: 0.5rem;
+}
+.page-back-search span{
+    padding: 0 0.5rem;
+    font-weight: bolder;
+}
 .container-2{
     width: 100%;
     display: flex;
@@ -1661,7 +1779,7 @@ main .section-search form div button > img{
 }
 .container-2 main .search-recipe{
     /* border: 1px solid; */
-    margin-top: 9rem;
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
 }
@@ -1754,7 +1872,7 @@ main .section-search form div button > img{
 
 /* <------------------- Inicio messageReceived ------------------->*/
 .article-message{
-    height: 70vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1763,7 +1881,7 @@ main .section-search form div button > img{
 .article-message h1{
     /* border: 1px solid; */
     width: 80%;
-    margin-top: 10rem;
+    margin-top: 3rem;
 }
 .article-message h1 > img{
     /* border: 1px solid; */
