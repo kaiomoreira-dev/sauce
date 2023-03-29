@@ -25,7 +25,7 @@
 [Node.js](https://nodejs.org/en/). 
 * Além disto é bom ter um editor para trabalhar com o código como 
 [VSCode](https://code.visualstudio.com/).
-* Ter uma chave para para utilizar a API de tradução de palavras do Google ao pesquisa.
+* Ter uma chave para para utilizar a API de tradução de palavras do Google ao pesquisar uma receita.
 [API_TRANSLATION_KEY](https://cloud.google.com/apis?utm_source=google&utm_medium=cpc&utm_campaign=latam-BR-all-pt-dr-SKWS-all-all-trial-p-dr-1605194-LUAC0015755&utm_content=text-ad-none-any-DEV_c-CRE_534667502760-ADGP_Hybrid%20%7C%20SKWS%20-%20PHR%20%7C%20Txt%20~%20API-Management_General-KWID_43700065166693642-kwd-307450581253&utm_term=KW_cloud%20api-ST_cloud%20API&gclid=Cj0KCQjww4-hBhCtARIsAC9gR3Zhy8uZOFl4mCTq6NmWDeGhsLCcDq4Yo_D9YR6MWLhj7vdcOU8uudcaAsfQEALw_wcB&gclsrc=aw.ds&hl=pt-br#section-2)
 ## Project access
 
