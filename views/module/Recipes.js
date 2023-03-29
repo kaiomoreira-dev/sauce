@@ -734,41 +734,7 @@
                 },
             ],
             desserts:[
-                {
-                    title: "Gelatina Colorida",
-                    img: "/images/gelatina_colorida.jpg",
-                    path: "",
-                    yield: 12,
-                    timeWait: 1440,
-                    levelPrice: "preço médio",
-                    rating: 4,
-                    category: "desserts",
-                    ingredients: [
-                        "4 a 6 pacotes de gelatina de sabores variados.",
-                        "Água fervente e gelada (100ml de cada para cada sabor de gelatina)",
-                        "1 lata de leite condensado",
-                        "1 vidro de leite de côco (200ml)",
-                        "óleo para juntar (se for preparar em forma)",
-                    ],
-                    preparations: [
-                        "Faça a gelatina conforme as instruções do pacote, porém, usando 100ml de água gelada e 100ml de água quente.",
-    
-                        "Despeje metade do volume total (ou seja 100ml) em uma forma decorada com buraco no meio, untada com óleo.",
-    
-                        "Leve para o congelador por 10 minutos, ou até endurecer um pouco.",
-    
-                        "Misture na outra parte (100ml) 3 colheres (sopa) de leite condensado e 2 colheres (sopa) de leite de côco e misture bem.",
-    
-                        "Coloque por cima da primeira camada já gelada com cuidado pelas paredes da forma, leve para endurecer novamente por mais 10 minutos.",
-    
-                        "Siga os mesmos passos com todas as cores de gelatina, na ordem que quiser.",
-    
-                        "Depois de terminado o processo, coloque a forma na geladeira e só desenforme no dia seguinte.",
-    
-                        "Pronto pode servir!"
-    
-                    ]  
-                },
+                
                 {
                     title: "Bolo de Chocolate de Liquidificador",
                     img: "/images/Bolo-de-chocolate-de-liquidificador-1.jpg",
@@ -811,13 +777,13 @@
                     ]  
                 },
                 {
-                    title: "Pavê de Morango Simples",
-                    img: "/images/pavê-de-morango-simples.jpeg.webp",
+                    title: "Pavê de Morango",
+                    img: "/images/pave-de-morango-simples.jpeg.png",
                     path: "",
                     yield: 12,
                     timeWait: 90,
                     levelPrice: "preço médio",
-                    rating: 3,
+                    rating: 5,
                     category: "desserts",
                     ingredients: [
                         "1 pacote de bolachas maria ao leite",
@@ -876,6 +842,7 @@
                         "E por fim coloque este preparado sobre o bolo, depois de desenformado e frio. Termine com chantilly. E pode servir!"
                     ]  
                 },
+               
                 {
                     title: "Mousse de Maracujá Com Fruta",
                     img: "/images/Mousse-de-Maracujá-Com-Fruta.jpeg.webp",
@@ -990,6 +957,41 @@
                         "Retire a massa do forno, espalhe a polpa de tomate, a escarola refogada e cubra com a muçarela e o tomate-cereja.",
     
                         "Volte ao forno por mais 20 minutos, ou até que o queijo derreta. Retire do forno e sirva em seguida."
+                    ]  
+                },
+                {
+                    title: "Gelatina Colorida",
+                    img: "/images/gelatina_colorida.jpg",
+                    path: "",
+                    yield: 12,
+                    timeWait: 1440,
+                    levelPrice: "preço médio",
+                    rating: 1,
+                    category: "desserts",
+                    ingredients: [
+                        "4 a 6 pacotes de gelatina de sabores variados.",
+                        "Água fervente e gelada (100ml de cada para cada sabor de gelatina)",
+                        "1 lata de leite condensado",
+                        "1 vidro de leite de côco (200ml)",
+                        "óleo para juntar (se for preparar em forma)",
+                    ],
+                    preparations: [
+                        "Faça a gelatina conforme as instruções do pacote, porém, usando 100ml de água gelada e 100ml de água quente.",
+    
+                        "Despeje metade do volume total (ou seja 100ml) em uma forma decorada com buraco no meio, untada com óleo.",
+    
+                        "Leve para o congelador por 10 minutos, ou até endurecer um pouco.",
+    
+                        "Misture na outra parte (100ml) 3 colheres (sopa) de leite condensado e 2 colheres (sopa) de leite de côco e misture bem.",
+    
+                        "Coloque por cima da primeira camada já gelada com cuidado pelas paredes da forma, leve para endurecer novamente por mais 10 minutos.",
+    
+                        "Siga os mesmos passos com todas as cores de gelatina, na ordem que quiser.",
+    
+                        "Depois de terminado o processo, coloque a forma na geladeira e só desenforme no dia seguinte.",
+    
+                        "Pronto pode servir!"
+    
                     ]  
                 },
             ]
@@ -1718,41 +1720,7 @@ const allRecipes = [
             "Assim que o macarrão cozinhar, coloque a mussarela de búfala, espere derreter e sirva na sequência.",
         ]  
     },
-    {
-        title: "Gelatina Colorida",
-        img: "/images/gelatina_colorida.jpg",
-        path: "",
-        yield: 12,
-        timeWait: 1440,
-        levelPrice: "preço médio",
-        rating: 4,
-        category: "desserts",
-        ingredients: [
-            "4 a 6 pacotes de gelatina de sabores variados.",
-            "Água fervente e gelada (100ml de cada para cada sabor de gelatina)",
-            "1 lata de leite condensado",
-            "1 vidro de leite de côco (200ml)",
-            "óleo para juntar (se for preparar em forma)",
-        ],
-        preparations: [
-            "Faça a gelatina conforme as instruções do pacote, porém, usando 100ml de água gelada e 100ml de água quente.",
-
-            "Despeje metade do volume total (ou seja 100ml) em uma forma decorada com buraco no meio, untada com óleo.",
-
-            "Leve para o congelador por 10 minutos, ou até endurecer um pouco.",
-
-            "Misture na outra parte (100ml) 3 colheres (sopa) de leite condensado e 2 colheres (sopa) de leite de côco e misture bem.",
-
-            "Coloque por cima da primeira camada já gelada com cuidado pelas paredes da forma, leve para endurecer novamente por mais 10 minutos.",
-
-            "Siga os mesmos passos com todas as cores de gelatina, na ordem que quiser.",
-
-            "Depois de terminado o processo, coloque a forma na geladeira e só desenforme no dia seguinte.",
-
-            "Pronto pode servir!"
-
-        ]  
-    },
+    
     {
         title: "Bolo de Chocolate de Liquidificador",
         img: "/images/Bolo-de-chocolate-de-liquidificador-1.jpg",
@@ -1834,7 +1802,7 @@ const allRecipes = [
         yield: 12,
         timeWait: 40,
         levelPrice: "preço médio",
-        rating: 3,
+        rating: 5,
         category: "desserts",
         ingredients: [
             "300 g de chocolate para culinária",
@@ -1974,6 +1942,41 @@ const allRecipes = [
             "Retire a massa do forno, espalhe a polpa de tomate, a escarola refogada e cubra com a muçarela e o tomate-cereja.",
 
             "Volte ao forno por mais 20 minutos, ou até que o queijo derreta. Retire do forno e sirva em seguida."
+        ]  
+    },
+    {
+        title: "Gelatina Colorida",
+        img: "/images/gelatina_colorida.jpg",
+        path: "",
+        yield: 12,
+        timeWait: 1440,
+        levelPrice: "preço médio",
+        rating: 3,
+        category: "desserts",
+        ingredients: [
+            "4 a 6 pacotes de gelatina de sabores variados.",
+            "Água fervente e gelada (100ml de cada para cada sabor de gelatina)",
+            "1 lata de leite condensado",
+            "1 vidro de leite de côco (200ml)",
+            "óleo para juntar (se for preparar em forma)",
+        ],
+        preparations: [
+            "Faça a gelatina conforme as instruções do pacote, porém, usando 100ml de água gelada e 100ml de água quente.",
+
+            "Despeje metade do volume total (ou seja 100ml) em uma forma decorada com buraco no meio, untada com óleo.",
+
+            "Leve para o congelador por 10 minutos, ou até endurecer um pouco.",
+
+            "Misture na outra parte (100ml) 3 colheres (sopa) de leite condensado e 2 colheres (sopa) de leite de côco e misture bem.",
+
+            "Coloque por cima da primeira camada já gelada com cuidado pelas paredes da forma, leve para endurecer novamente por mais 10 minutos.",
+
+            "Siga os mesmos passos com todas as cores de gelatina, na ordem que quiser.",
+
+            "Depois de terminado o processo, coloque a forma na geladeira e só desenforme no dia seguinte.",
+
+            "Pronto pode servir!"
+
         ]  
     },
 ];

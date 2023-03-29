@@ -735,40 +735,39 @@ const Categories =[
         ],
         desserts:[
             {
-                title: "Gelatina Colorida",
-                img: "/images/gelatina_colorida.jpg",
+                title: "Pavê de Morango",
+                img: "/images/pave-de-morango-simples.jpeg.png",
                 path: "",
                 yield: 12,
-                timeWait: 1440,
+                timeWait: 90,
                 levelPrice: "preço médio",
-                rating: 4,
+                rating: 5,
                 category: "desserts",
                 ingredients: [
-                    "4 a 6 pacotes de gelatina de sabores variados.",
-                    "Água fervente e gelada (100ml de cada para cada sabor de gelatina)",
-                    "1 lata de leite condensado",
-                    "1 vidro de leite de côco (200ml)",
-                    "óleo para juntar (se for preparar em forma)",
+                    "1 pacote de bolachas maria ao leite",
+                    "1 xícara de café de açúcar refinado",
+                    "2 bandejas de morango",
+                    "2 latas de leite condensado",
+                    "2 latas de creme de leite",
+                    "2 latas de leite: a mesma medida da lata de leite condensado",
+                    "2 colheres de sopa de chocolate em pó",
+                    "Morangos, Amendoim triturado ou paçoca para decorar"
                 ],
                 preparations: [
-                    "Faça a gelatina conforme as instruções do pacote, porém, usando 100ml de água gelada e 100ml de água quente.",
+                    "Para começar, corte os morangos em pequenas fatias e, logo depois, coloque-os em uma travessa e cubra com açúcar.",
 
-                    "Despeje metade do volume total (ou seja 100ml) em uma forma decorada com buraco no meio, untada com óleo.",
+                    "Deixe descansar por um tempo para formar uma espécie de calda de morango. Caso ache melhor, pode deixar ferver na panela 1 xícara de açúcar com os morangos até realmente virar uma calda, sempre mexendo para não grudar.",
 
-                    "Leve para o congelador por 10 minutos, ou até endurecer um pouco.",
+                    "Agora coloque o leite condensado em uma panela, junto do leite e do amido de milho.",
 
-                    "Misture na outra parte (100ml) 3 colheres (sopa) de leite condensado e 2 colheres (sopa) de leite de côco e misture bem.",
+                    "Na travessa, você terá a primeira camada do morango em calda.",
 
-                    "Coloque por cima da primeira camada já gelada com cuidado pelas paredes da forma, leve para endurecer novamente por mais 10 minutos.",
+                    "Coloque agora o chocolate em pó em uma parte do creme e cubra com a calda.",
 
-                    "Siga os mesmos passos com todas as cores de gelatina, na ordem que quiser.",
-
-                    "Depois de terminado o processo, coloque a forma na geladeira e só desenforme no dia seguinte.",
-
-                    "Pronto pode servir!"
-
+                    "Coloque na geladeira e deixe resfriar por cerca de 3 horas. Sirva à vontade!"
                 ]  
             },
+           
             {
                 title: "Bolo de Chocolate de Liquidificador",
                 img: "/images/Bolo-de-chocolate-de-liquidificador-1.jpg",
@@ -810,39 +809,7 @@ const Categories =[
 
                 ]  
             },
-            {
-                title: "Pavê de Morango Simples",
-                img: "/images/pavê-de-morango-simples.jpeg.webp",
-                path: "",
-                yield: 12,
-                timeWait: 90,
-                levelPrice: "preço médio",
-                rating: 3,
-                category: "desserts",
-                ingredients: [
-                    "1 pacote de bolachas maria ao leite",
-                    "1 xícara de café de açúcar refinado",
-                    "2 bandejas de morango",
-                    "2 latas de leite condensado",
-                    "2 latas de creme de leite",
-                    "2 latas de leite: a mesma medida da lata de leite condensado",
-                    "2 colheres de sopa de chocolate em pó",
-                    "Morangos, Amendoim triturado ou paçoca para decorar"
-                ],
-                preparations: [
-                    "Para começar, corte os morangos em pequenas fatias e, logo depois, coloque-os em uma travessa e cubra com açúcar.",
-
-                    "Deixe descansar por um tempo para formar uma espécie de calda de morango. Caso ache melhor, pode deixar ferver na panela 1 xícara de açúcar com os morangos até realmente virar uma calda, sempre mexendo para não grudar.",
-
-                    "Agora coloque o leite condensado em uma panela, junto do leite e do amido de milho.",
-
-                    "Na travessa, você terá a primeira camada do morango em calda.",
-
-                    "Coloque agora o chocolate em pó em uma parte do creme e cubra com a calda.",
-
-                    "Coloque na geladeira e deixe resfriar por cerca de 3 horas. Sirva à vontade!"
-                ]  
-            },
+        
             {
                 title: "Bolo baltazar",
                 img: "/images/Bolo-Baltazar.jpeg.webp",
@@ -930,7 +897,7 @@ const Categories =[
                 yield: 12,
                 timeWait: 1440,
                 levelPrice: "preço médio",
-                rating: 5,
+                rating: 3,
                 category: "desserts",
                 ingredients: [
                     "4 a 6 pacotes de gelatina de sabores variados.",
@@ -990,6 +957,41 @@ const Categories =[
                     "Retire a massa do forno, espalhe a polpa de tomate, a escarola refogada e cubra com a muçarela e o tomate-cereja.",
 
                     "Volte ao forno por mais 20 minutos, ou até que o queijo derreta. Retire do forno e sirva em seguida."
+                ]  
+            },
+            {
+                title: "Gelatina Colorida",
+                img: "/images/gelatina_colorida.jpg",
+                path: "",
+                yield: 12,
+                timeWait: 1440,
+                levelPrice: "preço médio",
+                rating: 2,
+                category: "desserts",
+                ingredients: [
+                    "4 a 6 pacotes de gelatina de sabores variados.",
+                    "Água fervente e gelada (100ml de cada para cada sabor de gelatina)",
+                    "1 lata de leite condensado",
+                    "1 vidro de leite de côco (200ml)",
+                    "óleo para juntar (se for preparar em forma)",
+                ],
+                preparations: [
+                    "Faça a gelatina conforme as instruções do pacote, porém, usando 100ml de água gelada e 100ml de água quente.",
+
+                    "Despeje metade do volume total (ou seja 100ml) em uma forma decorada com buraco no meio, untada com óleo.",
+
+                    "Leve para o congelador por 10 minutos, ou até endurecer um pouco.",
+
+                    "Misture na outra parte (100ml) 3 colheres (sopa) de leite condensado e 2 colheres (sopa) de leite de côco e misture bem.",
+
+                    "Coloque por cima da primeira camada já gelada com cuidado pelas paredes da forma, leve para endurecer novamente por mais 10 minutos.",
+
+                    "Siga os mesmos passos com todas as cores de gelatina, na ordem que quiser.",
+
+                    "Depois de terminado o processo, coloque a forma na geladeira e só desenforme no dia seguinte.",
+
+                    "Pronto pode servir!"
+
                 ]  
             },
         ]
