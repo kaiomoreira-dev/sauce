@@ -648,7 +648,7 @@
     
                 {
                     title: "Lasanha de carne moída",
-                    img: "/images/lasanha-de-carne-moida.jpg.jpg",
+                    img: "/images/lasanha-de-carne-moida-2.webp",
                     path: "",
                     yield: 15,
                     timeWait: 50,
@@ -1660,7 +1660,7 @@ const allRecipes = [
     },
     {
         title: "Lasanha de carne moída",
-        img: "/images/lasanha-de-carne-moida.jpg.jpg",
+        img: "/images/lasanha-de-carne-moida-2.webp",
         path: "",
         yield: 15,
         timeWait: 50,
