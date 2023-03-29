@@ -403,7 +403,6 @@ main .section-search form div button > img{
 .article-main-recipe section{
     /* border: 1px solid; */
     width: 40vw;
-    height: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -416,7 +415,7 @@ main .section-search form div button > img{
 /* Figura da seção do Artigo principal */
 .article-main-recipe section figure{
     /* border: 1px solid; */
-    height: 50vh;
+    height: auto;
     width: 100%;
     border-radius: 0.3rem;
 
@@ -472,7 +471,7 @@ main .section-search form div button > img{
 } 
 /* Imagem da seção do Artigo principal*/
 .article-main-recipe section figure a > img{
-    height: 51vh;
+    height: 100%;
     width: 100%;
     -webkit-transition: -webkit-transform .5s ease;
     transition: all 1.3s;
@@ -567,7 +566,6 @@ main .section-search form div button > img{
 }
 /* Figure na Seção do Artigo secundário */
 .article-second-recipe figure{
-    height: 40vh;
     width: auto;
     overflow: hidden;
     display: flex;
