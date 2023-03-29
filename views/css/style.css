@@ -46,8 +46,10 @@ body::-webkit-scrollbar-thumb {
     padding: 0 0.5rem;
     font-weight: bolder;
 }
-
-  @media screen and (max-width: 500px) {
+.page-back-mobile{
+    display: none;
+}
+@media screen and (max-width: 500px) {
     .page-back-uniformn{
         /* border: 1px solid; */
         display: none;
@@ -67,6 +69,27 @@ body::-webkit-scrollbar-thumb {
         /* border: 1px solid; */
         display: none;
         
+    }
+    .page-back-mobile{
+        display: block;
+        margin-top: 8rem;
+        margin-bottom: 3rem;
+        width: 90%;
+        font-size: 0.85rem;
+    }
+
+    .page-back-mobile a{
+        text-decoration: none;
+        color: #000000;
+    }
+    .page-back-mobile a:hover{
+        text-decoration: underline;
+        color: #000000;
+        font-weight: bolder;
+    }
+    .page-back-mobile a > h4{
+        display: inline;
+        padding-left: 0.5rem;
     }
   }
 /* <------------------- Final Uniformn  ------------------->*/
@@ -1110,7 +1133,7 @@ main .section-search form div button > img{
     .article-main-recipe section{
         /* border: 1px solid; */
         width: 100%;
-        height: 50vh;
+        height: 60vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1343,7 +1366,6 @@ main .section-search form div button > img{
     width: 85%;
     box-sizing: content-box;
     padding: 0 2rem 4rem 2rem;
-    margin-top: 5rem;
 }
 
 .privacy-policies h1{
@@ -1404,7 +1426,6 @@ main .section-search form div button > img{
     justify-content: center;
     /* margin: 0 0 5rem 0; */
     width: 90%;
-    margin: 5rem 0 0 0;
 }
 .article-contact h1{
     /* border: 1px solid; */
@@ -1902,7 +1923,7 @@ main .section-search form div button > img{
     .article-message h1{
         /* border: 1px solid; */
         width: 90%;
-        margin-top: 9rem;
+        margin-top: 5rem;
     }
     .article-message p{
         /* border: 1px solid; */
