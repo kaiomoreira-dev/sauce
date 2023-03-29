@@ -37,6 +37,7 @@ $ git clone <https://github.com/kaiomoreira-dev/sauce.git>
 # Acesse a pasta do projeto no terminal/cmd
 $ cd sauce
 
+#Adicione API Translation Key no arquivo .env antes de rodar
 # Instale as dependências
 $ yarn ou npm install
 
