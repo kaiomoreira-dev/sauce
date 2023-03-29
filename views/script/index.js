@@ -155,8 +155,9 @@ async function createArticleSecondaryDough(){
         const divStars = document.createElement("div");
 
         articleSecondaryDough.classList.add("article-second-recipe");
-        a_link.setAttribute("href", dough.path)
-        image.setAttribute("src", dough.img)
+        a_link.setAttribute("href", dough.path);
+        image.setAttribute("src", dough.img);
+        image.setAttribute("title", "Ler mais");
         divTitle.classList.add("title");
         h1.innerHTML = dough.title;
         divStars.classList.add("stars");
@@ -213,6 +214,7 @@ async function createArticleSecondaryMainCourses(){
         articleSecondary.classList.add("article-second-recipe");
         a_link.setAttribute("href", course.path)
         image.setAttribute("src", course.img)
+        image.setAttribute("title", "Ler mais");
         divTitle.classList.add("title");
         h1.innerHTML = course.title;
         divStars.classList.add("stars");
@@ -272,6 +274,7 @@ async function createArticleSecondaryDessert(){
         articleSecondaryDessert.classList.add("article-second-recipe");
         a_link.setAttribute("href", dessert.path)
         image.setAttribute("src", dessert.img)
+        image.setAttribute("title", "Ler mais");
         divTitle.classList.add("title");
         h1.innerHTML = dessert.title;
         divStars.classList.add("stars");
