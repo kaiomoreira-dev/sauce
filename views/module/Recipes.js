@@ -506,7 +506,7 @@
             doughs:[
                 {
                     title: "Pizza escarola de liquidificador",
-                    img: "/images/pizza-escarola.jpg",
+                    img: "/images/pizza-escarola.webp",
                     path: "",
                     yield: 8,
                     timeWait: 60,
@@ -587,7 +587,7 @@
                 },
                 {
                     title: "Pizza 3 Queijos",
-                    img: "/images/pizza-3-queijo.jpg",
+                    img: "/images/pizza-3-queijo.webp",
                     path: "",
                     yield: 8,
                     timeWait: 60,
@@ -1519,7 +1519,7 @@ const allRecipes = [
     },
     {
         title: "Pizza escarola de liquidificador",
-        img: "/images/pizza-escarola.jpg",
+        img: "/images/pizza-escarola.webp",
         path: "",
         yield: 8,
         timeWait: 60,
@@ -1600,7 +1600,7 @@ const allRecipes = [
     },
     {
         title: "Pizza 3 Queijos",
-        img: "/images/pizza-3-queijo.jpg",
+        img: "/images/pizza-3-queijo.webp",
         path: "",
         yield: 8,
         timeWait: 60,
