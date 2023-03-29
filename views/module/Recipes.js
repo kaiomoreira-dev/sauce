@@ -95,7 +95,7 @@
                 },  
                 {
                     title: "Filé de Peixe na AirFryer",
-                    img: "/images/receita-de-file-de-tilapia-no-airfryer.webp",
+                    img: "/images/files-de-frango-na-airfryer.jpg",
                     path: "",
                     yield: 3,
                     timeWait: 50,
@@ -262,6 +262,29 @@
             ],
             mainCourses:[
                 {
+                    title: "Frango a passarinho",
+                    img: "/images/frango-passarinho-da-ana-maria-braga.webp",
+                    path: "",
+                    yield: 4,
+                    timeWait: 40,
+                    levelPrice: "preço médio",
+                    rating: 5,
+                    category: "mainCourses",
+                    ingredients: [
+                        "1 frango inteiro, cortado em pedaços pequenos (1,3 kg)",
+                        "2 limões",
+                        "2 pitadas de sal",
+                        "1 pitada de pimenta-do-reino",
+                    ],
+                    preparations: [
+                        "Em uma tigela grande, coloque o frango, o suco dos limões, o sal e a pimenta-do-reino, cubra e deixe tomar gosto na geladeira por 30 minutos.",
+            
+                        "Frite os pedaços de frango em imersão, aos poucos, em óleo quente, por cerca de 8 minutos, ou até ficarem bem dourados por fora e cozidos por dentro. ",
+            
+                        "Escorra em papel toalha e sirva em seguida seu frango a passarinho.",
+                    ]  
+                },
+                {
                     title: "Feijão Preto na Panela de pressão",
                     img: "/images/Feijão-Preto-na-Panela-de-pressão.jpg.webp",
                     path: "",
@@ -302,7 +325,7 @@
                 },
                 {
                     title: "Bolinho de arroz quatro queijos",
-                    img: "/images/Bolinho-de-arroz-quatro-queijos.jpg",
+                    img: "/images/bolinho-de-arroz.jpg",
                     path: "",
                     yield: 5,
                     timeWait: 20,
@@ -335,8 +358,8 @@
                     ]  
                 },              
                 {
-                    title: "Arroz de Sobra",
-                    img: "/images/receita-arroz-de-forno-02.jpg",
+                    title: "Arroz de forno",
+                    img: "/images/arroz-de-forno.webp",
                     path: "",
                     yield: 5,
                     timeWait: 30,
@@ -477,7 +500,7 @@
                         "Tempere com sal e pimenta. Desligue o fogo, acrescente o arroz reservado e o cheiro-verde e misture delicadamente antes de servir."
                     ]  
                 },
-                
+               
                 
             ],
             doughs:[
@@ -522,7 +545,7 @@
                 },
                 {
                     title: "Rondelli de Presunto e Queijo",
-                    img: "/images/rondelli.jpeg",
+                    img: "/images/rondelli.webp",
                     path: "/categoria/massa/rondelli-presunto-e-queijo",
                     yield: 6,
                     timeWait: 60,
@@ -737,7 +760,7 @@
                 
                 {
                     title: "Bolo de Chocolate de Liquidificador",
-                    img: "/images/Bolo-de-chocolate-de-liquidificador-1.jpg",
+                    img: "/images/bolo-grande-de-chocolate-4.webp",
                     path: "",
                     yield: 12,
                     timeWait: 30,
@@ -778,7 +801,7 @@
                 },
                 {
                     title: "Pavê de Morango",
-                    img: "/images/pave-de-morango-simples.jpeg.png",
+                    img: "/images/pave-de-morango-8.webp",
                     path: "",
                     yield: 12,
                     timeWait: 90,
@@ -1093,7 +1116,7 @@ const allRecipes = [
     },  
     {
         title: "Filé de Peixe na AirFryer",
-        img: "/images/receita-de-file-de-tilapia-no-airfryer.webp",
+        img: "/images/files-de-frango-na-airfryer.jpg",
         path: "",
         yield: 3,
         timeWait: 50,
@@ -1294,8 +1317,31 @@ const allRecipes = [
         ]  
     },
     {
+        title: "Frango a passarinho",
+        img: "/images/frango-passarinho-da-ana-maria-braga.webp",
+        path: "",
+        yield: 4,
+        timeWait: 40,
+        levelPrice: "preço médio",
+        rating: 5,
+        category: "mainCourses",
+        ingredients: [
+            "1 frango inteiro, cortado em pedaços pequenos (1,3 kg)",
+            "2 limões",
+            "2 pitadas de sal",
+            "1 pitada de pimenta-do-reino",
+        ],
+        preparations: [
+            "Em uma tigela grande, coloque o frango, o suco dos limões, o sal e a pimenta-do-reino, cubra e deixe tomar gosto na geladeira por 30 minutos.",
+
+            "Frite os pedaços de frango em imersão, aos poucos, em óleo quente, por cerca de 8 minutos, ou até ficarem bem dourados por fora e cozidos por dentro. ",
+
+            "Escorra em papel toalha e sirva em seguida seu frango a passarinho.",
+        ]  
+    },
+    {
         title: "Bolinho de arroz quatro queijos",
-        img: "/images/Bolinho-de-arroz-quatro-queijos.jpg",
+        img: "/images/bolinho-de-arroz.jpg",
         path: "",
         yield: 5,
         timeWait: 20,
@@ -1328,8 +1374,8 @@ const allRecipes = [
         ]  
     },              
     {
-        title: "Arroz de Sobra",
-        img: "/images/receita-arroz-de-forno-02.jpg",
+        title: "Arroz de forno",
+        img: "/images/arroz-de-forno.webp",
         path: "",
         yield: 5,
         timeWait: 30,
@@ -1360,6 +1406,7 @@ const allRecipes = [
             "Quando o queijo estiver dourado é só tirar e servir essa delícia.",
         ]  
     },
+
     {
         title: "Omelete de Espinafre",
         img: "/images/omelete.jpg.webp",
@@ -1511,7 +1558,7 @@ const allRecipes = [
     },
     {
         title: "Rondelli de Presunto e Queijo",
-        img: "/images/rondelli.jpeg",
+        img: "/images/rondelli.webp",
         path: "/categoria/massa/rondelli-presunto-e-queijo",
         yield: 6,
         timeWait: 60,
@@ -1723,7 +1770,7 @@ const allRecipes = [
     
     {
         title: "Bolo de Chocolate de Liquidificador",
-        img: "/images/Bolo-de-chocolate-de-liquidificador-1.jpg",
+        img: "/images/bolo-grande-de-chocolate-4.webp",
         path: "",
         yield: 12,
         timeWait: 30,
@@ -1764,7 +1811,7 @@ const allRecipes = [
     },
     {
         title: "Pavê de Morango",
-        img: "/images/pave-de-morango-simples.jpeg.png",
+        img: "/images/pave-de-morango-8.webp",
         path: "",
         yield: 12,
         timeWait: 90,
