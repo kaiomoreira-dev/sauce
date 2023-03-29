@@ -1095,6 +1095,11 @@ main .section-search form div button > img{
         height: 100%;
 
     }
+    .article-main-recipe section figure a > img:hover{
+        -webkit-transform: unset;
+        transform: unset;
+        
+    }
     /* Artigo secundário */
     .article-second-recipe{
         /* border: 1px solid; */
@@ -1128,7 +1133,12 @@ main .section-search form div button > img{
         margin-top: 0.3rem;
         height: auto;
         width: 100%;
-    }    
+    } 
+    .article-second-recipe section figure a > img:hover{
+        -webkit-transform: unset;
+        transform: unset;
+        
+    }  
     #loader-article{
         /* border: 1px solid; */
         width: 100%;
