@@ -89,7 +89,7 @@ app.get("/search", async (request, response) =>{
       const translatedTextFormatted = translatedText.join("").replace(" ", "");      
       for(let category of recipes){
             if(translatedTextFormatted === "pastas" || translatedTextFormatted === "pasta"){
-                sectionCategory = "Massa";
+                sectionCategory = "Massas";
                 amountRecipesFound = category.doughs.length;
                 textRecipe = "Receitas";
 
@@ -102,7 +102,7 @@ app.get("/search", async (request, response) =>{
                 }
             }
             if(translatedTextFormatted === "salads" || translatedTextFormatted === "salad"){
-                sectionCategory = "Salada";
+                sectionCategory = "Saladas";
                 amountRecipesFound = category.salads.length;
                 textRecipe = "Receitas";
                 for(let salad of category.salads){
@@ -114,7 +114,7 @@ app.get("/search", async (request, response) =>{
                 }
             }
             if(translatedTextFormatted === "meats" || translatedTextFormatted === "meat"){
-                sectionCategory = "Carne";
+                sectionCategory = "Carnes";
                 amountRecipesFound = category.meats.length;
                 textRecipe = "Receitas";
                 for(let meat of category.meats){
@@ -126,7 +126,7 @@ app.get("/search", async (request, response) =>{
                 }
             }
             if(translatedTextFormatted === "desserts" || translatedTextFormatted === "dessert"){
-                sectionCategory = "Sobremesa";
+                sectionCategory = "Sobremesas";
                 amountRecipesFound = category.desserts.length;
                 textRecipe = "Receitas";
                 for(let dessert of category.desserts){
@@ -138,7 +138,7 @@ app.get("/search", async (request, response) =>{
                 }
             }
             if(translatedTextFormatted === "maincourses" || translatedTextFormatted === "maincourse"){
-                sectionCategory = "Prato Principal";
+                sectionCategory = "Pratos Principais";
                 textRecipe = "Receitas";
                 amountRecipesFound = category.mainCourses.length;
                 for(let mainCourse of category.mainCourses){
