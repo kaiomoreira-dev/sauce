@@ -1763,8 +1763,8 @@ const allRecipes = [
         ]  
     },
     {
-        title: "Pavê de Morango Simples",
-        img: "/images/pavê-de-morango-simples.jpeg.webp",
+        title: "Pavê de Morango",
+        img: "/images/pave-de-morango-simples.jpeg.png",
         path: "",
         yield: 12,
         timeWait: 90,
